@@ -1,0 +1,2157 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0564E54A6F03094F6F39F7D2325CE0D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0225A37988381FFA818BADFB6552F75 /* CoreGraphics.framework */; };
+		0A0300B41E7F36AF8C02211132EE4919 /* UIResponder+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5595143828B801697DC1285AB58C1 /* UIResponder+ViewState.swift */; };
+		0B2B4D7B7279348BEDF992E2E3310950 /* Pods-EyeHospitalApplicationTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D9F36D4C3CFABA38EFAF13DC358812 /* Pods-EyeHospitalApplicationTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BA470C775E2D76081A301E7925E7F88 /* KeyboardAvoidingViewLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE94F0D8AB58C32EBB5604B512F3ED /* KeyboardAvoidingViewLoader.m */; };
+		0DB327E2223491A7FF9A9A8A1FDBA67D /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E139AB686239390DCF980EC04EF9690 /* Delegate.swift */; };
+		0F4EE8BACFC4FDF927134D14F3FA7284 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */; };
+		102F4487BC4ADC3C2B56A0470E0A9468 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD5D73C24E95C0F1B4C78CBCA3A5CE /* IQKeyboardManagerConstantsInternal.swift */; };
+		1248CD17524C2E4A3BE2DB46305141FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5280D8583B6487063FA1B48C123A8739 /* UIKit.framework */; };
+		13F9FACFA2D452D5672112C3618E3C1D /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81699EC22DFAD7F22A80DBCDCF2E4F3A /* KeyboardManager.swift */; };
+		1DFB5B23FD8257FAA7D535EDA87D512F /* KeyboardAvoidingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09103AA44C4895CDF7197673DEDE5596 /* KeyboardAvoidingView.swift */; };
+		20361391B18108E444C89AD5E723120A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5280D8583B6487063FA1B48C123A8739 /* UIKit.framework */; };
+		207C84743FE7C82BCC63DFDC1C27D80A /* TransitionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F896E5A0D9AF349E9BCC3154B2D4DE /* TransitionContext.swift */; };
+		23F2720A4168CAD9ADD9EDF5A6438497 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A285CE5F960F5A6F12275C081BBB72 /* Preferences.swift */; };
+		259D6FC80BCFE785471F743B1F533970 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D62FF5607FF791CCF45110520C699B8 /* IQNSArray+Sort.swift */; };
+		2964A4832ED09F9CB441D25FB2F7B76C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */; };
+		29DE7A169BD02E2A7190B9C8E6BF7E8C /* UIViewController+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED17385334B535ECDE7B92023C6C595A /* UIViewController+ViewState.swift */; };
+		2D50CD5E7CB6B9A348C933A5A0436407 /* Pods-EyeHospitalApplication-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DAB3D206C54455DDA8A5C88320AA70 /* Pods-EyeHospitalApplication-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FB6DB3CBE692F290CD53AD78E9B67A0 /* Pods-EyeHospitalApplicationTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5C118EF3BB51C1D776F29022BAEE8D /* Pods-EyeHospitalApplicationTests-dummy.m */; };
+		3045125744014703602E03534B143525 /* IHKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBC73DBD0E5E21D03DB99EDDBA796F0 /* IHKeyboardAvoiding-dummy.m */; };
+		3218229D0A5BC018776DB48A1F51A1AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */; };
+		331E92669A5C7A8B36B4E1329E288E34 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394AD82CBDB0660895CA10E4BDF7575 /* Segue.swift */; };
+		3393F2A5744BAF2A3B8E8F25F20D29AB /* SideMenuSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2B3354E7FAFA6AB27E008978BE7F49 /* SideMenuSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3580FDDC6579117BED10AE8BC72336CB /* UIScrollView+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EEE91BF1CD3C31E942E57DC21A140 /* UIScrollView+ViewState.swift */; };
+		361F5CE2807CBD530C8C6E63FD245F5A /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2C5D88C0378C8DE6CC6A7205712E14 /* DropDownCell.swift */; };
+		399B3B92B2A5CAE443F3942282FB43C5 /* ViewState.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419AB8DF4F8C047256FC307E6420932F /* ViewState.framework */; };
+		39F7DC10B2DC9D2F40E75AD093547EE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */; };
+		3EEDFA2EB46CEEB8E49AAC559C9F338A /* KeyboardAvoidingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB71FFFDA46CA774C43A7B912CDDD3D /* KeyboardAvoidingView-dummy.m */; };
+		3F091C427A3E96117C902E8EA143729E /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EBDF8F1C10A7309CC11B96F0BA15E6 /* IQKeyboardManager.swift */; };
+		467F8F1CBD7C6CA5EE431B2E01F22227 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0B56B0E4B7ED57311C37A6E1EFB726 /* StatusBar.swift */; };
+		4737103B10A1C40C5301D0512B9310E4 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A65AF479A4849EA51E13255038196 /* IQKeyboardReturnKeyHandler.swift */; };
+		48A6A72E28762A18E4609864075FF9AC /* SideMenuSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F54304AF6B522B629BE70A3954D1F9 /* SideMenuSwift-dummy.m */; };
+		4A8FE4C4F6D45B41CE01A00D24C56961 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6588EBF75D3E57EE36C5BF51FCF15C85 /* DPDUIView+Extension.swift */; };
+		4C069FA7FAA45154DA92CF5DF3BCDCA9 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C878B971C967C786D5C83DDB961854 /* IQUITextFieldView+Additions.swift */; };
+		4E5BD4403829B8607F8C5777E937BA2E /* BasicTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30A6E7ADA938DBFA4D7B7D872387A2 /* BasicTransitionAnimator.swift */; };
+		4F0CF2AD58CF0D08BC090E7AF0DD63D7 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26554C052809B3CF4EC3876A8737EC74 /* IQInvocation.swift */; };
+		5044FEAEF09468B6964F9F37A1F1F45C /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50151E60326319AF804E05ACC8E89E /* IQPreviousNextView.swift */; };
+		539DCF40B7F4F6F6206B29CB0CBB227F /* IHKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 556CCA21F4C654D73036EFF23A596AB6 /* IHKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59E43E38129589B8685993402A619F28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */; };
+		5F515237FF94DAB4C8A15B7E33A3877B /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C671FC39D807097994442C6B94F1850 /* DPDConstants.swift */; };
+		6064C623428CE711C252E442741F81AB /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BCB5748BDEC5F4DF55D505D5B504D /* DropDown+Appearance.swift */; };
+		618D9C6E8BFF0C7AAD509E9279488585 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */; };
+		62A85277D0462C43B80A05E8822794BB /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40385EE0119F2075A8F843E0E950740A /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E4C5F78398B346507E673C0AD568EE /* KeyboardAvoidingView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0318F973E652DF52F56B291CA1104DAA /* KeyboardAvoidingView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6783D3CC415F39415E837E86D95A70B0 /* KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F5C4497904433566C82747E40DCB9 /* KeyboardAvoiding.swift */; };
+		6A2B4B5F6EF0F334A22B36838DD35BDE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C37BF7BAC082EF937AF48B9FD2290 /* Extensions.swift */; };
+		6ED4B055DFB49DB2A0FFE2BC1A7890BD /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 963E80CC4A48F5B49D96326CF19BA4EE /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74341DA37F4B926FDF4CB2599CAC547A /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB5FF4A0FAF94FAA73A5A157071846 /* IQUIViewController+Additions.swift */; };
+		7FB3576FD619DD256294BAD7E5F83CBE /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44FCF378DD0C7EB4CDA9E9EBE6C664 /* IQTextView.swift */; };
+		82A0BE95CCF791118BEA149220979246 /* KeyboardDismissingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB02CB7C6F1F49C3036BE662BBFD84 /* KeyboardDismissingView.swift */; };
+		842DFBB1471889C2CA329AE05620BBE7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E1DF4AB282C49B14C4AA8BE6852AC0 /* DropDown.swift */; };
+		8B439A47AA5FDEF67AD63BDDB808AC5A /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479645FC860C5EC8AD5195F36DD8875 /* IQUIView+Hierarchy.swift */; };
+		8D7E528DC9BB42437F8ED4B2BD410FAE /* UIViewController+SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1792635DF16DE1BA99E42FBBBF24FFE /* UIViewController+SideMenu.swift */; };
+		8F92DE493E66A26C230C75F95BEB6C77 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4AED629C1A819941681A387CEAA5E0A /* QuartzCore.framework */; };
+		9518195DB69E904D77247E0A55A0043C /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 858F027FEA4640DE0023249B087E317D /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95897DCFD4071A7D61AEAE1DA86BB539 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 016834DC79D62D807598A9CB13AD62F6 /* DropDown-dummy.m */; };
+		980E5594F8DBCE362764AEDC2F086E36 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8823DFA334C68CA1B6B29D16EB2A9BE1 /* IQToolbar.swift */; };
+		9A4D3FE24FFCB47FBE00697FDEC587EA /* Pods-EyeHospitalApplication-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB4ABACAA9ACC54AD8A0339AED2446F /* Pods-EyeHospitalApplication-dummy.m */; };
+		9EA4F8BFC05AE48B88B7E7925116734E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */; };
+		A54E7DB163A4617D92401B596F4487CA /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5805C8FE1FF704F7D43385ADCDAC4A9 /* SideMenuController.swift */; };
+		AE3B246482DCD60BA846EA3CE983A1FB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAEE779C18F11C5C31C778E79017BD /* IQUIView+IQKeyboardToolbar.swift */; };
+		B9220D02A5299E366EC0C766B062E45F /* SideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E15B5CF4FB3BFE0452D4485F220F185 /* SideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B98378C55379E1B92897F11A22E38443 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB072C42C2C7EC19B68E8E438C883477 /* IQKeyboardManagerSwift-dummy.m */; };
+		BA7BB2FF04CE1CAFC5238D1807EF0034 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B8F526860143F25BCE0CBC9A506ADA /* DPDKeyboardListener.swift */; };
+		BD2B1D0A6CE61B15D72E8A23B79BC0E0 /* ViewStateLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4D0F916756B0FD8F845C8F4435CF1F /* ViewStateLoader.m */; };
+		C04C5F1F1D6B337F87E157B55A747E41 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A6815652D69B62F30C64E5703E869 /* IQKeyboardManagerConstants.swift */; };
+		C0EB3776478AB80676E488BC9C9CDA3C /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C336522F6CFACA84159D54A0934CBB8 /* IQUIScrollView+Additions.swift */; };
+		C24276C061E50C6E383AABD7F4A87232 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5280D8583B6487063FA1B48C123A8739 /* UIKit.framework */; };
+		C35DCE97EB77150C41E735DB57BD6616 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755C61E3CA1A9F64210DA9F0FE14A90 /* IQTitleBarButtonItem.swift */; };
+		C5930CD00D1DD8B949676C92EEBBA044 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */; };
+		C6E6630F5780DE829F526E13A844F891 /* KeyboardAvoidingViewLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5B4038B0F9779DAA4C52CB734DC9E4 /* KeyboardAvoidingViewLoader.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CDD98EEA92CFC6BB90D2E33B04466811 /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC334B91E54ABF7BAFE45E323FA6632 /* UIView+Container.swift */; };
+		CE7D19B910BF1108051384DB18AD88DC /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C275F20F46FC9F16948BD84EF94592 /* ReplaceMe.swift */; };
+		D6B18C75D23CCC757E7FED786AC0480D /* UIViewController+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9697EBED3AA9E0EAB5808185F88656 /* UIViewController+Container.swift */; };
+		DDE417BA9D13D2BB98316DF0512A1944 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5434372DEF34A93E03C7B76433CF5 /* IQBarButtonItem.swift */; };
+		DED9172E49400CF4873B0AD34C2397E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */; };
+		E2F241AE194191F06998ECFD8517ACB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5280D8583B6487063FA1B48C123A8739 /* UIKit.framework */; };
+		E41D336BEDA07B08CD4B381D00C9B344 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB5BCC482818B1C9E930CB8CC9AB5BD /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-dummy.m */; };
+		E62CE4A79DB0919785E7E3EF006D90B2 /* ViewState-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A066005A811D0C1DBA8858BED78BDF /* ViewState-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E6BFDF5981CD9A8BFB47D07A6ACE62 /* DropDownCell.xib */; };
+		EE892B571A637999F7C786F4244AB4B8 /* ViewState-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21422563A6C33D37041F22573B9BD72B /* ViewState-dummy.m */; };
+		F69625B6C497302FF083C7C2CCAD930C /* ViewStateLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E8449A685B1B29DEA779E244BA4172 /* ViewStateLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		064592022CA5C56A800350F1FB503195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		1173CACF4BBB01C604A3BA2DE3ED4857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF159A88B9F1E00CBF00F84837E9CB01;
+			remoteInfo = "Pods-EyeHospitalApplication";
+		};
+		28C64B1A5331684DD6A9DAB43C70A239 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 873002DBC460B8090EFD7E391AA04141;
+			remoteInfo = SideMenuSwift;
+		};
+		40DFD3616588BDF12A8D35AA9C24F54D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 338E7F2037362B87520AA39B21123C6A;
+			remoteInfo = ViewState;
+		};
+		5457F80B13392B910A5892AF81ED80EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9CE3DD48ABA60042E7CC0A84E35E9F;
+			remoteInfo = KeyboardAvoidingView;
+		};
+		A34D809EC7D94A9E31277E4F7E42986E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		BADCE1AEF4AAB2B1A82C621AA9A8A8AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E078D0497EB06B70930AA116C544BC4F;
+			remoteInfo = IHKeyboardAvoiding;
+		};
+		CC55ADEDF1983BB217A67C82F0B175C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 338E7F2037362B87520AA39B21123C6A;
+			remoteInfo = ViewState;
+		};
+		D17459A5E4F4BA444FBAF64A36F35050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		D7C36B05B3F644E0DAB0838719EFDB97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E078D0497EB06B70930AA116C544BC4F;
+			remoteInfo = IHKeyboardAvoiding;
+		};
+		D99804595DC18EE7CE4F3FB0005A8ADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		F4571007969345399C4F717117C3920C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 873002DBC460B8090EFD7E391AA04141;
+			remoteInfo = SideMenuSwift;
+		};
+		FA042950C7E4BFF571B31D4386C13B7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 338E7F2037362B87520AA39B21123C6A;
+			remoteInfo = ViewState;
+		};
+		FB6C5D88087EE397DA1A5359C57EA281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9CE3DD48ABA60042E7CC0A84E35E9F;
+			remoteInfo = KeyboardAvoidingView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008A65AF479A4849EA51E13255038196 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		016834DC79D62D807598A9CB13AD62F6 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		01F896E5A0D9AF349E9BCC3154B2D4DE /* TransitionContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionContext.swift; path = Sources/SideMenu/TransitionContext.swift; sourceTree = "<group>"; };
+		0318F973E652DF52F56B291CA1104DAA /* KeyboardAvoidingView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeyboardAvoidingView-umbrella.h"; sourceTree = "<group>"; };
+		03C275F20F46FC9F16948BD84EF94592 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ViewState/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		0479645FC860C5EC8AD5195F36DD8875 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		09103AA44C4895CDF7197673DEDE5596 /* KeyboardAvoidingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardAvoidingView.swift; path = KeyboardAvoidingView/Classes/KeyboardAvoidingView.swift; sourceTree = "<group>"; };
+		09B66C2E0BFEC36D58AF5D3B3F45789D /* IHKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IHKeyboardAvoiding.framework; path = IHKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA8E557132E12A62D497F42F7973718 /* Pods-EyeHospitalApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyeHospitalApplication.release.xcconfig"; sourceTree = "<group>"; };
+		0B2365D7E3A9C60458A3FB64FD4052D7 /* IHKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IHKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		0C336522F6CFACA84159D54A0934CBB8 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		0CB9784379F00243A8271980593C3992 /* Pods_EyeHospitalApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EyeHospitalApplication.framework; path = "Pods-EyeHospitalApplication.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E139AB686239390DCF980EC04EF9690 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = Sources/SideMenu/Delegate.swift; sourceTree = "<group>"; };
+		10F54304AF6B522B629BE70A3954D1F9 /* SideMenuSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenuSwift-dummy.m"; sourceTree = "<group>"; };
+		19D9750FDBCD0715DB1EFE70E469F734 /* IHKeyboardAvoiding-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IHKeyboardAvoiding-Info.plist"; sourceTree = "<group>"; };
+		19DAB3D206C54455DDA8A5C88320AA70 /* Pods-EyeHospitalApplication-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EyeHospitalApplication-umbrella.h"; sourceTree = "<group>"; };
+		1FBC73DBD0E5E21D03DB99EDDBA796F0 /* IHKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IHKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		21422563A6C33D37041F22573B9BD72B /* ViewState-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewState-dummy.m"; sourceTree = "<group>"; };
+		26554C052809B3CF4EC3876A8737EC74 /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
+		27EE05E84FF3127B22CEA3B2A4CA4371 /* Pods-EyeHospitalApplicationTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EyeHospitalApplicationTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		28F88B664C2883A3ADDF1E68F6E19F2B /* Pods-EyeHospitalApplication-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyeHospitalApplication-acknowledgements.plist"; sourceTree = "<group>"; };
+		2BC99354E56AB3D7730A0C878BEE5D2F /* ViewState-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewState-prefix.pch"; sourceTree = "<group>"; };
+		2D5B4038B0F9779DAA4C52CB734DC9E4 /* KeyboardAvoidingViewLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyboardAvoidingViewLoader.h; path = KeyboardAvoidingView/Classes/KeyboardAvoidingViewLoader.h; sourceTree = "<group>"; };
+		2F04F30DB54F9B6E00250160E7742FF5 /* KeyboardAvoidingView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeyboardAvoidingView.xcconfig; sourceTree = "<group>"; };
+		31C878B971C967C786D5C83DDB961854 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		3343BE8D914297BD6A22EFF1C80CAF99 /* Pods-EyeHospitalApplicationTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyeHospitalApplicationTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		35B1741BC9C4CFB9D5F610F7F38C4AFB /* Pods-EyeHospitalApplication-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EyeHospitalApplication-acknowledgements.markdown"; sourceTree = "<group>"; };
+		377706AEE545A0255A8C380B4CD6F82A /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
+		39EBDF8F1C10A7309CC11B96F0BA15E6 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		3BBA4ABB9A37F3A8B6F98D1B0C1369E8 /* Pods-EyeHospitalApplication-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyeHospitalApplication-Info.plist"; sourceTree = "<group>"; };
+		3C877CBEC329E5A4BF7586E941E6FB75 /* SideMenuSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenuSwift-Info.plist"; sourceTree = "<group>"; };
+		3FF5434372DEF34A93E03C7B76433CF5 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		40385EE0119F2075A8F843E0E950740A /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		419AB8DF4F8C047256FC307E6420932F /* ViewState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EB02CB7C6F1F49C3036BE662BBFD84 /* KeyboardDismissingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardDismissingView.swift; path = Sources/KeyboardDismissingView.swift; sourceTree = "<group>"; };
+		438C5FC4E46F59BE667D4C657728A191 /* ViewState.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewState.xcconfig; sourceTree = "<group>"; };
+		46250238E7F675ED7310930E84E99C33 /* KeyboardAvoidingView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeyboardAvoidingView-prefix.pch"; sourceTree = "<group>"; };
+		494B828BE369AEF2B9F97BB440417593 /* KeyboardAvoidingView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeyboardAvoidingView-Info.plist"; sourceTree = "<group>"; };
+		49D9F36D4C3CFABA38EFAF13DC358812 /* Pods-EyeHospitalApplicationTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EyeHospitalApplicationTests-umbrella.h"; sourceTree = "<group>"; };
+		5280D8583B6487063FA1B48C123A8739 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		556CCA21F4C654D73036EFF23A596AB6 /* IHKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IHKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		5B963F50F7B0D041F684E5E564173390 /* ViewState.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ViewState.modulemap; sourceTree = "<group>"; };
+		5C7DFD48ADE411DFBA32CAED36A41B58 /* ViewState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ViewState.framework; path = ViewState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6588EBF75D3E57EE36C5BF51FCF15C85 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		6642040CCC4CD7F37093C2AA4F7FB304 /* SideMenuSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenuSwift.framework; path = SideMenuSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C35AA8DD2B12A4DD37B2CB9079F235 /* IHKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IHKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		6A9697EBED3AA9E0EAB5808185F88656 /* UIViewController+Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Container.swift"; path = "Sources/SideMenu/UIViewController+Container.swift"; sourceTree = "<group>"; };
+		6BB7A5BB249AD85A87DB566466CDE3AD /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-Info.plist"; sourceTree = "<group>"; };
+		6E15B5CF4FB3BFE0452D4485F220F185 /* SideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SideMenu.h; path = Sources/SideMenu/SideMenu.h; sourceTree = "<group>"; };
+		707576E886A250862D02A695E8478D66 /* SideMenuSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenuSwift.modulemap; sourceTree = "<group>"; };
+		7124436635603D5A87BAEEB7A66E9AEF /* Pods-EyeHospitalApplication-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EyeHospitalApplication-frameworks.sh"; sourceTree = "<group>"; };
+		75DB01F56A73662E48EA058210ACE81F /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		77BCA9CA33C5D02E4AE0B1E2904EE5CA /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		77DC49BF899C3B921176CFAACF37A4BD /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		77E13E7AC5C6EE6373420B4421F98500 /* SideMenuSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenuSwift-prefix.pch"; sourceTree = "<group>"; };
+		7ADDCC3264333D68D32E21B7BF3DA5F8 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		7ED35B3A3DA44D7A0B0932CFCD29065C /* ViewState-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ViewState-Info.plist"; sourceTree = "<group>"; };
+		7F4A6815652D69B62F30C64E5703E869 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		7FE7208A9E40A5EEDEC116B8243A0172 /* Pods-EyeHospitalApplication.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EyeHospitalApplication.modulemap"; sourceTree = "<group>"; };
+		81699EC22DFAD7F22A80DBCDCF2E4F3A /* KeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardManager.swift; path = KeyboardAvoidingView/Classes/KeyboardManager.swift; sourceTree = "<group>"; };
+		81B8F526860143F25BCE0CBC9A506ADA /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		833EEE2F15C44A9A0EFFD1C069E1E39C /* KeyboardAvoidingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeyboardAvoidingView.framework; path = KeyboardAvoidingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844F5C4497904433566C82747E40DCB9 /* KeyboardAvoiding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardAvoiding.swift; path = Sources/KeyboardAvoiding.swift; sourceTree = "<group>"; };
+		84B5595143828B801697DC1285AB58C1 /* UIResponder+ViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIResponder+ViewState.swift"; path = "ViewState/Classes/UIResponder+ViewState.swift"; sourceTree = "<group>"; };
+		84E8449A685B1B29DEA779E244BA4172 /* ViewStateLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ViewStateLoader.h; path = ViewState/Classes/ViewStateLoader.h; sourceTree = "<group>"; };
+		858F027FEA4640DE0023249B087E317D /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		8823DFA334C68CA1B6B29D16EB2A9BE1 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		88A066005A811D0C1DBA8858BED78BDF /* ViewState-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewState-umbrella.h"; sourceTree = "<group>"; };
+		8D62FF5607FF791CCF45110520C699B8 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		8F30A6E7ADA938DBFA4D7B7D872387A2 /* BasicTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicTransitionAnimator.swift; path = Sources/SideMenu/BasicTransitionAnimator.swift; sourceTree = "<group>"; };
+		90E10051895E8D2CE1970E97AADB2498 /* SideMenuSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenuSwift.xcconfig; sourceTree = "<group>"; };
+		91EE94F0D8AB58C32EBB5604B512F3ED /* KeyboardAvoidingViewLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KeyboardAvoidingViewLoader.m; path = KeyboardAvoidingView/Classes/KeyboardAvoidingViewLoader.m; sourceTree = "<group>"; };
+		92B1A555B45A16F6E271B3A6932B2740 /* Pods-EyeHospitalApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyeHospitalApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		963E80CC4A48F5B49D96326CF19BA4EE /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-umbrella.h"; sourceTree = "<group>"; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C671FC39D807097994442C6B94F1850 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		9C9BCB5748BDEC5F4DF55D505D5B504D /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F2600486DAF7537E4A276AC84B3968D /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		A154F6544FB63544C8E6663A2F287D10 /* Pods_EyeHospitalApplication_EyeHospitalApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EyeHospitalApplication_EyeHospitalApplicationUITests.framework; path = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AA8FD13B4BA2FA1EF53F1F209A0AD0 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		A1DAEE779C18F11C5C31C778E79017BD /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		A24C37BF7BAC082EF937AF48B9FD2290 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = KeyboardAvoidingView/Classes/Extensions.swift; sourceTree = "<group>"; };
+		A24FB1CF7E8998AAFA955CF0B70EE373 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA003F44EB2C5E1585CB426AD38474D3 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		AA50151E60326319AF804E05ACC8E89E /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		AA6A51D26A031B5C0C246D305C6F71E7 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF44FCF378DD0C7EB4CDA9E9EBE6C664 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		B0225A37988381FFA818BADFB6552F75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B3CA01BBE41C2FAC3FCBEDC90846823E /* Pods-EyeHospitalApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyeHospitalApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		B4AED629C1A819941681A387CEAA5E0A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B6A285CE5F960F5A6F12275C081BBB72 /* Preferences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Preferences.swift; path = Sources/SideMenu/Preferences.swift; sourceTree = "<group>"; };
+		BF0B56B0E4B7ED57311C37A6E1EFB726 /* StatusBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusBar.swift; path = Sources/SideMenu/StatusBar.swift; sourceTree = "<group>"; };
+		BF7558E0E4DA811F12A8E6B010B6C40C /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C5805C8FE1FF704F7D43385ADCDAC4A9 /* SideMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuController.swift; path = Sources/SideMenu/SideMenuController.swift; sourceTree = "<group>"; };
+		C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C755C61E3CA1A9F64210DA9F0FE14A90 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		CB5C118EF3BB51C1D776F29022BAEE8D /* Pods-EyeHospitalApplicationTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EyeHospitalApplicationTests-dummy.m"; sourceTree = "<group>"; };
+		CFD9AA9C302C6E0A6CB0EBC3E51E71F7 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.modulemap"; sourceTree = "<group>"; };
+		DB2B3354E7FAFA6AB27E008978BE7F49 /* SideMenuSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenuSwift-umbrella.h"; sourceTree = "<group>"; };
+		DBC95A7D4D7505CE2FEA790D8778B520 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		DD40CCAC2D46EA429169D125B8E5D6FD /* DropDown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.xcconfig; sourceTree = "<group>"; };
+		DD4D0F916756B0FD8F845C8F4435CF1F /* ViewStateLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ViewStateLoader.m; path = ViewState/Classes/ViewStateLoader.m; sourceTree = "<group>"; };
+		DEBB5FF4A0FAF94FAA73A5A157071846 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		DFCD5D73C24E95C0F1B4C78CBCA3A5CE /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		E16DF165BDA0D273F24494AA290A6E13 /* KeyboardAvoidingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeyboardAvoidingView.modulemap; sourceTree = "<group>"; };
+		E17EEE91BF1CD3C31E942E57DC21A140 /* UIScrollView+ViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ViewState.swift"; path = "ViewState/Classes/UIScrollView+ViewState.swift"; sourceTree = "<group>"; };
+		E394AD82CBDB0660895CA10E4BDF7575 /* Segue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Segue.swift; path = Sources/SideMenu/Segue.swift; sourceTree = "<group>"; };
+		E5150ACC08896D1654D5E7C02C86F0E3 /* Pods-EyeHospitalApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EyeHospitalApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED17385334B535ECDE7B92023C6C595A /* UIViewController+ViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+ViewState.swift"; path = "ViewState/Classes/UIViewController+ViewState.swift"; sourceTree = "<group>"; };
+		EE2C5D88C0378C8DE6CC6A7205712E14 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		EE8584A50BA460BB2B777AD93F0495AE /* Pods-EyeHospitalApplicationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EyeHospitalApplicationTests.modulemap"; sourceTree = "<group>"; };
+		EEB4ABACAA9ACC54AD8A0339AED2446F /* Pods-EyeHospitalApplication-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EyeHospitalApplication-dummy.m"; sourceTree = "<group>"; };
+		EFB71FFFDA46CA774C43A7B912CDDD3D /* KeyboardAvoidingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeyboardAvoidingView-dummy.m"; sourceTree = "<group>"; };
+		F0E6BFDF5981CD9A8BFB47D07A6ACE62 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		F1792635DF16DE1BA99E42FBBBF24FFE /* UIViewController+SideMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+SideMenu.swift"; path = "Sources/SideMenu/UIViewController+SideMenu.swift"; sourceTree = "<group>"; };
+		F7E1DF4AB282C49B14C4AA8BE6852AC0 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		FAA34D0BCB4B0B9CB9653445BEB1A74E /* Pods_EyeHospitalApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EyeHospitalApplicationTests.framework; path = "Pods-EyeHospitalApplicationTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB072C42C2C7EC19B68E8E438C883477 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		FDEFC18A4D832428F8E677EEB189056A /* IHKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IHKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
+		FFB5BCC482818B1C9E930CB8CC9AB5BD /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-dummy.m"; sourceTree = "<group>"; };
+		FFC334B91E54ABF7BAFE45E323FA6632 /* UIView+Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Container.swift"; path = "Sources/SideMenu/UIView+Container.swift"; sourceTree = "<group>"; };
+		FFC487517F52E3C2916F0A59C210EDFF /* Pods-EyeHospitalApplicationTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EyeHospitalApplicationTests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02F54470B1955DDCF3764C75C352A3D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F7DC10B2DC9D2F40E75AD093547EE2 /* Foundation.framework in Frameworks */,
+				C24276C061E50C6E383AABD7F4A87232 /* UIKit.framework in Frameworks */,
+				399B3B92B2A5CAE443F3942282FB43C5 /* ViewState.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D928D5B3F0F97A621363F01E3CC2A1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3218229D0A5BC018776DB48A1F51A1AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2292E431F316076553538B7FBB63C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0564E54A6F03094F6F39F7D2325CE0D5 /* CoreGraphics.framework in Frameworks */,
+				2964A4832ED09F9CB441D25FB2F7B76C /* Foundation.framework in Frameworks */,
+				8F92DE493E66A26C230C75F95BEB6C77 /* QuartzCore.framework in Frameworks */,
+				E2F241AE194191F06998ECFD8517ACB9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		662CE40CED9D33A1FC9887D2894D34F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5930CD00D1DD8B949676C92EEBBA044 /* Foundation.framework in Frameworks */,
+				1248CD17524C2E4A3BE2DB46305141FF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B8F521963D3A08E207B621B39679C03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED9172E49400CF4873B0AD34C2397E1 /* Foundation.framework in Frameworks */,
+				20361391B18108E444C89AD5E723120A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9727840973A9C2692E58F7089A7C243E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618D9C6E8BFF0C7AAD509E9279488585 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98AF056870BE80E4A0C428720B405A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E43E38129589B8685993402A619F28 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A039AB2278899CF4E8BFF8FD2229E879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4EE8BACFC4FDF927134D14F3FA7284 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A200DAF4321DD0A7CD75F25053FF5611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA4F8BFC05AE48B88B7E7925116734E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03A3256791D94556B331567E45B92ECA /* SideMenuSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8F30A6E7ADA938DBFA4D7B7D872387A2 /* BasicTransitionAnimator.swift */,
+				0E139AB686239390DCF980EC04EF9690 /* Delegate.swift */,
+				B6A285CE5F960F5A6F12275C081BBB72 /* Preferences.swift */,
+				E394AD82CBDB0660895CA10E4BDF7575 /* Segue.swift */,
+				6E15B5CF4FB3BFE0452D4485F220F185 /* SideMenu.h */,
+				C5805C8FE1FF704F7D43385ADCDAC4A9 /* SideMenuController.swift */,
+				BF0B56B0E4B7ED57311C37A6E1EFB726 /* StatusBar.swift */,
+				01F896E5A0D9AF349E9BCC3154B2D4DE /* TransitionContext.swift */,
+				FFC334B91E54ABF7BAFE45E323FA6632 /* UIView+Container.swift */,
+				6A9697EBED3AA9E0EAB5808185F88656 /* UIViewController+Container.swift */,
+				F1792635DF16DE1BA99E42FBBBF24FFE /* UIViewController+SideMenu.swift */,
+				55263CF2200132E55EABDE7FAD81832C /* Support Files */,
+			);
+			name = SideMenuSwift;
+			path = SideMenuSwift;
+			sourceTree = "<group>";
+		};
+		1235D8B196CCC00A05C8282B741C71EC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B963F50F7B0D041F684E5E564173390 /* ViewState.modulemap */,
+				438C5FC4E46F59BE667D4C657728A191 /* ViewState.xcconfig */,
+				21422563A6C33D37041F22573B9BD72B /* ViewState-dummy.m */,
+				7ED35B3A3DA44D7A0B0932CFCD29065C /* ViewState-Info.plist */,
+				2BC99354E56AB3D7730A0C878BEE5D2F /* ViewState-prefix.pch */,
+				88A066005A811D0C1DBA8858BED78BDF /* ViewState-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ViewState";
+			sourceTree = "<group>";
+		};
+		2A329B7F64CB6ECA4F880E4F17562386 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94922D9CE69809CA094C0819E74F4764 /* Pods-EyeHospitalApplication */,
+				A0078BAFDD8B7B9974DFEBE4776E770A /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests */,
+				B42E0401F1CE638B189B046F26E84DBB /* Pods-EyeHospitalApplicationTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2CC05B890C19EF7A5A24ABE5F4E19BE4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69C35AA8DD2B12A4DD37B2CB9079F235 /* IHKeyboardAvoiding.modulemap */,
+				FDEFC18A4D832428F8E677EEB189056A /* IHKeyboardAvoiding.xcconfig */,
+				1FBC73DBD0E5E21D03DB99EDDBA796F0 /* IHKeyboardAvoiding-dummy.m */,
+				19D9750FDBCD0715DB1EFE70E469F734 /* IHKeyboardAvoiding-Info.plist */,
+				0B2365D7E3A9C60458A3FB64FD4052D7 /* IHKeyboardAvoiding-prefix.pch */,
+				556CCA21F4C654D73036EFF23A596AB6 /* IHKeyboardAvoiding-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IHKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+		2E182154C0E34779107B7F1ADEFE2487 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
+				09B66C2E0BFEC36D58AF5D3B3F45789D /* IHKeyboardAvoiding.framework */,
+				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */,
+				833EEE2F15C44A9A0EFFD1C069E1E39C /* KeyboardAvoidingView.framework */,
+				0CB9784379F00243A8271980593C3992 /* Pods_EyeHospitalApplication.framework */,
+				A154F6544FB63544C8E6663A2F287D10 /* Pods_EyeHospitalApplication_EyeHospitalApplicationUITests.framework */,
+				FAA34D0BCB4B0B9CB9653445BEB1A74E /* Pods_EyeHospitalApplicationTests.framework */,
+				6642040CCC4CD7F37093C2AA4F7FB304 /* SideMenuSwift.framework */,
+				5C7DFD48ADE411DFBA32CAED36A41B58 /* ViewState.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32F10F0D81A536E68251552C3F91F0A4 /* ViewState */ = {
+			isa = PBXGroup;
+			children = (
+				03C275F20F46FC9F16948BD84EF94592 /* ReplaceMe.swift */,
+				84B5595143828B801697DC1285AB58C1 /* UIResponder+ViewState.swift */,
+				E17EEE91BF1CD3C31E942E57DC21A140 /* UIScrollView+ViewState.swift */,
+				ED17385334B535ECDE7B92023C6C595A /* UIViewController+ViewState.swift */,
+				84E8449A685B1B29DEA779E244BA4172 /* ViewStateLoader.h */,
+				DD4D0F916756B0FD8F845C8F4435CF1F /* ViewStateLoader.m */,
+				1235D8B196CCC00A05C8282B741C71EC /* Support Files */,
+			);
+			name = ViewState;
+			path = ViewState;
+			sourceTree = "<group>";
+		};
+		342EF42FD215EBBB8E1F8CF1433E1B3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				419AB8DF4F8C047256FC307E6420932F /* ViewState.framework */,
+				9C34C4D95492CE6CE5BBF6B2D440133E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34D1B8E2C229C06C9DA8466DF20CE9DF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBC95A7D4D7505CE2FEA790D8778B520 /* DropDown.modulemap */,
+				DD40CCAC2D46EA429169D125B8E5D6FD /* DropDown.xcconfig */,
+				016834DC79D62D807598A9CB13AD62F6 /* DropDown-dummy.m */,
+				A1AA8FD13B4BA2FA1EF53F1F209A0AD0 /* DropDown-Info.plist */,
+				9F2600486DAF7537E4A276AC84B3968D /* DropDown-prefix.pch */,
+				858F027FEA4640DE0023249B087E317D /* DropDown-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		4A38C3D82C09A7D45517D372E79D958F /* KeyboardAvoidingView */ = {
+			isa = PBXGroup;
+			children = (
+				A24C37BF7BAC082EF937AF48B9FD2290 /* Extensions.swift */,
+				09103AA44C4895CDF7197673DEDE5596 /* KeyboardAvoidingView.swift */,
+				2D5B4038B0F9779DAA4C52CB734DC9E4 /* KeyboardAvoidingViewLoader.h */,
+				91EE94F0D8AB58C32EBB5604B512F3ED /* KeyboardAvoidingViewLoader.m */,
+				81699EC22DFAD7F22A80DBCDCF2E4F3A /* KeyboardManager.swift */,
+				919A66C648D31AF28C4E96159B21BE88 /* Support Files */,
+			);
+			name = KeyboardAvoidingView;
+			path = KeyboardAvoidingView;
+			sourceTree = "<group>";
+		};
+		55263CF2200132E55EABDE7FAD81832C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				707576E886A250862D02A695E8478D66 /* SideMenuSwift.modulemap */,
+				90E10051895E8D2CE1970E97AADB2498 /* SideMenuSwift.xcconfig */,
+				10F54304AF6B522B629BE70A3954D1F9 /* SideMenuSwift-dummy.m */,
+				3C877CBEC329E5A4BF7586E941E6FB75 /* SideMenuSwift-Info.plist */,
+				77E13E7AC5C6EE6373420B4421F98500 /* SideMenuSwift-prefix.pch */,
+				DB2B3354E7FAFA6AB27E008978BE7F49 /* SideMenuSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SideMenuSwift";
+			sourceTree = "<group>";
+		};
+		6AFBD99EFB3CA6CC9893C18D4472D585 /* IHKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				844F5C4497904433566C82747E40DCB9 /* KeyboardAvoiding.swift */,
+				41EB02CB7C6F1F49C3036BE662BBFD84 /* KeyboardDismissingView.swift */,
+				2CC05B890C19EF7A5A24ABE5F4E19BE4 /* Support Files */,
+			);
+			name = IHKeyboardAvoiding;
+			path = IHKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		7A8F37B471E4BF7130DF8F0F503DFB8D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7ADDCC3264333D68D32E21B7BF3DA5F8 /* IQKeyboardManagerSwift.modulemap */,
+				AA003F44EB2C5E1585CB426AD38474D3 /* IQKeyboardManagerSwift.xcconfig */,
+				FB072C42C2C7EC19B68E8E438C883477 /* IQKeyboardManagerSwift-dummy.m */,
+				377706AEE545A0255A8C380B4CD6F82A /* IQKeyboardManagerSwift-Info.plist */,
+				75DB01F56A73662E48EA058210ACE81F /* IQKeyboardManagerSwift-prefix.pch */,
+				40385EE0119F2075A8F843E0E950740A /* IQKeyboardManagerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		919A66C648D31AF28C4E96159B21BE88 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E16DF165BDA0D273F24494AA290A6E13 /* KeyboardAvoidingView.modulemap */,
+				2F04F30DB54F9B6E00250160E7742FF5 /* KeyboardAvoidingView.xcconfig */,
+				EFB71FFFDA46CA774C43A7B912CDDD3D /* KeyboardAvoidingView-dummy.m */,
+				494B828BE369AEF2B9F97BB440417593 /* KeyboardAvoidingView-Info.plist */,
+				46250238E7F675ED7310930E84E99C33 /* KeyboardAvoidingView-prefix.pch */,
+				0318F973E652DF52F56B291CA1104DAA /* KeyboardAvoidingView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeyboardAvoidingView";
+			sourceTree = "<group>";
+		};
+		920644861E65265F5943DC20B19D536B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0E6BFDF5981CD9A8BFB47D07A6ACE62 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		94922D9CE69809CA094C0819E74F4764 /* Pods-EyeHospitalApplication */ = {
+			isa = PBXGroup;
+			children = (
+				7FE7208A9E40A5EEDEC116B8243A0172 /* Pods-EyeHospitalApplication.modulemap */,
+				35B1741BC9C4CFB9D5F610F7F38C4AFB /* Pods-EyeHospitalApplication-acknowledgements.markdown */,
+				28F88B664C2883A3ADDF1E68F6E19F2B /* Pods-EyeHospitalApplication-acknowledgements.plist */,
+				EEB4ABACAA9ACC54AD8A0339AED2446F /* Pods-EyeHospitalApplication-dummy.m */,
+				7124436635603D5A87BAEEB7A66E9AEF /* Pods-EyeHospitalApplication-frameworks.sh */,
+				3BBA4ABB9A37F3A8B6F98D1B0C1369E8 /* Pods-EyeHospitalApplication-Info.plist */,
+				19DAB3D206C54455DDA8A5C88320AA70 /* Pods-EyeHospitalApplication-umbrella.h */,
+				B3CA01BBE41C2FAC3FCBEDC90846823E /* Pods-EyeHospitalApplication.debug.xcconfig */,
+				0AA8E557132E12A62D497F42F7973718 /* Pods-EyeHospitalApplication.release.xcconfig */,
+			);
+			name = "Pods-EyeHospitalApplication";
+			path = "Target Support Files/Pods-EyeHospitalApplication";
+			sourceTree = "<group>";
+		};
+		9C34C4D95492CE6CE5BBF6B2D440133E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B0225A37988381FFA818BADFB6552F75 /* CoreGraphics.framework */,
+				C640CD79A2E5845615710FEFFFA97E44 /* Foundation.framework */,
+				B4AED629C1A819941681A387CEAA5E0A /* QuartzCore.framework */,
+				5280D8583B6487063FA1B48C123A8739 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A0078BAFDD8B7B9974DFEBE4776E770A /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFD9AA9C302C6E0A6CB0EBC3E51E71F7 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.modulemap */,
+				77DC49BF899C3B921176CFAACF37A4BD /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-acknowledgements.markdown */,
+				AA6A51D26A031B5C0C246D305C6F71E7 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-acknowledgements.plist */,
+				FFB5BCC482818B1C9E930CB8CC9AB5BD /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-dummy.m */,
+				A24FB1CF7E8998AAFA955CF0B70EE373 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-frameworks.sh */,
+				6BB7A5BB249AD85A87DB566466CDE3AD /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-Info.plist */,
+				963E80CC4A48F5B49D96326CF19BA4EE /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-umbrella.h */,
+				77BCA9CA33C5D02E4AE0B1E2904EE5CA /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.debug.xcconfig */,
+				BF7558E0E4DA811F12A8E6B010B6C40C /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig */,
+			);
+			name = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests";
+			path = "Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests";
+			sourceTree = "<group>";
+		};
+		A7ABE64A858832DAD9D08E3ECE1DAE69 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3FF5434372DEF34A93E03C7B76433CF5 /* IQBarButtonItem.swift */,
+				26554C052809B3CF4EC3876A8737EC74 /* IQInvocation.swift */,
+				39EBDF8F1C10A7309CC11B96F0BA15E6 /* IQKeyboardManager.swift */,
+				7F4A6815652D69B62F30C64E5703E869 /* IQKeyboardManagerConstants.swift */,
+				DFCD5D73C24E95C0F1B4C78CBCA3A5CE /* IQKeyboardManagerConstantsInternal.swift */,
+				008A65AF479A4849EA51E13255038196 /* IQKeyboardReturnKeyHandler.swift */,
+				8D62FF5607FF791CCF45110520C699B8 /* IQNSArray+Sort.swift */,
+				AA50151E60326319AF804E05ACC8E89E /* IQPreviousNextView.swift */,
+				AF44FCF378DD0C7EB4CDA9E9EBE6C664 /* IQTextView.swift */,
+				C755C61E3CA1A9F64210DA9F0FE14A90 /* IQTitleBarButtonItem.swift */,
+				8823DFA334C68CA1B6B29D16EB2A9BE1 /* IQToolbar.swift */,
+				0C336522F6CFACA84159D54A0934CBB8 /* IQUIScrollView+Additions.swift */,
+				31C878B971C967C786D5C83DDB961854 /* IQUITextFieldView+Additions.swift */,
+				0479645FC860C5EC8AD5195F36DD8875 /* IQUIView+Hierarchy.swift */,
+				A1DAEE779C18F11C5C31C778E79017BD /* IQUIView+IQKeyboardToolbar.swift */,
+				DEBB5FF4A0FAF94FAA73A5A157071846 /* IQUIViewController+Additions.swift */,
+				7A8F37B471E4BF7130DF8F0F503DFB8D /* Support Files */,
+			);
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		B42E0401F1CE638B189B046F26E84DBB /* Pods-EyeHospitalApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE8584A50BA460BB2B777AD93F0495AE /* Pods-EyeHospitalApplicationTests.modulemap */,
+				27EE05E84FF3127B22CEA3B2A4CA4371 /* Pods-EyeHospitalApplicationTests-acknowledgements.markdown */,
+				3343BE8D914297BD6A22EFF1C80CAF99 /* Pods-EyeHospitalApplicationTests-acknowledgements.plist */,
+				CB5C118EF3BB51C1D776F29022BAEE8D /* Pods-EyeHospitalApplicationTests-dummy.m */,
+				FFC487517F52E3C2916F0A59C210EDFF /* Pods-EyeHospitalApplicationTests-Info.plist */,
+				49D9F36D4C3CFABA38EFAF13DC358812 /* Pods-EyeHospitalApplicationTests-umbrella.h */,
+				92B1A555B45A16F6E271B3A6932B2740 /* Pods-EyeHospitalApplicationTests.debug.xcconfig */,
+				E5150ACC08896D1654D5E7C02C86F0E3 /* Pods-EyeHospitalApplicationTests.release.xcconfig */,
+			);
+			name = "Pods-EyeHospitalApplicationTests";
+			path = "Target Support Files/Pods-EyeHospitalApplicationTests";
+			sourceTree = "<group>";
+		};
+		B453482EE38124B4661CE91BA1B6BC78 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				9C671FC39D807097994442C6B94F1850 /* DPDConstants.swift */,
+				81B8F526860143F25BCE0CBC9A506ADA /* DPDKeyboardListener.swift */,
+				6588EBF75D3E57EE36C5BF51FCF15C85 /* DPDUIView+Extension.swift */,
+				F7E1DF4AB282C49B14C4AA8BE6852AC0 /* DropDown.swift */,
+				9C9BCB5748BDEC5F4DF55D505D5B504D /* DropDown+Appearance.swift */,
+				EE2C5D88C0378C8DE6CC6A7205712E14 /* DropDownCell.swift */,
+				920644861E65265F5943DC20B19D536B /* Resources */,
+				34D1B8E2C229C06C9DA8466DF20CE9DF /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				342EF42FD215EBBB8E1F8CF1433E1B3C /* Frameworks */,
+				DACD557E014289A68361DB9285D21372 /* Pods */,
+				2E182154C0E34779107B7F1ADEFE2487 /* Products */,
+				2A329B7F64CB6ECA4F880E4F17562386 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DACD557E014289A68361DB9285D21372 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B453482EE38124B4661CE91BA1B6BC78 /* DropDown */,
+				6AFBD99EFB3CA6CC9893C18D4472D585 /* IHKeyboardAvoiding */,
+				A7ABE64A858832DAD9D08E3ECE1DAE69 /* IQKeyboardManagerSwift */,
+				4A38C3D82C09A7D45517D372E79D958F /* KeyboardAvoidingView */,
+				03A3256791D94556B331567E45B92ECA /* SideMenuSwift */,
+				32F10F0D81A536E68251552C3F91F0A4 /* ViewState */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2BB5683F7D1AA8FB2F94DA252A664DB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9518195DB69E904D77247E0A55A0043C /* DropDown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34E707F485563A323A8914885ED80439 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E62CE4A79DB0919785E7E3EF006D90B2 /* ViewState-umbrella.h in Headers */,
+				F69625B6C497302FF083C7C2CCAD930C /* ViewStateLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416FB3D0E01501E8237962175ECAA69A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539DCF40B7F4F6F6206B29CB0CBB227F /* IHKeyboardAvoiding-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94311070A2850EC97BC6D5B89FAD2E5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9220D02A5299E366EC0C766B062E45F /* SideMenu.h in Headers */,
+				3393F2A5744BAF2A3B8E8F25F20D29AB /* SideMenuSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C95AAE991B599C06B151766A45D59BE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D50CD5E7CB6B9A348C933A5A0436407 /* Pods-EyeHospitalApplication-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDC148BD130844DB38102A6B6E429EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED4B055DFB49DB2A0FFE2BC1A7890BD /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9501342F66CE4F2C2C9657ADCA4433 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E4C5F78398B346507E673C0AD568EE /* KeyboardAvoidingView-umbrella.h in Headers */,
+				C6E6630F5780DE829F526E13A844F891 /* KeyboardAvoidingViewLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4A6429FF0F9608A16E4D96813E85F23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A85277D0462C43B80A05E8822794BB /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE269BCCC7D22B7124462252A363368 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2B4D7B7279348BEDF992E2E3310950 /* Pods-EyeHospitalApplicationTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		338E7F2037362B87520AA39B21123C6A /* ViewState */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA43A2091F02C844F49034CB408C34D /* Build configuration list for PBXNativeTarget "ViewState" */;
+			buildPhases = (
+				34E707F485563A323A8914885ED80439 /* Headers */,
+				0F18F77DB663B418814FD907CD3BB54A /* Sources */,
+				662CE40CED9D33A1FC9887D2894D34F6 /* Frameworks */,
+				37C20391B7ACCB63B47A740494690AF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewState;
+			productName = ViewState;
+			productReference = 5C7DFD48ADE411DFBA32CAED36A41B58 /* ViewState.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		726661649E659B4849C28C9B6BC34A39 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF62FADCBF57DC4C26A188322394C777 /* Build configuration list for PBXNativeTarget "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests" */;
+			buildPhases = (
+				CFDC148BD130844DB38102A6B6E429EE /* Headers */,
+				8FE6009AFF481EC1F9F8843A35294747 /* Sources */,
+				98AF056870BE80E4A0C428720B405A70 /* Frameworks */,
+				3FAF5108A861111E243FB8295EB39FCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47C7FC1614175B36AF83DA40D1DA204C /* PBXTargetDependency */,
+				ED936E92F882CC99E331108AECA2B53D /* PBXTargetDependency */,
+				C26D2BD3BE67BE6B0AC785DD69E428B9 /* PBXTargetDependency */,
+				1AF5DC202E5A55C50FB9DD44D221F9F8 /* PBXTargetDependency */,
+				A503C8F4EABDA2BF48C00CABEDF3A04F /* PBXTargetDependency */,
+				273A280B9A90E7FA433A8433CCD73C99 /* PBXTargetDependency */,
+			);
+			name = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests";
+			productName = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests";
+			productReference = A154F6544FB63544C8E6663A2F287D10 /* Pods_EyeHospitalApplication_EyeHospitalApplicationUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		873002DBC460B8090EFD7E391AA04141 /* SideMenuSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285C963712D29FD9C44041632F236A16 /* Build configuration list for PBXNativeTarget "SideMenuSwift" */;
+			buildPhases = (
+				94311070A2850EC97BC6D5B89FAD2E5A /* Headers */,
+				A2CAA0A72D6350C9DCB93FCC586DBA43 /* Sources */,
+				A200DAF4321DD0A7CD75F25053FF5611 /* Frameworks */,
+				27EF8C731772A136BCF4DE084247279A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SideMenuSwift;
+			productName = SideMenuSwift;
+			productReference = 6642040CCC4CD7F37093C2AA4F7FB304 /* SideMenuSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B9939FBAE5037558EF3C818263FE024 /* Pods-EyeHospitalApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25DF17DC8EB89BFFEE82F5A9238C3FA9 /* Build configuration list for PBXNativeTarget "Pods-EyeHospitalApplicationTests" */;
+			buildPhases = (
+				FFE269BCCC7D22B7124462252A363368 /* Headers */,
+				B63865FAE74C50FB715DA22CFD45B5A1 /* Sources */,
+				A039AB2278899CF4E8BFF8FD2229E879 /* Frameworks */,
+				44F8082D988259B31FD8F7822AF059F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F4E36CF52F78E3B37878A43D6FFD129 /* PBXTargetDependency */,
+			);
+			name = "Pods-EyeHospitalApplicationTests";
+			productName = "Pods-EyeHospitalApplicationTests";
+			productReference = FAA34D0BCB4B0B9CB9653445BEB1A74E /* Pods_EyeHospitalApplicationTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7155AE59A19533F60ECE3B4045B01F0 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
+			buildPhases = (
+				F4A6429FF0F9608A16E4D96813E85F23 /* Headers */,
+				6C02E9CBF87ED8A1C6D8ED4C951F75A4 /* Sources */,
+				2C2292E431F316076553538B7FBB63C3 /* Frameworks */,
+				FAA5DA81F8292820D65F403E941074FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E078D0497EB06B70930AA116C544BC4F /* IHKeyboardAvoiding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED5325A5545E52EEF12048EBD36F45A /* Build configuration list for PBXNativeTarget "IHKeyboardAvoiding" */;
+			buildPhases = (
+				416FB3D0E01501E8237962175ECAA69A /* Headers */,
+				05E285AADF1A170F9F6D14301B00D6A2 /* Sources */,
+				7B8F521963D3A08E207B621B39679C03 /* Frameworks */,
+				50E514856F35936142591AEDBDCBB809 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IHKeyboardAvoiding;
+			productName = IHKeyboardAvoiding;
+			productReference = 09B66C2E0BFEC36D58AF5D3B3F45789D /* IHKeyboardAvoiding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBED57D13F9A2559E14BCD92E7CFF597 /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				2BB5683F7D1AA8FB2F94DA252A664DB8 /* Headers */,
+				FAFA782452D3B598A37FB459CD314120 /* Sources */,
+				9727840973A9C2692E58F7089A7C243E /* Frameworks */,
+				D0143B72ED2669C4E98A5B8BBCE72151 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EA9CE3DD48ABA60042E7CC0A84E35E9F /* KeyboardAvoidingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 947C3C5F087551D1518BD18BF19566A7 /* Build configuration list for PBXNativeTarget "KeyboardAvoidingView" */;
+			buildPhases = (
+				ED9501342F66CE4F2C2C9657ADCA4433 /* Headers */,
+				A847B8F7DAC5B5B709775BA81EB7E784 /* Sources */,
+				02F54470B1955DDCF3764C75C352A3D9 /* Frameworks */,
+				DB20A42926E9326068B296BC4138467E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				091F9A48C644F9A0BB1B82B2E9249EB9 /* PBXTargetDependency */,
+			);
+			name = KeyboardAvoidingView;
+			productName = KeyboardAvoidingView;
+			productReference = 833EEE2F15C44A9A0EFFD1C069E1E39C /* KeyboardAvoidingView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF159A88B9F1E00CBF00F84837E9CB01 /* Pods-EyeHospitalApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F6DBE1C8B425D1BAFBE8D4193ECD07 /* Build configuration list for PBXNativeTarget "Pods-EyeHospitalApplication" */;
+			buildPhases = (
+				C95AAE991B599C06B151766A45D59BE8 /* Headers */,
+				F7AB4B1935CB9EC6FCAEA3C33737BFD5 /* Sources */,
+				0D928D5B3F0F97A621363F01E3CC2A1F /* Frameworks */,
+				EBD2B376D3E03437BAF633915E539DAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10DC000730478AE847F079DE902C20A4 /* PBXTargetDependency */,
+				276222C9A06046A218B966553F64C0B6 /* PBXTargetDependency */,
+				6DB8E894999FB941C7AB98AB046503E7 /* PBXTargetDependency */,
+				4F2C4D40EC4FBAFFB5A848C292FD2194 /* PBXTargetDependency */,
+				D0F1912E69303F83E6F1F73DEE3492C5 /* PBXTargetDependency */,
+				FA1093D077D03F4EB5AE0748646FD854 /* PBXTargetDependency */,
+			);
+			name = "Pods-EyeHospitalApplication";
+			productName = "Pods-EyeHospitalApplication";
+			productReference = 0CB9784379F00243A8271980593C3992 /* Pods_EyeHospitalApplication.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2E182154C0E34779107B7F1ADEFE2487 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
+				E078D0497EB06B70930AA116C544BC4F /* IHKeyboardAvoiding */,
+				B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */,
+				EA9CE3DD48ABA60042E7CC0A84E35E9F /* KeyboardAvoidingView */,
+				EF159A88B9F1E00CBF00F84837E9CB01 /* Pods-EyeHospitalApplication */,
+				726661649E659B4849C28C9B6BC34A39 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests */,
+				8B9939FBAE5037558EF3C818263FE024 /* Pods-EyeHospitalApplicationTests */,
+				873002DBC460B8090EFD7E391AA04141 /* SideMenuSwift */,
+				338E7F2037362B87520AA39B21123C6A /* ViewState */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27EF8C731772A136BCF4DE084247279A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37C20391B7ACCB63B47A740494690AF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FAF5108A861111E243FB8295EB39FCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F8082D988259B31FD8F7822AF059F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E514856F35936142591AEDBDCBB809 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0143B72ED2669C4E98A5B8BBCE72151 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB20A42926E9326068B296BC4138467E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD2B376D3E03437BAF633915E539DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA5DA81F8292820D65F403E941074FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05E285AADF1A170F9F6D14301B00D6A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3045125744014703602E03534B143525 /* IHKeyboardAvoiding-dummy.m in Sources */,
+				6783D3CC415F39415E837E86D95A70B0 /* KeyboardAvoiding.swift in Sources */,
+				82A0BE95CCF791118BEA149220979246 /* KeyboardDismissingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F18F77DB663B418814FD907CD3BB54A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7D19B910BF1108051384DB18AD88DC /* ReplaceMe.swift in Sources */,
+				0A0300B41E7F36AF8C02211132EE4919 /* UIResponder+ViewState.swift in Sources */,
+				3580FDDC6579117BED10AE8BC72336CB /* UIScrollView+ViewState.swift in Sources */,
+				29DE7A169BD02E2A7190B9C8E6BF7E8C /* UIViewController+ViewState.swift in Sources */,
+				EE892B571A637999F7C786F4244AB4B8 /* ViewState-dummy.m in Sources */,
+				BD2B1D0A6CE61B15D72E8A23B79BC0E0 /* ViewStateLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C02E9CBF87ED8A1C6D8ED4C951F75A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE417BA9D13D2BB98316DF0512A1944 /* IQBarButtonItem.swift in Sources */,
+				4F0CF2AD58CF0D08BC090E7AF0DD63D7 /* IQInvocation.swift in Sources */,
+				3F091C427A3E96117C902E8EA143729E /* IQKeyboardManager.swift in Sources */,
+				C04C5F1F1D6B337F87E157B55A747E41 /* IQKeyboardManagerConstants.swift in Sources */,
+				102F4487BC4ADC3C2B56A0470E0A9468 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				B98378C55379E1B92897F11A22E38443 /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				4737103B10A1C40C5301D0512B9310E4 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				259D6FC80BCFE785471F743B1F533970 /* IQNSArray+Sort.swift in Sources */,
+				5044FEAEF09468B6964F9F37A1F1F45C /* IQPreviousNextView.swift in Sources */,
+				7FB3576FD619DD256294BAD7E5F83CBE /* IQTextView.swift in Sources */,
+				C35DCE97EB77150C41E735DB57BD6616 /* IQTitleBarButtonItem.swift in Sources */,
+				980E5594F8DBCE362764AEDC2F086E36 /* IQToolbar.swift in Sources */,
+				C0EB3776478AB80676E488BC9C9CDA3C /* IQUIScrollView+Additions.swift in Sources */,
+				4C069FA7FAA45154DA92CF5DF3BCDCA9 /* IQUITextFieldView+Additions.swift in Sources */,
+				8B439A47AA5FDEF67AD63BDDB808AC5A /* IQUIView+Hierarchy.swift in Sources */,
+				AE3B246482DCD60BA846EA3CE983A1FB /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				74341DA37F4B926FDF4CB2599CAC547A /* IQUIViewController+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE6009AFF481EC1F9F8843A35294747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41D336BEDA07B08CD4B381D00C9B344 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2CAA0A72D6350C9DCB93FCC586DBA43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5BD4403829B8607F8C5777E937BA2E /* BasicTransitionAnimator.swift in Sources */,
+				0DB327E2223491A7FF9A9A8A1FDBA67D /* Delegate.swift in Sources */,
+				23F2720A4168CAD9ADD9EDF5A6438497 /* Preferences.swift in Sources */,
+				331E92669A5C7A8B36B4E1329E288E34 /* Segue.swift in Sources */,
+				A54E7DB163A4617D92401B596F4487CA /* SideMenuController.swift in Sources */,
+				48A6A72E28762A18E4609864075FF9AC /* SideMenuSwift-dummy.m in Sources */,
+				467F8F1CBD7C6CA5EE431B2E01F22227 /* StatusBar.swift in Sources */,
+				207C84743FE7C82BCC63DFDC1C27D80A /* TransitionContext.swift in Sources */,
+				CDD98EEA92CFC6BB90D2E33B04466811 /* UIView+Container.swift in Sources */,
+				D6B18C75D23CCC757E7FED786AC0480D /* UIViewController+Container.swift in Sources */,
+				8D7E528DC9BB42437F8ED4B2BD410FAE /* UIViewController+SideMenu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A847B8F7DAC5B5B709775BA81EB7E784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A2B4B5F6EF0F334A22B36838DD35BDE /* Extensions.swift in Sources */,
+				3EEDFA2EB46CEEB8E49AAC559C9F338A /* KeyboardAvoidingView-dummy.m in Sources */,
+				1DFB5B23FD8257FAA7D535EDA87D512F /* KeyboardAvoidingView.swift in Sources */,
+				0BA470C775E2D76081A301E7925E7F88 /* KeyboardAvoidingViewLoader.m in Sources */,
+				13F9FACFA2D452D5672112C3618E3C1D /* KeyboardManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B63865FAE74C50FB715DA22CFD45B5A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB6DB3CBE692F290CD53AD78E9B67A0 /* Pods-EyeHospitalApplicationTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7AB4B1935CB9EC6FCAEA3C33737BFD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4D3FE24FFCB47FBE00697FDEC587EA /* Pods-EyeHospitalApplication-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA782452D3B598A37FB459CD314120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F515237FF94DAB4C8A15B7E33A3877B /* DPDConstants.swift in Sources */,
+				BA7BB2FF04CE1CAFC5238D1807EF0034 /* DPDKeyboardListener.swift in Sources */,
+				4A8FE4C4F6D45B41CE01A00D24C56961 /* DPDUIView+Extension.swift in Sources */,
+				6064C623428CE711C252E442741F81AB /* DropDown+Appearance.swift in Sources */,
+				95897DCFD4071A7D61AEAE1DA86BB539 /* DropDown-dummy.m in Sources */,
+				842DFBB1471889C2CA329AE05620BBE7 /* DropDown.swift in Sources */,
+				361F5CE2807CBD530C8C6E63FD245F5A /* DropDownCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		091F9A48C644F9A0BB1B82B2E9249EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViewState;
+			target = 338E7F2037362B87520AA39B21123C6A /* ViewState */;
+			targetProxy = 40DFD3616588BDF12A8D35AA9C24F54D /* PBXContainerItemProxy */;
+		};
+		10DC000730478AE847F079DE902C20A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = A34D809EC7D94A9E31277E4F7E42986E /* PBXContainerItemProxy */;
+		};
+		1AF5DC202E5A55C50FB9DD44D221F9F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyboardAvoidingView;
+			target = EA9CE3DD48ABA60042E7CC0A84E35E9F /* KeyboardAvoidingView */;
+			targetProxy = 5457F80B13392B910A5892AF81ED80EC /* PBXContainerItemProxy */;
+		};
+		273A280B9A90E7FA433A8433CCD73C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViewState;
+			target = 338E7F2037362B87520AA39B21123C6A /* ViewState */;
+			targetProxy = FA042950C7E4BFF571B31D4386C13B7E /* PBXContainerItemProxy */;
+		};
+		276222C9A06046A218B966553F64C0B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IHKeyboardAvoiding;
+			target = E078D0497EB06B70930AA116C544BC4F /* IHKeyboardAvoiding */;
+			targetProxy = D7C36B05B3F644E0DAB0838719EFDB97 /* PBXContainerItemProxy */;
+		};
+		3F4E36CF52F78E3B37878A43D6FFD129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EyeHospitalApplication";
+			target = EF159A88B9F1E00CBF00F84837E9CB01 /* Pods-EyeHospitalApplication */;
+			targetProxy = 1173CACF4BBB01C604A3BA2DE3ED4857 /* PBXContainerItemProxy */;
+		};
+		47C7FC1614175B36AF83DA40D1DA204C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = 064592022CA5C56A800350F1FB503195 /* PBXContainerItemProxy */;
+		};
+		4F2C4D40EC4FBAFFB5A848C292FD2194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyboardAvoidingView;
+			target = EA9CE3DD48ABA60042E7CC0A84E35E9F /* KeyboardAvoidingView */;
+			targetProxy = FB6C5D88087EE397DA1A5359C57EA281 /* PBXContainerItemProxy */;
+		};
+		6DB8E894999FB941C7AB98AB046503E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = D99804595DC18EE7CE4F3FB0005A8ADD /* PBXContainerItemProxy */;
+		};
+		A503C8F4EABDA2BF48C00CABEDF3A04F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenuSwift;
+			target = 873002DBC460B8090EFD7E391AA04141 /* SideMenuSwift */;
+			targetProxy = 28C64B1A5331684DD6A9DAB43C70A239 /* PBXContainerItemProxy */;
+		};
+		C26D2BD3BE67BE6B0AC785DD69E428B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
+			targetProxy = D17459A5E4F4BA444FBAF64A36F35050 /* PBXContainerItemProxy */;
+		};
+		D0F1912E69303F83E6F1F73DEE3492C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenuSwift;
+			target = 873002DBC460B8090EFD7E391AA04141 /* SideMenuSwift */;
+			targetProxy = F4571007969345399C4F717117C3920C /* PBXContainerItemProxy */;
+		};
+		ED936E92F882CC99E331108AECA2B53D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IHKeyboardAvoiding;
+			target = E078D0497EB06B70930AA116C544BC4F /* IHKeyboardAvoiding */;
+			targetProxy = BADCE1AEF4AAB2B1A82C621AA9A8A8AE /* PBXContainerItemProxy */;
+		};
+		FA1093D077D03F4EB5AE0748646FD854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViewState;
+			target = 338E7F2037362B87520AA39B21123C6A /* ViewState */;
+			targetProxy = CC55ADEDF1983BB217A67C82F0B175C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0226FD78D4738C7783D127137FA36A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B1A555B45A16F6E271B3A6932B2740 /* Pods-EyeHospitalApplicationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyeHospitalApplicationTests/Pods-EyeHospitalApplicationTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyeHospitalApplicationTests/Pods-EyeHospitalApplicationTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0C1B98C4FE8E70EBCA7C460D8E9D75A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA8E557132E12A62D497F42F7973718 /* Pods-EyeHospitalApplication.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		138842898D8C33B76C3B793274BFFC95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF7558E0E4DA811F12A8E6B010B6C40C /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		15011036DC276A3DEAE1BD2282592EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA003F44EB2C5E1585CB426AD38474D3 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A9E11B6FD139D3DCB68CB653E655799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E10051895E8D2CE1970E97AADB2498 /* SideMenuSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenuSwift/SideMenuSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenuSwift/SideMenuSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SideMenuSwift/SideMenuSwift.modulemap";
+				PRODUCT_MODULE_NAME = SideMenuSwift;
+				PRODUCT_NAME = SideMenuSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		428D04F24654531D8F07C9A6FE44A955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F04F30DB54F9B6E00250160E7742FF5 /* KeyboardAvoidingView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeyboardAvoidingView/KeyboardAvoidingView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeyboardAvoidingView/KeyboardAvoidingView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeyboardAvoidingView/KeyboardAvoidingView.modulemap";
+				PRODUCT_MODULE_NAME = KeyboardAvoidingView;
+				PRODUCT_NAME = KeyboardAvoidingView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E2BCD9DF37ECDCE8531990AC4FBDACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438C5FC4E46F59BE667D4C657728A191 /* ViewState.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewState/ViewState-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewState/ViewState-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ViewState/ViewState.modulemap";
+				PRODUCT_MODULE_NAME = ViewState;
+				PRODUCT_NAME = ViewState;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		791EB426BE793A76AD6443B0FBD0DAA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5150ACC08896D1654D5E7C02C86F0E3 /* Pods-EyeHospitalApplicationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyeHospitalApplicationTests/Pods-EyeHospitalApplicationTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyeHospitalApplicationTests/Pods-EyeHospitalApplicationTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82F6B667957E5D082D4BCC829BD2D469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E10051895E8D2CE1970E97AADB2498 /* SideMenuSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenuSwift/SideMenuSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenuSwift/SideMenuSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SideMenuSwift/SideMenuSwift.modulemap";
+				PRODUCT_MODULE_NAME = SideMenuSwift;
+				PRODUCT_NAME = SideMenuSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		99E59C743B0D25B2EDB6CC0CFA91FF15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDEFC18A4D832428F8E677EEB189056A /* IHKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IHKeyboardAvoiding/IHKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IHKeyboardAvoiding/IHKeyboardAvoiding-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IHKeyboardAvoiding/IHKeyboardAvoiding.modulemap";
+				PRODUCT_MODULE_NAME = IHKeyboardAvoiding;
+				PRODUCT_NAME = IHKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9EC74B3CAEC4DBB333E4FD98942FCE2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438C5FC4E46F59BE667D4C657728A191 /* ViewState.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewState/ViewState-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewState/ViewState-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ViewState/ViewState.modulemap";
+				PRODUCT_MODULE_NAME = ViewState;
+				PRODUCT_NAME = ViewState;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0A080185E903F0D6BF0C541394BA394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA003F44EB2C5E1585CB426AD38474D3 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A2EAFB1A5585FCFFE61D439C012DE8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F04F30DB54F9B6E00250160E7742FF5 /* KeyboardAvoidingView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeyboardAvoidingView/KeyboardAvoidingView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeyboardAvoidingView/KeyboardAvoidingView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeyboardAvoidingView/KeyboardAvoidingView.modulemap";
+				PRODUCT_MODULE_NAME = KeyboardAvoidingView;
+				PRODUCT_NAME = KeyboardAvoidingView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3C733A6F45D03BC5A3664D7A8E538FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD40CCAC2D46EA429169D125B8E5D6FD /* DropDown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8270B3708681A18D9EE8389C3B99DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CA01BBE41C2FAC3FCBEDC90846823E /* Pods-EyeHospitalApplication.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA4F28F19C06AC147F271EF47B7D577F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDEFC18A4D832428F8E677EEB189056A /* IHKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IHKeyboardAvoiding/IHKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IHKeyboardAvoiding/IHKeyboardAvoiding-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IHKeyboardAvoiding/IHKeyboardAvoiding.modulemap";
+				PRODUCT_MODULE_NAME = IHKeyboardAvoiding;
+				PRODUCT_NAME = IHKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D30219333FCB92E4D175316E26E044C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD40CCAC2D46EA429169D125B8E5D6FD /* DropDown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E5242DA7A74E56EADAB1A9334B526E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BCA9CA33C5D02E4AE0B1E2904EE5CA /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25DF17DC8EB89BFFEE82F5A9238C3FA9 /* Build configuration list for PBXNativeTarget "Pods-EyeHospitalApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0226FD78D4738C7783D127137FA36A16 /* Debug */,
+				791EB426BE793A76AD6443B0FBD0DAA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		285C963712D29FD9C44041632F236A16 /* Build configuration list for PBXNativeTarget "SideMenuSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A9E11B6FD139D3DCB68CB653E655799 /* Debug */,
+				82F6B667957E5D082D4BCC829BD2D469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CA43A2091F02C844F49034CB408C34D /* Build configuration list for PBXNativeTarget "ViewState" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E2BCD9DF37ECDCE8531990AC4FBDACE /* Debug */,
+				9EC74B3CAEC4DBB333E4FD98942FCE2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ED5325A5545E52EEF12048EBD36F45A /* Build configuration list for PBXNativeTarget "IHKeyboardAvoiding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99E59C743B0D25B2EDB6CC0CFA91FF15 /* Debug */,
+				CA4F28F19C06AC147F271EF47B7D577F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		947C3C5F087551D1518BD18BF19566A7 /* Build configuration list for PBXNativeTarget "KeyboardAvoidingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EAFB1A5585FCFFE61D439C012DE8C6 /* Debug */,
+				428D04F24654531D8F07C9A6FE44A955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7155AE59A19533F60ECE3B4045B01F0 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15011036DC276A3DEAE1BD2282592EF6 /* Debug */,
+				A0A080185E903F0D6BF0C541394BA394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1F6DBE1C8B425D1BAFBE8D4193ECD07 /* Build configuration list for PBXNativeTarget "Pods-EyeHospitalApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8270B3708681A18D9EE8389C3B99DFE /* Debug */,
+				0C1B98C4FE8E70EBCA7C460D8E9D75A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF62FADCBF57DC4C26A188322394C777 /* Build configuration list for PBXNativeTarget "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E5242DA7A74E56EADAB1A9334B526E /* Debug */,
+				138842898D8C33B76C3B793274BFFC95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBED57D13F9A2559E14BCD92E7CFF597 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30219333FCB92E4D175316E26E044C8 /* Debug */,
+				A3C733A6F45D03BC5A3664D7A8E538FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

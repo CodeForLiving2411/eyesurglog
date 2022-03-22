@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G1012" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Demographics1" representedClassName="Demographics1" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="demouniqueid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dob" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eye" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fellowInvolvement" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="levelOfInvolvement" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mrn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surgerySetting" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Demographics2" representedClassName="Demographics2" syncable="YES"/>
+    <entity name="DoctorRegistration" representedClassName="DoctorRegistration" syncable="YES">
+        <attribute name="confirmPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="employeeCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Surgery" representedClassName="Surgery" syncable="YES"/>
+    <elements>
+        <element name="Demographics1" positionX="-63" positionY="27" width="128" height="195"/>
+        <element name="Demographics2" positionX="-54" positionY="36" width="128" height="45"/>
+        <element name="DoctorRegistration" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Surgery" positionX="-36" positionY="45" width="128" height="45"/>
+    </elements>
+</model>

@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		255AC3FB92682996CB26687C /* Pods_EyeHospitalApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95461824A479085B450C468 /* Pods_EyeHospitalApplicationTests.framework */; };
+		3A296C07196948C0B22170CC /* Pods_EyeHospitalApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1C1C64FCC3911D523FB8A1 /* Pods_EyeHospitalApplication.framework */; };
+		6082981FB80C653670015929 /* Pods_EyeHospitalApplication_EyeHospitalApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD13C3A14A7301A96456317 /* Pods_EyeHospitalApplication_EyeHospitalApplicationUITests.framework */; };
+		6920A91423B1D3F7008AB918 /* SearchACaseByDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6920A91323B1D3F7008AB918 /* SearchACaseByDateViewController.swift */; };
+		6920A91623B1D706008AB918 /* SearchDasnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6920A91523B1D706008AB918 /* SearchDasnBoardViewController.swift */; };
+		6921A13C2487711800ED0145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6921A13B2487711800ED0145 /* Assets.xcassets */; };
+		6921A13E248790C700ED0145 /* EyeFundusDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921A13D248790C700ED0145 /* EyeFundusDrawingViewController.swift */; };
+		6921A1442487A2BB00ED0145 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921A1432487A2BB00ED0145 /* CanvasView.swift */; };
+		69241D48243E567D002BC9D9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69241D47243E567D002BC9D9 /* CloudKit.framework */; };
+		6924D063242621B500ADCEE4 /* AddFieldSurgeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924D062242621B500ADCEE4 /* AddFieldSurgeryViewController.swift */; };
+		692DFFF223EA91C40026FA02 /* SearchACaseBySurgeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DFFF123EA91C40026FA02 /* SearchACaseBySurgeryViewController.swift */; };
+		692DFFF423ED2FF70026FA02 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DFFF323ED2FF70026FA02 /* MenuTableViewController.swift */; };
+		692DFFF623ED339D0026FA02 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DFFF523ED339D0026FA02 /* SlideInTransition.swift */; };
+		692FEE2923F27465006B6984 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692FEE2823F27465006B6984 /* ForgotPasswordViewController.swift */; };
+		692FEE2B23F2A1F2006B6984 /* PopUpBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692FEE2A23F2A1F2006B6984 /* PopUpBarViewController.swift */; };
+		6930297B23A4D91E006B8748 /* SearchACaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6930297A23A4D91E006B8748 /* SearchACaseViewController.swift */; };
+		6930297D23A4E6B9006B8748 /* PatientSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6930297C23A4E6B9006B8748 /* PatientSearchModel.swift */; };
+		69305FA924C5CDBA0008AC25 /* EditDemographicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69305FA824C5CDBA0008AC25 /* EditDemographicsViewController.swift */; };
+		69343CB42536FF82000E9BAF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69343CB32536FF82000E9BAF /* Extension.swift */; };
+		693AEF5423D06EEF00E84038 /* EditDemographics2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AEF5323D06EEF00E84038 /* EditDemographics2ViewController.swift */; };
+		693AEF5A23D08C7F00E84038 /* EditSurgeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AEF5923D08C7F00E84038 /* EditSurgeryViewController.swift */; };
+		694C165A2420A53E00FAA1A6 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C16592420A53E00FAA1A6 /* AgreementViewController.swift */; };
+		6953BA4B24EA4CF2004A5ADB /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6953BA4A24EA4CF2004A5ADB /* FaqViewController.swift */; };
+		6963153C23EEB86500258E56 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6963153B23EEB86500258E56 /* ChangePasswordViewController.swift */; };
+		69673BDE23A89BF3001CEA04 /* PatientDetailDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69673BDD23A89BF3001CEA04 /* PatientDetailDashboardViewController.swift */; };
+		69673BE023A90040001CEA04 /* DemographicDataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69673BDF23A90040001CEA04 /* DemographicDataListViewController.swift */; };
+		69673BE223A903C7001CEA04 /* DemographicDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69673BE123A903C7001CEA04 /* DemographicDataTableViewCell.swift */; };
+		69673BE423AA287E001CEA04 /* DiagnosisDataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69673BE323AA287E001CEA04 /* DiagnosisDataListViewController.swift */; };
+		69673BE623AA48C2001CEA04 /* DiagnosisDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69673BE523AA48C2001CEA04 /* DiagnosisDataTableViewCell.swift */; };
+		69673BE823AA4929001CEA04 /* SurgeryDataListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69673BE723AA4929001CEA04 /* SurgeryDataListViewViewController.swift */; };
+		69673BEC23AA49E7001CEA04 /* SurgeryDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69673BEB23AA49E7001CEA04 /* SurgeryDataTableViewCell.swift */; };
+		6968C312234DEA9E0037465A /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6968C311234DEA9E0037465A /* Validation.swift */; };
+		6968C4DD23ADF589008FB819 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6968C4DC23ADF589008FB819 /* HomeViewController.swift */; };
+		6968C4DF23AE1A16008FB819 /* UnLoggedPatientSearchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6968C4DE23AE1A16008FB819 /* UnLoggedPatientSearchDetailsViewController.swift */; };
+		6968C4E123AE1A48008FB819 /* UnloggedCaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6968C4E023AE1A48008FB819 /* UnloggedCaseTableViewCell.swift */; };
+		696A1CA623F14F7300A0C40A /* Demographics1a_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696A1CA523F14F7300A0C40A /* Demographics1a_ViewController.swift */; };
+		69705AB0246EA05A002EE2A9 /* SearchACaseByDiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69705AAF246EA05A002EE2A9 /* SearchACaseByDiagnosisViewController.swift */; };
+		6988134523BA1EAA00808379 /* OutcomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988134423BA1EAA00808379 /* OutcomesViewController.swift */; };
+		6988134723BB14C000808379 /* SurgeryOutcomesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988134623BB14C000808379 /* SurgeryOutcomesModel.swift */; };
+		6996617C24CC2021009B7594 /* EditCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6996617B24CC2021009B7594 /* EditCameraViewController.swift */; };
+		699AA255241F7E510003D92A /* DiagnosisAddFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699AA254241F7E510003D92A /* DiagnosisAddFieldViewController.swift */; };
+		699AE013235DBA1300BAB5A5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699ADFCA235DB1F800BAB5A5 /* CoreData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		699AE019235DD27500BAB5A5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699AE018235DD27500BAB5A5 /* RegistrationViewController.swift */; };
+		69A23C3F23A77DCD009A5089 /* SearchCaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A23C3E23A77DCD009A5089 /* SearchCaseTableViewCell.swift */; };
+		69ABDA1223AB73A400E39877 /* CameraImageDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABDA1123AB73A400E39877 /* CameraImageDataViewController.swift */; };
+		69B2B41A233887D30015BD6E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2B419233887D30015BD6E /* LoginViewController.swift */; };
+		69B2B41E233888F10015BD6E /* Demographics1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2B41D233888F10015BD6E /* Demographics1_ViewController.swift */; };
+		69B2B420233889250015BD6E /* Demographics2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2B41F233889250015BD6E /* Demographics2_ViewController.swift */; };
+		69B2B42223388C530015BD6E /* Surgery_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2B42123388C530015BD6E /* Surgery_ViewController.swift */; };
+		69B2B42423388D2E0015BD6E /* Camera_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2B42323388D2E0015BD6E /* Camera_ViewController.swift */; };
+		69B7EB3723B4AE980095756A /* CsvExportDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B7EB3623B4AE980095756A /* CsvExportDataModel.swift */; };
+		69B7EB3923B4C45C0095756A /* CsvExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B7EB3823B4C45C0095756A /* CsvExportViewController.swift */; };
+		69B859C823A279EE00F75D43 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B859C723A279EE00F75D43 /* ImageModel.swift */; };
+		69C56BAB238BA1C3006B0673 /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BAA238BA1C3006B0673 /* RegistrationModel.swift */; };
+		69C56BAD238BA5EA006B0673 /* Demographics1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BAC238BA5EA006B0673 /* Demographics1Model.swift */; };
+		69C56BAF238BA61A006B0673 /* Demographics2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BAE238BA61A006B0673 /* Demographics2Model.swift */; };
+		69C56BB1238BA633006B0673 /* SurgeryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BB0238BA633006B0673 /* SurgeryModel.swift */; };
+		69C56BC0238BC6D8006B0673 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BB4238BC6D7006B0673 /* FMResultSet.m */; };
+		69C56BC1238BC6D8006B0673 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BB6238BC6D7006B0673 /* FMDatabase.m */; };
+		69C56BC2238BC6D8006B0673 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BB7238BC6D7006B0673 /* FMDatabaseQueue.m */; };
+		69C56BC3238BC6D8006B0673 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BB8238BC6D7006B0673 /* FMDatabaseAdditions.m */; };
+		69C56BC4238BC6D8006B0673 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BBC238BC6D8006B0673 /* FMDatabasePool.m */; };
+		69C56BC7238BCEAA006B0673 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BC6238BCEAA006B0673 /* Util.swift */; };
+		69C56BC9238BCF35006B0673 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C56BC8238BCF35006B0673 /* DatabaseManager.swift */; };
+		69C56BD2238BEABD006B0673 /* SurgLogAppDB.db in Resources */ = {isa = PBXBuildFile; fileRef = 69C56BD1238BEABD006B0673 /* SurgLogAppDB.db */; };
+		69C77E85254FD33E00D23095 /* CPTSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C77E84254FD33E00D23095 /* CPTSelectionViewController.swift */; };
+		69C77E87254FD49A00D23095 /* CPTSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C77E86254FD49A00D23095 /* CPTSelectionTableViewCell.swift */; };
+		69D4F4CE24121CFB00337F5C /* ExportBySurgeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4F4CD24121CFB00337F5C /* ExportBySurgeryViewController.swift */; };
+		69E766932418BC4C003636C7 /* ExportDashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E766922418BC4C003636C7 /* ExportDashBoardViewController.swift */; };
+		69E766952418F122003636C7 /* ChangeHospitalNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E766942418F122003636C7 /* ChangeHospitalNameViewController.swift */; };
+		69F1E95723E83ABC005CBCD7 /* NavigationViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F1E95623E83ABC005CBCD7 /* NavigationViewControllerViewController.swift */; };
+		69F443EC23A7A5BC00F81689 /* PatientSearchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F443EB23A7A5BC00F81689 /* PatientSearchDetailsViewController.swift */; };
+		69F5406B231E433100B49F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F5406A231E433100B49F4A /* AppDelegate.swift */; };
+		69F5406D231E433100B49F4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F5406C231E433100B49F4A /* ViewController.swift */; };
+		69F54070231E433100B49F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F5406E231E433100B49F4A /* Main.storyboard */; };
+		69F54075231E433300B49F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F54073231E433300B49F4A /* LaunchScreen.storyboard */; };
+		69F54080231E433300B49F4A /* EyeHospitalApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F5407F231E433300B49F4A /* EyeHospitalApplicationTests.swift */; };
+		69F5408B231E433300B49F4A /* EyeHospitalApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F5408A231E433300B49F4A /* EyeHospitalApplicationUITests.swift */; };
+		69FA9DD223793BA7005A50F2 /* EyeProcedureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA9DD123793BA7005A50F2 /* EyeProcedureViewController.swift */; };
+		69FD575F24691E3C00B1ACA5 /* ExportByDiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FD575E24691E3C00B1ACA5 /* ExportByDiagnosisViewController.swift */; };
+		69FD576124691E5A00B1ACA5 /* ExportByMRNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FD576024691E5A00B1ACA5 /* ExportByMRNViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69F5407C231E433300B49F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69F5405F231E433100B49F4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69F54066231E433100B49F4A;
+			remoteInfo = EyeHospitalApplication;
+		};
+		69F54087231E433300B49F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69F5405F231E433100B49F4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69F54066231E433100B49F4A;
+			remoteInfo = EyeHospitalApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0901E0012A91BE9D6C0D2210 /* Pods-EyeHospitalApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeHospitalApplicationTests.release.xcconfig"; path = "Target Support Files/Pods-EyeHospitalApplicationTests/Pods-EyeHospitalApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
+		2AD13C3A14A7301A96456317 /* Pods_EyeHospitalApplication_EyeHospitalApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyeHospitalApplication_EyeHospitalApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B819FF11DDBEF68BE1FD0F /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.debug.xcconfig"; path = "Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6920A91323B1D3F7008AB918 /* SearchACaseByDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchACaseByDateViewController.swift; sourceTree = "<group>"; };
+		6920A91523B1D706008AB918 /* SearchDasnBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDasnBoardViewController.swift; sourceTree = "<group>"; };
+		6921A13B2487711800ED0145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6921A13D248790C700ED0145 /* EyeFundusDrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeFundusDrawingViewController.swift; sourceTree = "<group>"; };
+		6921A1432487A2BB00ED0145 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		69241D46243E560B002BC9D9 /* EyeHospitalApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EyeHospitalApplication.entitlements; sourceTree = "<group>"; };
+		69241D47243E567D002BC9D9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		6924D062242621B500ADCEE4 /* AddFieldSurgeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFieldSurgeryViewController.swift; sourceTree = "<group>"; };
+		692DFFF123EA91C40026FA02 /* SearchACaseBySurgeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchACaseBySurgeryViewController.swift; sourceTree = "<group>"; };
+		692DFFF323ED2FF70026FA02 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		692DFFF523ED339D0026FA02 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
+		692FEE2823F27465006B6984 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		692FEE2A23F2A1F2006B6984 /* PopUpBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpBarViewController.swift; sourceTree = "<group>"; };
+		6930297A23A4D91E006B8748 /* SearchACaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchACaseViewController.swift; sourceTree = "<group>"; };
+		6930297C23A4E6B9006B8748 /* PatientSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSearchModel.swift; sourceTree = "<group>"; };
+		69305FA824C5CDBA0008AC25 /* EditDemographicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDemographicsViewController.swift; sourceTree = "<group>"; };
+		69343CB32536FF82000E9BAF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		693AEF5323D06EEF00E84038 /* EditDemographics2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDemographics2ViewController.swift; sourceTree = "<group>"; };
+		693AEF5923D08C7F00E84038 /* EditSurgeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSurgeryViewController.swift; sourceTree = "<group>"; };
+		694C16592420A53E00FAA1A6 /* AgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
+		6953BA4A24EA4CF2004A5ADB /* FaqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
+		6963153B23EEB86500258E56 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		69673BDD23A89BF3001CEA04 /* PatientDetailDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetailDashboardViewController.swift; sourceTree = "<group>"; };
+		69673BDF23A90040001CEA04 /* DemographicDataListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemographicDataListViewController.swift; sourceTree = "<group>"; };
+		69673BE123A903C7001CEA04 /* DemographicDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemographicDataTableViewCell.swift; sourceTree = "<group>"; };
+		69673BE323AA287E001CEA04 /* DiagnosisDataListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisDataListViewController.swift; sourceTree = "<group>"; };
+		69673BE523AA48C2001CEA04 /* DiagnosisDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisDataTableViewCell.swift; sourceTree = "<group>"; };
+		69673BE723AA4929001CEA04 /* SurgeryDataListViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryDataListViewViewController.swift; sourceTree = "<group>"; };
+		69673BEB23AA49E7001CEA04 /* SurgeryDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryDataTableViewCell.swift; sourceTree = "<group>"; };
+		6968C311234DEA9E0037465A /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		6968C4DC23ADF589008FB819 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6968C4DE23AE1A16008FB819 /* UnLoggedPatientSearchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnLoggedPatientSearchDetailsViewController.swift; sourceTree = "<group>"; };
+		6968C4E023AE1A48008FB819 /* UnloggedCaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnloggedCaseTableViewCell.swift; sourceTree = "<group>"; };
+		696A1CA523F14F7300A0C40A /* Demographics1a_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demographics1a_ViewController.swift; sourceTree = "<group>"; };
+		69705AAF246EA05A002EE2A9 /* SearchACaseByDiagnosisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchACaseByDiagnosisViewController.swift; sourceTree = "<group>"; };
+		6988134423BA1EAA00808379 /* OutcomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutcomesViewController.swift; sourceTree = "<group>"; };
+		6988134623BB14C000808379 /* SurgeryOutcomesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryOutcomesModel.swift; sourceTree = "<group>"; };
+		6996617B24CC2021009B7594 /* EditCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCameraViewController.swift; sourceTree = "<group>"; };
+		699AA254241F7E510003D92A /* DiagnosisAddFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisAddFieldViewController.swift; sourceTree = "<group>"; };
+		699ADFCA235DB1F800BAB5A5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		699AE018235DD27500BAB5A5 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = EyeHospitalApplication/ViewControllers/RegistrationViewController.swift; sourceTree = SOURCE_ROOT; };
+		69A23C3E23A77DCD009A5089 /* SearchCaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCaseTableViewCell.swift; sourceTree = "<group>"; };
+		69ABDA1123AB73A400E39877 /* CameraImageDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraImageDataViewController.swift; sourceTree = "<group>"; };
+		69B2B419233887D30015BD6E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		69B2B41D233888F10015BD6E /* Demographics1_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demographics1_ViewController.swift; sourceTree = "<group>"; };
+		69B2B41F233889250015BD6E /* Demographics2_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demographics2_ViewController.swift; sourceTree = "<group>"; };
+		69B2B42123388C530015BD6E /* Surgery_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surgery_ViewController.swift; sourceTree = "<group>"; };
+		69B2B42323388D2E0015BD6E /* Camera_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera_ViewController.swift; sourceTree = "<group>"; };
+		69B7EB3623B4AE980095756A /* CsvExportDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvExportDataModel.swift; sourceTree = "<group>"; };
+		69B7EB3823B4C45C0095756A /* CsvExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvExportViewController.swift; sourceTree = "<group>"; };
+		69B859C723A279EE00F75D43 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		69C56BAA238BA1C3006B0673 /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
+		69C56BAC238BA5EA006B0673 /* Demographics1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demographics1Model.swift; sourceTree = "<group>"; };
+		69C56BAE238BA61A006B0673 /* Demographics2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demographics2Model.swift; sourceTree = "<group>"; };
+		69C56BB0238BA633006B0673 /* SurgeryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryModel.swift; sourceTree = "<group>"; };
+		69C56BB2238BC6D6006B0673 /* EyeHospitalApplication-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyeHospitalApplication-Bridging-Header.h"; sourceTree = "<group>"; };
+		69C56BB3238BC6D7006B0673 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C56BB4238BC6D7006B0673 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		69C56BB5238BC6D7006B0673 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		69C56BB6238BC6D7006B0673 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		69C56BB7238BC6D7006B0673 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		69C56BB8238BC6D7006B0673 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		69C56BB9238BC6D7006B0673 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		69C56BBA238BC6D8006B0673 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		69C56BBB238BC6D8006B0673 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		69C56BBC238BC6D8006B0673 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		69C56BBD238BC6D8006B0673 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		69C56BBE238BC6D8006B0673 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		69C56BC6238BCEAA006B0673 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		69C56BC8238BCF35006B0673 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		69C56BD1238BEABD006B0673 /* SurgLogAppDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = SurgLogAppDB.db; sourceTree = "<group>"; };
+		69C77E84254FD33E00D23095 /* CPTSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPTSelectionViewController.swift; sourceTree = "<group>"; };
+		69C77E86254FD49A00D23095 /* CPTSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPTSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		69D4F4CD24121CFB00337F5C /* ExportBySurgeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportBySurgeryViewController.swift; sourceTree = "<group>"; };
+		69E766922418BC4C003636C7 /* ExportDashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDashBoardViewController.swift; sourceTree = "<group>"; };
+		69E766942418F122003636C7 /* ChangeHospitalNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeHospitalNameViewController.swift; sourceTree = "<group>"; };
+		69F1E95623E83ABC005CBCD7 /* NavigationViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerViewController.swift; sourceTree = "<group>"; };
+		69F443EB23A7A5BC00F81689 /* PatientSearchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSearchDetailsViewController.swift; sourceTree = "<group>"; };
+		69F54067231E433100B49F4A /* Eye Surgery Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eye Surgery Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F5406A231E433100B49F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69F5406C231E433100B49F4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69F5406F231E433100B49F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69F54074231E433300B49F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69F54076231E433300B49F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69F5407B231E433300B49F4A /* EyeHospitalApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeHospitalApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F5407F231E433300B49F4A /* EyeHospitalApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeHospitalApplicationTests.swift; sourceTree = "<group>"; };
+		69F54081231E433300B49F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69F54086231E433300B49F4A /* EyeHospitalApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeHospitalApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F5408A231E433300B49F4A /* EyeHospitalApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeHospitalApplicationUITests.swift; sourceTree = "<group>"; };
+		69F5408C231E433300B49F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69FA9DD123793BA7005A50F2 /* EyeProcedureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeProcedureViewController.swift; sourceTree = "<group>"; };
+		69FD575E24691E3C00B1ACA5 /* ExportByDiagnosisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportByDiagnosisViewController.swift; sourceTree = "<group>"; };
+		69FD576024691E5A00B1ACA5 /* ExportByMRNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportByMRNViewController.swift; sourceTree = "<group>"; };
+		971E42CB5D0A368151C191F0 /* Pods-EyeHospitalApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeHospitalApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-EyeHospitalApplicationTests/Pods-EyeHospitalApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A29270F1C8A91AAFDD178435 /* Pods-EyeHospitalApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeHospitalApplication.debug.xcconfig"; path = "Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		AF1C1C64FCC3911D523FB8A1 /* Pods_EyeHospitalApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyeHospitalApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF303CC414790A0F99971EF4 /* Pods-EyeHospitalApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeHospitalApplication.release.xcconfig"; path = "Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication.release.xcconfig"; sourceTree = "<group>"; };
+		C7074F891567F2B214D56684 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig"; path = "Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F95461824A479085B450C468 /* Pods_EyeHospitalApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyeHospitalApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69F54064231E433100B49F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69241D48243E567D002BC9D9 /* CloudKit.framework in Frameworks */,
+				699AE013235DBA1300BAB5A5 /* CoreData.framework in Frameworks */,
+				3A296C07196948C0B22170CC /* Pods_EyeHospitalApplication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F54078231E433300B49F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255AC3FB92682996CB26687C /* Pods_EyeHospitalApplicationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F54083231E433300B49F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6082981FB80C653670015929 /* Pods_EyeHospitalApplication_EyeHospitalApplicationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		690E650D2355DA3200A882BF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				69C56BC6238BCEAA006B0673 /* Util.swift */,
+				69C56BC8238BCF35006B0673 /* DatabaseManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6921A1422487A27600ED0145 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6921A1432487A2BB00ED0145 /* CanvasView.swift */,
+				69343CB32536FF82000E9BAF /* Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		692558A82337FA3700BCD6DC /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				69C56BAA238BA1C3006B0673 /* RegistrationModel.swift */,
+				69C56BAC238BA5EA006B0673 /* Demographics1Model.swift */,
+				69C56BAE238BA61A006B0673 /* Demographics2Model.swift */,
+				69C56BB0238BA633006B0673 /* SurgeryModel.swift */,
+				69B859C723A279EE00F75D43 /* ImageModel.swift */,
+				6930297C23A4E6B9006B8748 /* PatientSearchModel.swift */,
+				69B7EB3623B4AE980095756A /* CsvExportDataModel.swift */,
+				6988134623BB14C000808379 /* SurgeryOutcomesModel.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		692558A92337FA4100BCD6DC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6968C311234DEA9E0037465A /* Validation.swift */,
+				69B2B419233887D30015BD6E /* LoginViewController.swift */,
+				699AE018235DD27500BAB5A5 /* RegistrationViewController.swift */,
+				69B2B41D233888F10015BD6E /* Demographics1_ViewController.swift */,
+				69B2B41F233889250015BD6E /* Demographics2_ViewController.swift */,
+				69B2B42123388C530015BD6E /* Surgery_ViewController.swift */,
+				69B2B42323388D2E0015BD6E /* Camera_ViewController.swift */,
+				69FA9DD123793BA7005A50F2 /* EyeProcedureViewController.swift */,
+				69A23C3E23A77DCD009A5089 /* SearchCaseTableViewCell.swift */,
+				69673BDD23A89BF3001CEA04 /* PatientDetailDashboardViewController.swift */,
+				69673BDF23A90040001CEA04 /* DemographicDataListViewController.swift */,
+				69673BE123A903C7001CEA04 /* DemographicDataTableViewCell.swift */,
+				69673BE323AA287E001CEA04 /* DiagnosisDataListViewController.swift */,
+				69673BE523AA48C2001CEA04 /* DiagnosisDataTableViewCell.swift */,
+				69673BE723AA4929001CEA04 /* SurgeryDataListViewViewController.swift */,
+				69673BEB23AA49E7001CEA04 /* SurgeryDataTableViewCell.swift */,
+				69ABDA1123AB73A400E39877 /* CameraImageDataViewController.swift */,
+				6968C4DC23ADF589008FB819 /* HomeViewController.swift */,
+				6968C4DE23AE1A16008FB819 /* UnLoggedPatientSearchDetailsViewController.swift */,
+				6968C4E023AE1A48008FB819 /* UnloggedCaseTableViewCell.swift */,
+				6920A91523B1D706008AB918 /* SearchDasnBoardViewController.swift */,
+				6930297A23A4D91E006B8748 /* SearchACaseViewController.swift */,
+				6920A91323B1D3F7008AB918 /* SearchACaseByDateViewController.swift */,
+				692DFFF123EA91C40026FA02 /* SearchACaseBySurgeryViewController.swift */,
+				69705AAF246EA05A002EE2A9 /* SearchACaseByDiagnosisViewController.swift */,
+				69F443EB23A7A5BC00F81689 /* PatientSearchDetailsViewController.swift */,
+				69E766922418BC4C003636C7 /* ExportDashBoardViewController.swift */,
+				69B7EB3823B4C45C0095756A /* CsvExportViewController.swift */,
+				69FD576024691E5A00B1ACA5 /* ExportByMRNViewController.swift */,
+				69FD575E24691E3C00B1ACA5 /* ExportByDiagnosisViewController.swift */,
+				69D4F4CD24121CFB00337F5C /* ExportBySurgeryViewController.swift */,
+				6988134423BA1EAA00808379 /* OutcomesViewController.swift */,
+				693AEF5323D06EEF00E84038 /* EditDemographics2ViewController.swift */,
+				693AEF5923D08C7F00E84038 /* EditSurgeryViewController.swift */,
+				69F1E95623E83ABC005CBCD7 /* NavigationViewControllerViewController.swift */,
+				692DFFF323ED2FF70026FA02 /* MenuTableViewController.swift */,
+				692DFFF523ED339D0026FA02 /* SlideInTransition.swift */,
+				6963153B23EEB86500258E56 /* ChangePasswordViewController.swift */,
+				696A1CA523F14F7300A0C40A /* Demographics1a_ViewController.swift */,
+				692FEE2823F27465006B6984 /* ForgotPasswordViewController.swift */,
+				692FEE2A23F2A1F2006B6984 /* PopUpBarViewController.swift */,
+				69E766942418F122003636C7 /* ChangeHospitalNameViewController.swift */,
+				699AA254241F7E510003D92A /* DiagnosisAddFieldViewController.swift */,
+				694C16592420A53E00FAA1A6 /* AgreementViewController.swift */,
+				6924D062242621B500ADCEE4 /* AddFieldSurgeryViewController.swift */,
+				6921A13D248790C700ED0145 /* EyeFundusDrawingViewController.swift */,
+				69305FA824C5CDBA0008AC25 /* EditDemographicsViewController.swift */,
+				6996617B24CC2021009B7594 /* EditCameraViewController.swift */,
+				6953BA4A24EA4CF2004A5ADB /* FaqViewController.swift */,
+				69C77E84254FD33E00D23095 /* CPTSelectionViewController.swift */,
+				69C77E86254FD49A00D23095 /* CPTSelectionTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		692558AB2338063200BCD6DC /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		692558AC2338065A00BCD6DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A29270F1C8A91AAFDD178435 /* Pods-EyeHospitalApplication.debug.xcconfig */,
+				BF303CC414790A0F99971EF4 /* Pods-EyeHospitalApplication.release.xcconfig */,
+				32B819FF11DDBEF68BE1FD0F /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.debug.xcconfig */,
+				C7074F891567F2B214D56684 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig */,
+				971E42CB5D0A368151C191F0 /* Pods-EyeHospitalApplicationTests.debug.xcconfig */,
+				0901E0012A91BE9D6C0D2210 /* Pods-EyeHospitalApplicationTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		699AE017235DC20900BAB5A5 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				69C56BBA238BC6D8006B0673 /* FMDatabase.h */,
+				69C56BB6238BC6D7006B0673 /* FMDatabase.m */,
+				69C56BBB238BC6D8006B0673 /* FMDatabaseAdditions.h */,
+				69C56BB8238BC6D7006B0673 /* FMDatabaseAdditions.m */,
+				69C56BB9238BC6D7006B0673 /* FMDatabasePool.h */,
+				69C56BBC238BC6D8006B0673 /* FMDatabasePool.m */,
+				69C56BBD238BC6D8006B0673 /* FMDatabaseQueue.h */,
+				69C56BB7238BC6D7006B0673 /* FMDatabaseQueue.m */,
+				69C56BBE238BC6D8006B0673 /* FMDB.h */,
+				69C56BB5238BC6D7006B0673 /* FMResultSet.h */,
+				69C56BB4238BC6D7006B0673 /* FMResultSet.m */,
+				69C56BB3238BC6D7006B0673 /* Info.plist */,
+				69C56BB2238BC6D6006B0673 /* EyeHospitalApplication-Bridging-Header.h */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		69F5405E231E433100B49F4A = {
+			isa = PBXGroup;
+			children = (
+				69F54069231E433100B49F4A /* EyeHospitalApplication */,
+				69F5407E231E433300B49F4A /* EyeHospitalApplicationTests */,
+				69F54089231E433300B49F4A /* EyeHospitalApplicationUITests */,
+				692558AC2338065A00BCD6DC /* Pods */,
+				69F54068231E433100B49F4A /* Products */,
+				AF2A341DD9429A70E2B7A752 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69F54068231E433100B49F4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69F54067231E433100B49F4A /* Eye Surgery Log.app */,
+				69F5407B231E433300B49F4A /* EyeHospitalApplicationTests.xctest */,
+				69F54086231E433300B49F4A /* EyeHospitalApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69F54069231E433100B49F4A /* EyeHospitalApplication */ = {
+			isa = PBXGroup;
+			children = (
+				69241D46243E560B002BC9D9 /* EyeHospitalApplication.entitlements */,
+				69C56BD1238BEABD006B0673 /* SurgLogAppDB.db */,
+				6921A1422487A27600ED0145 /* Helpers */,
+				699AE017235DC20900BAB5A5 /* fmdb */,
+				692558A92337FA4100BCD6DC /* ViewControllers */,
+				692558A82337FA3700BCD6DC /* Data Model */,
+				692558AB2338063200BCD6DC /* Interface */,
+				69F5406A231E433100B49F4A /* AppDelegate.swift */,
+				69F5406C231E433100B49F4A /* ViewController.swift */,
+				690E650D2355DA3200A882BF /* Utils */,
+				69F5406E231E433100B49F4A /* Main.storyboard */,
+				69F54073231E433300B49F4A /* LaunchScreen.storyboard */,
+				69F54076231E433300B49F4A /* Info.plist */,
+				6921A13B2487711800ED0145 /* Assets.xcassets */,
+			);
+			path = EyeHospitalApplication;
+			sourceTree = "<group>";
+		};
+		69F5407E231E433300B49F4A /* EyeHospitalApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				69F5407F231E433300B49F4A /* EyeHospitalApplicationTests.swift */,
+				69F54081231E433300B49F4A /* Info.plist */,
+			);
+			path = EyeHospitalApplicationTests;
+			sourceTree = "<group>";
+		};
+		69F54089231E433300B49F4A /* EyeHospitalApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69F5408A231E433300B49F4A /* EyeHospitalApplicationUITests.swift */,
+				69F5408C231E433300B49F4A /* Info.plist */,
+			);
+			path = EyeHospitalApplicationUITests;
+			sourceTree = "<group>";
+		};
+		AF2A341DD9429A70E2B7A752 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69241D47243E567D002BC9D9 /* CloudKit.framework */,
+				699ADFCA235DB1F800BAB5A5 /* CoreData.framework */,
+				AF1C1C64FCC3911D523FB8A1 /* Pods_EyeHospitalApplication.framework */,
+				2AD13C3A14A7301A96456317 /* Pods_EyeHospitalApplication_EyeHospitalApplicationUITests.framework */,
+				F95461824A479085B450C468 /* Pods_EyeHospitalApplicationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69F54066231E433100B49F4A /* EyeHospitalApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69F5408F231E433300B49F4A /* Build configuration list for PBXNativeTarget "EyeHospitalApplication" */;
+			buildPhases = (
+				B17952374083D1627EA2DC29 /* [CP] Check Pods Manifest.lock */,
+				69F54063231E433100B49F4A /* Sources */,
+				69F54064231E433100B49F4A /* Frameworks */,
+				69F54065231E433100B49F4A /* Resources */,
+				F5958C6859CE4EB9E6A8331C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyeHospitalApplication;
+			productName = EyeHospitalApplication;
+			productReference = 69F54067231E433100B49F4A /* Eye Surgery Log.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69F5407A231E433300B49F4A /* EyeHospitalApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69F54092231E433300B49F4A /* Build configuration list for PBXNativeTarget "EyeHospitalApplicationTests" */;
+			buildPhases = (
+				B7AC341476E81391C977CA5B /* [CP] Check Pods Manifest.lock */,
+				69F54077231E433300B49F4A /* Sources */,
+				69F54078231E433300B49F4A /* Frameworks */,
+				69F54079231E433300B49F4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69F5407D231E433300B49F4A /* PBXTargetDependency */,
+			);
+			name = EyeHospitalApplicationTests;
+			productName = EyeHospitalApplicationTests;
+			productReference = 69F5407B231E433300B49F4A /* EyeHospitalApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69F54085231E433300B49F4A /* EyeHospitalApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69F54095231E433300B49F4A /* Build configuration list for PBXNativeTarget "EyeHospitalApplicationUITests" */;
+			buildPhases = (
+				95F1B92AAD5C243B6A27D1B4 /* [CP] Check Pods Manifest.lock */,
+				69F54082231E433300B49F4A /* Sources */,
+				69F54083231E433300B49F4A /* Frameworks */,
+				69F54084231E433300B49F4A /* Resources */,
+				A482766E9D29D54D7E46F5F5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69F54088231E433300B49F4A /* PBXTargetDependency */,
+			);
+			name = EyeHospitalApplicationUITests;
+			productName = EyeHospitalApplicationUITests;
+			productReference = 69F54086231E433300B49F4A /* EyeHospitalApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69F5405F231E433100B49F4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "abhishek dwivedi";
+				TargetAttributes = {
+					69F54066231E433100B49F4A = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					69F5407A231E433300B49F4A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 69F54066231E433100B49F4A;
+					};
+					69F54085231E433300B49F4A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 69F54066231E433100B49F4A;
+					};
+				};
+			};
+			buildConfigurationList = 69F54062231E433100B49F4A /* Build configuration list for PBXProject "EyeHospitalApplication" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69F5405E231E433100B49F4A;
+			productRefGroup = 69F54068231E433100B49F4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69F54066231E433100B49F4A /* EyeHospitalApplication */,
+				69F5407A231E433300B49F4A /* EyeHospitalApplicationTests */,
+				69F54085231E433300B49F4A /* EyeHospitalApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69F54065231E433100B49F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F54075231E433300B49F4A /* LaunchScreen.storyboard in Resources */,
+				69C56BD2238BEABD006B0673 /* SurgLogAppDB.db in Resources */,
+				6921A13C2487711800ED0145 /* Assets.xcassets in Resources */,
+				69F54070231E433100B49F4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F54079231E433300B49F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F54084231E433300B49F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95F1B92AAD5C243B6A27D1B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A482766E9D29D54D7E46F5F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B17952374083D1627EA2DC29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EyeHospitalApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7AC341476E81391C977CA5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EyeHospitalApplicationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5958C6859CE4EB9E6A8331C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69F54063231E433100B49F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B7EB3923B4C45C0095756A /* CsvExportViewController.swift in Sources */,
+				69C56BAB238BA1C3006B0673 /* RegistrationModel.swift in Sources */,
+				69673BE223A903C7001CEA04 /* DemographicDataTableViewCell.swift in Sources */,
+				69C56BAD238BA5EA006B0673 /* Demographics1Model.swift in Sources */,
+				69673BE823AA4929001CEA04 /* SurgeryDataListViewViewController.swift in Sources */,
+				692DFFF223EA91C40026FA02 /* SearchACaseBySurgeryViewController.swift in Sources */,
+				6930297B23A4D91E006B8748 /* SearchACaseViewController.swift in Sources */,
+				6968C4DD23ADF589008FB819 /* HomeViewController.swift in Sources */,
+				69C56BC3238BC6D8006B0673 /* FMDatabaseAdditions.m in Sources */,
+				69705AB0246EA05A002EE2A9 /* SearchACaseByDiagnosisViewController.swift in Sources */,
+				69C56BAF238BA61A006B0673 /* Demographics2Model.swift in Sources */,
+				6953BA4B24EA4CF2004A5ADB /* FaqViewController.swift in Sources */,
+				69F1E95723E83ABC005CBCD7 /* NavigationViewControllerViewController.swift in Sources */,
+				69FD575F24691E3C00B1ACA5 /* ExportByDiagnosisViewController.swift in Sources */,
+				69E766952418F122003636C7 /* ChangeHospitalNameViewController.swift in Sources */,
+				69673BEC23AA49E7001CEA04 /* SurgeryDataTableViewCell.swift in Sources */,
+				6930297D23A4E6B9006B8748 /* PatientSearchModel.swift in Sources */,
+				6988134523BA1EAA00808379 /* OutcomesViewController.swift in Sources */,
+				69B2B41A233887D30015BD6E /* LoginViewController.swift in Sources */,
+				69F5406D231E433100B49F4A /* ViewController.swift in Sources */,
+				69B7EB3723B4AE980095756A /* CsvExportDataModel.swift in Sources */,
+				6968C4DF23AE1A16008FB819 /* UnLoggedPatientSearchDetailsViewController.swift in Sources */,
+				69E766932418BC4C003636C7 /* ExportDashBoardViewController.swift in Sources */,
+				69C56BC1238BC6D8006B0673 /* FMDatabase.m in Sources */,
+				6920A91623B1D706008AB918 /* SearchDasnBoardViewController.swift in Sources */,
+				692DFFF423ED2FF70026FA02 /* MenuTableViewController.swift in Sources */,
+				69305FA924C5CDBA0008AC25 /* EditDemographicsViewController.swift in Sources */,
+				696A1CA623F14F7300A0C40A /* Demographics1a_ViewController.swift in Sources */,
+				69C77E87254FD49A00D23095 /* CPTSelectionTableViewCell.swift in Sources */,
+				699AA255241F7E510003D92A /* DiagnosisAddFieldViewController.swift in Sources */,
+				6921A13E248790C700ED0145 /* EyeFundusDrawingViewController.swift in Sources */,
+				69FD576124691E5A00B1ACA5 /* ExportByMRNViewController.swift in Sources */,
+				69D4F4CE24121CFB00337F5C /* ExportBySurgeryViewController.swift in Sources */,
+				69F443EC23A7A5BC00F81689 /* PatientSearchDetailsViewController.swift in Sources */,
+				69C56BC7238BCEAA006B0673 /* Util.swift in Sources */,
+				69C56BC0238BC6D8006B0673 /* FMResultSet.m in Sources */,
+				69B2B420233889250015BD6E /* Demographics2_ViewController.swift in Sources */,
+				692DFFF623ED339D0026FA02 /* SlideInTransition.swift in Sources */,
+				6968C312234DEA9E0037465A /* Validation.swift in Sources */,
+				69B859C823A279EE00F75D43 /* ImageModel.swift in Sources */,
+				6921A1442487A2BB00ED0145 /* CanvasView.swift in Sources */,
+				69B2B42223388C530015BD6E /* Surgery_ViewController.swift in Sources */,
+				693AEF5423D06EEF00E84038 /* EditDemographics2ViewController.swift in Sources */,
+				69673BDE23A89BF3001CEA04 /* PatientDetailDashboardViewController.swift in Sources */,
+				69C56BC4238BC6D8006B0673 /* FMDatabasePool.m in Sources */,
+				6996617C24CC2021009B7594 /* EditCameraViewController.swift in Sources */,
+				6920A91423B1D3F7008AB918 /* SearchACaseByDateViewController.swift in Sources */,
+				69B2B42423388D2E0015BD6E /* Camera_ViewController.swift in Sources */,
+				694C165A2420A53E00FAA1A6 /* AgreementViewController.swift in Sources */,
+				69B2B41E233888F10015BD6E /* Demographics1_ViewController.swift in Sources */,
+				6924D063242621B500ADCEE4 /* AddFieldSurgeryViewController.swift in Sources */,
+				692FEE2923F27465006B6984 /* ForgotPasswordViewController.swift in Sources */,
+				699AE019235DD27500BAB5A5 /* RegistrationViewController.swift in Sources */,
+				69C77E85254FD33E00D23095 /* CPTSelectionViewController.swift in Sources */,
+				69673BE623AA48C2001CEA04 /* DiagnosisDataTableViewCell.swift in Sources */,
+				69C56BC2238BC6D8006B0673 /* FMDatabaseQueue.m in Sources */,
+				69673BE023A90040001CEA04 /* DemographicDataListViewController.swift in Sources */,
+				6968C4E123AE1A48008FB819 /* UnloggedCaseTableViewCell.swift in Sources */,
+				69A23C3F23A77DCD009A5089 /* SearchCaseTableViewCell.swift in Sources */,
+				692FEE2B23F2A1F2006B6984 /* PopUpBarViewController.swift in Sources */,
+				69F5406B231E433100B49F4A /* AppDelegate.swift in Sources */,
+				69343CB42536FF82000E9BAF /* Extension.swift in Sources */,
+				69673BE423AA287E001CEA04 /* DiagnosisDataListViewController.swift in Sources */,
+				6963153C23EEB86500258E56 /* ChangePasswordViewController.swift in Sources */,
+				69C56BB1238BA633006B0673 /* SurgeryModel.swift in Sources */,
+				693AEF5A23D08C7F00E84038 /* EditSurgeryViewController.swift in Sources */,
+				69FA9DD223793BA7005A50F2 /* EyeProcedureViewController.swift in Sources */,
+				69C56BC9238BCF35006B0673 /* DatabaseManager.swift in Sources */,
+				6988134723BB14C000808379 /* SurgeryOutcomesModel.swift in Sources */,
+				69ABDA1223AB73A400E39877 /* CameraImageDataViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F54077231E433300B49F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F54080231E433300B49F4A /* EyeHospitalApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69F54082231E433300B49F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F5408B231E433300B49F4A /* EyeHospitalApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69F5407D231E433300B49F4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69F54066231E433100B49F4A /* EyeHospitalApplication */;
+			targetProxy = 69F5407C231E433300B49F4A /* PBXContainerItemProxy */;
+		};
+		69F54088231E433300B49F4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69F54066231E433100B49F4A /* EyeHospitalApplication */;
+			targetProxy = 69F54087231E433300B49F4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69F5406E231E433100B49F4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69F5406F231E433100B49F4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69F54073231E433300B49F4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69F54074231E433300B49F4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69F5408D231E433300B49F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69F5408E231E433300B49F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69F54090231E433300B49F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A29270F1C8A91AAFDD178435 /* Pods-EyeHospitalApplication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EyeHospitalApplication/EyeHospitalApplication.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 335C9P8MKA;
+				INFOPLIST_FILE = EyeHospitalApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.38;
+				PRODUCT_BUNDLE_IDENTIFIER = zemusi.com.surgLogApp;
+				PRODUCT_NAME = "Eye Surgery Log";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyeHospitalApplication/fmdb/EyeHospitalApplication-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		69F54091231E433300B49F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF303CC414790A0F99971EF4 /* Pods-EyeHospitalApplication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EyeHospitalApplication/EyeHospitalApplication.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 335C9P8MKA;
+				INFOPLIST_FILE = EyeHospitalApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.38;
+				PRODUCT_BUNDLE_IDENTIFIER = zemusi.com.surgLogApp;
+				PRODUCT_NAME = "Eye Surgery Log";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyeHospitalApplication/fmdb/EyeHospitalApplication-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		69F54093231E433300B49F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971E42CB5D0A368151C191F0 /* Pods-EyeHospitalApplicationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GYQ9J3A7X;
+				INFOPLIST_FILE = EyeHospitalApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abh.EyeHospitalApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyeHospitalApplication.app/EyeHospitalApplication";
+			};
+			name = Debug;
+		};
+		69F54094231E433300B49F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0901E0012A91BE9D6C0D2210 /* Pods-EyeHospitalApplicationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GYQ9J3A7X;
+				INFOPLIST_FILE = EyeHospitalApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abh.EyeHospitalApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyeHospitalApplication.app/EyeHospitalApplication";
+			};
+			name = Release;
+		};
+		69F54096231E433300B49F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32B819FF11DDBEF68BE1FD0F /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GYQ9J3A7X;
+				INFOPLIST_FILE = EyeHospitalApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abh.EyeHospitalApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EyeHospitalApplication;
+			};
+			name = Debug;
+		};
+		69F54097231E433300B49F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7074F891567F2B214D56684 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GYQ9J3A7X;
+				INFOPLIST_FILE = EyeHospitalApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abh.EyeHospitalApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EyeHospitalApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69F54062231E433100B49F4A /* Build configuration list for PBXProject "EyeHospitalApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69F5408D231E433300B49F4A /* Debug */,
+				69F5408E231E433300B49F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69F5408F231E433300B49F4A /* Build configuration list for PBXNativeTarget "EyeHospitalApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69F54090231E433300B49F4A /* Debug */,
+				69F54091231E433300B49F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69F54092231E433300B49F4A /* Build configuration list for PBXNativeTarget "EyeHospitalApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69F54093231E433300B49F4A /* Debug */,
+				69F54094231E433300B49F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69F54095231E433300B49F4A /* Build configuration list for PBXNativeTarget "EyeHospitalApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69F54096231E433300B49F4A /* Debug */,
+				69F54097231E433300B49F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69F5405F231E433100B49F4A /* Project object */;
+}
