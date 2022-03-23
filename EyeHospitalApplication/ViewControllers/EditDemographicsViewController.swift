@@ -78,11 +78,7 @@ class EditDemographicsViewController: UIViewController , UITextFieldDelegate   {
         // For getting default hospital name and ASC Centr name
        //  getUserHospitalName()
         
-        if(fellowLevelSegControl.selectedSegmentIndex == 0){
-            fellowInvolmentPercentageSeg.isEnabled = false
-        }else{
-            fellowInvolmentPercentageSeg.isEnabled = true
-        }
+       
        
         if tag == 1  {
             print("entered tag 1")
@@ -109,6 +105,8 @@ class EditDemographicsViewController: UIViewController , UITextFieldDelegate   {
             
             print("demographic list 7" , demographics1List[6])
             
+            fellowInvolmentPercentageSeg.selectedSegmentIndex = 2
+            
             if (demographics1List[6] as! String == "Yes" ){
                 fellowLevelSegControl.selectedSegmentIndex = 1
             }
@@ -130,7 +128,9 @@ class EditDemographicsViewController: UIViewController , UITextFieldDelegate   {
                 fellowInvolmentPercentageSeg.selectedSegmentIndex = 4
             }
             
-            print("demographic list 7" , demographics1List[7])
+            var values =  demographics1List[7] as! String
+            
+            print("demographic list 7 ==> " ,  values  )
             
            
            
@@ -149,6 +149,12 @@ class EditDemographicsViewController: UIViewController , UITextFieldDelegate   {
             
             dateTextField?.text? = demographics1List[11] as! String
             
+        }
+        
+        if(fellowLevelSegControl.selectedSegmentIndex == 0){
+            fellowInvolmentPercentageSeg.isEnabled = false
+        }else{
+            fellowInvolmentPercentageSeg.isEnabled = true
         }
        
         

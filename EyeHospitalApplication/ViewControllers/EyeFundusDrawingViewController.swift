@@ -23,10 +23,10 @@ class EyeFundusDrawingViewController: UIViewController {
        @IBOutlet weak var canvasView: CanvasView!
        @IBOutlet var featuresView: UIView!
        @IBOutlet weak var collectionView: UICollectionView!
-       @IBOutlet weak var btnArrow: UIButton!
+//       @IBOutlet weak var btnArrow: UIButton!
        
        @IBOutlet weak var widthSlider: UISlider!
-       @IBOutlet weak var opacitySlider: UISlider!
+//       @IBOutlet weak var opacitySlider: UISlider!
     
   
     
@@ -69,8 +69,8 @@ class EyeFundusDrawingViewController: UIViewController {
             UIGraphicsEndImageContext()
             debugPrint("Image not available")
          }
-           opacitySlider.tintColor = .systemBlue
-           featuresView.transform = CGAffineTransform(translationX: 0, y: kHeight - (kHeight - 80))
+         //  opacitySlider.tintColor = .systemBlue
+//           featuresView.transform = CGAffineTransform(translationX: 0, y: kHeight - (kHeight - 80))
            
        }
     
@@ -87,22 +87,22 @@ class EyeFundusDrawingViewController: UIViewController {
         
     }
     
-       @IBAction func onClickHideShowFeatureView(_ sender: UIButton) {
-           if sender.isSelected {
-               UIView.animate(withDuration: animationTime) {
-                   sender.isSelected = false
-                   self.btnArrow.setBackgroundImage(#imageLiteral(resourceName: "up-arrow"), for: .normal)
-                   self.featuresView.transform = CGAffineTransform(translationX: 0, y: self.kHeight - (self.kHeight - 80))
-               }
-           } else {
-               UIView.animate(withDuration: animationTime) {
-                   sender.isSelected = true
-                   self.btnArrow.setBackgroundImage(#imageLiteral(resourceName: "down-arrow"), for: .normal)
-                   self.featuresView.transform = CGAffineTransform.identity
-               }
-           }
-           
-       }
+//       @IBAction func onClickHideShowFeatureView(_ sender: UIButton) {
+//           if sender.isSelected {
+//               UIView.animate(withDuration: animationTime) {
+//                   sender.isSelected = false
+//                   self.btnArrow.setBackgroundImage(#imageLiteral(resourceName: "up-arrow"), for: .normal)
+//                   self.featuresView.transform = CGAffineTransform(translationX: 0, y: self.kHeight - (self.kHeight - 80))
+//               }
+//           } else {
+//               UIView.animate(withDuration: animationTime) {
+//                   sender.isSelected = true
+//                   self.btnArrow.setBackgroundImage(#imageLiteral(resourceName: "down-arrow"), for: .normal)
+//                   self.featuresView.transform = CGAffineTransform.identity
+//               }
+//           }
+//
+//       }
        @IBAction func onClickBrushWidth(_ sender: UISlider) {
            canvasView.strokeWidth = CGFloat(sender.value)
        }

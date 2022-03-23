@@ -966,19 +966,19 @@ func loadData() -> Int {
                         let mrn = results.string(forColumn:patientMrnColumn)
                         demographicsDetailsList.append(mrn)
                         let eyeType = results.string(forColumn: eyeTypeColumn)
-                        demographicsDetailsList.append(eyeType)
+                        demographicsDetailsList.append(eyeType!)
                         let fellowInvovement = results.string(forColumn: fellowInvolvementColumn)
-                        demographicsDetailsList.append(fellowInvovement)
-                        let fellowPercentage = results.string(forColumn: fellowInvolvementPercentageColumn)
-                        demographicsDetailsList.append(fellowPercentage)
+                        demographicsDetailsList.append(fellowInvovement!)
+                        let fellowPercentage = results.string(forColumn: fellowInvolvementPercentageColumn  )
+                        demographicsDetailsList.append(fellowPercentage!)
                         let fellowLevel = results.string(forColumn: fellowLevelColumn)
-                        demographicsDetailsList.append(fellowLevel)
+                        demographicsDetailsList.append(fellowLevel!)
                         let surgurySetting = results.string(forColumn: surgerySettingColumn)
-                        demographicsDetailsList.append(surgurySetting)
+                        demographicsDetailsList.append(surgurySetting!)
                         let hospitalName = results.string(forColumn: hospitalAscNameCoumn)
-                        demographicsDetailsList.append(hospitalName)
+                        demographicsDetailsList.append(hospitalName!)
                         let surgeryDate = results.string(forColumn: surgeryDateColumn)
-                        demographicsDetailsList.append(surgeryDate)
+                        demographicsDetailsList.append(surgeryDate!)
                         
                         
                         
@@ -2593,7 +2593,7 @@ func loadData() -> Int {
                                 
                    if openDatabase() {
                         
-                       let query = "update Demographics1 set lastName = '\(demographic1Model.lastName!)', firstname = '\(demographic1Model.firstName!)' , dob = '\(demographic1Model.dob!)' , mrn = '\(demographic1Model.mrn!)' , eye = '\(demographic1Model.eye!)' ,fellowInvolvement = '\(demographic1Model.fellowInvolvement!)', level = '\(demographic1Model.levelSelect!)' , fellowInvolvementPercentage ='\(demographic1Model.fellowInvolvementPercentage)' , surgerySetting = '\(demographic1Model.surjurySetting!)' , hospitalName = '\(demographic1Model.hospitalName!)' , date = '\(demographic1Model.date!)' where personIdDemo1 = \(id) and status = 1"
+                       let query = "update Demographics1 set lastName = '\(demographic1Model.lastName!)', firstname = '\(demographic1Model.firstName!)' , dob = '\(demographic1Model.dob!)' , mrn = '\(demographic1Model.mrn!)' , eye = '\(demographic1Model.eye!)' ,fellowInvolvement = '\(demographic1Model.fellowInvolvement!)', level = '\(demographic1Model.levelSelect!)' , fellowInvolvementPercentage ='\(demographic1Model.fellowInvolvementPercentage!)' , surgerySetting = '\(demographic1Model.surjurySetting!)' , hospitalName = '\(demographic1Model.hospitalName!)' , date = '\(demographic1Model.date!)' where personIdDemo1 = \(id) and status = 1"
                     
                     
                                       do {
