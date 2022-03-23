@@ -368,7 +368,7 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
      sc.selectedSegmentIndex = 0
      sc.selectedSegmentTintColor = .link
      sc.accessibilityIdentifier = ilmCodeAccesiblityIdentifier
-     
+     sc.apportionsSegmentWidthsByContent = true
      return sc
     
      }()

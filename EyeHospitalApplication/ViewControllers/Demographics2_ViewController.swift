@@ -1128,7 +1128,7 @@ class Demographics2_ViewController: UIViewController, UITextFieldDelegate{
         let lamellarMacularSeg = lamellarMacularHoleSegmentedControl.titleForSegment(at: lamellarMacularHoleSegmentedControl.selectedSegmentIndex)
         
         let latticeDegenerationSeg = latticeDegenerationSegmentedControl.titleForSegment(at: latticeDegenerationSegmentedControl.selectedSegmentIndex)
-          let RetinalDefectSeg = retinalDefectSegmentedControl.titleForSegment(at: retinalDefectSegmentedControl.selectedSegmentIndex)
+          let retinalDefectSeg = retinalDefectSegmentedControl.titleForSegment(at: retinalDefectSegmentedControl.selectedSegmentIndex)
         
         //------------------------------------------------------------
         
@@ -1145,7 +1145,7 @@ class Demographics2_ViewController: UIViewController, UITextFieldDelegate{
         
         
         // setting the values to the model
-        let demographics2Info = Demographics2Model(personIdFromDemo1:valueDemo,aphakia: aphakiaSeg, cataract: catractSeg, choroidalEffusion: choroidalEffusionSeg, choroidalHemorrhage: choroidalHemorrhageSeg, diabeticTrd: diabeticTRDSeg, dislocatedIntraocularLens: dislocatedIntraocularLensSeg, endophthalmitis: endophthalmitisSeg, epiretinalMembrane: epiretinalMembraneSeg, fevr: fevrSeg, floaters: floatersSeg, fullThicknessMacularHole: fullThicknessMacularHoleSeg, intraocularForeignBody: intraocularForeignBodySeg , lamellarMacularHole: lamellarMacularSeg, latticeDegeneration: latticeDegenerationSeg, pdr: pdrSeg, primaryRdWithPvr: primaryRdWithPVRSeleg, recurrentRdWithPvr: recurrentRdWithPVRSeg, recurrentRdWithOutPvr: recurrentRdWithoutPVRSeg, retainedLensFragments: retainedLensFragmentSeg, retinalTear: retinalTearSeg, retinalVeinOcclusion: retinalVeinOcclusionSeg, rhegmatogenousRdMaculaOff: MaculaOffSeg, rhegmatogenousRdMaculaOn: MaculaOnSeg, rop: ropSeg, sickleCell: sickleCellSeg, spRdRepairWithSiliconeOil: repairWithSiliconeOilSeg , subluxedCrystallineLens: sublucedCrystallineLensSeg, vitreousHemorrhage: vitreousHemorrhageSeg , retinalDefect: retinalTearSeg ,otherField: of1,otherField2: of2, otherField3: of3, otherField4: of4,status: 0)
+        let demographics2Info = Demographics2Model(personIdFromDemo1:valueDemo,aphakia: aphakiaSeg, cataract: catractSeg, choroidalEffusion: choroidalEffusionSeg, choroidalHemorrhage: choroidalHemorrhageSeg, diabeticTrd: diabeticTRDSeg, dislocatedIntraocularLens: dislocatedIntraocularLensSeg, endophthalmitis: endophthalmitisSeg, epiretinalMembrane: epiretinalMembraneSeg, fevr: fevrSeg, floaters: floatersSeg, fullThicknessMacularHole: fullThicknessMacularHoleSeg, intraocularForeignBody: intraocularForeignBodySeg , lamellarMacularHole: lamellarMacularSeg, latticeDegeneration: latticeDegenerationSeg, pdr: pdrSeg, primaryRdWithPvr: primaryRdWithPVRSeleg, recurrentRdWithPvr: recurrentRdWithPVRSeg, recurrentRdWithOutPvr: recurrentRdWithoutPVRSeg, retainedLensFragments: retainedLensFragmentSeg, retinalTear: retinalTearSeg, retinalVeinOcclusion: retinalVeinOcclusionSeg, rhegmatogenousRdMaculaOff: MaculaOffSeg, rhegmatogenousRdMaculaOn: MaculaOnSeg, rop: ropSeg, sickleCell: sickleCellSeg, spRdRepairWithSiliconeOil: repairWithSiliconeOilSeg , subluxedCrystallineLens: sublucedCrystallineLensSeg, vitreousHemorrhage: vitreousHemorrhageSeg , retinalDefect: retinalDefectSeg ,otherField: of1,otherField2: of2, otherField3: of3, otherField4: of4,status: 0)
         
         // DataBase Work insertion
         //
