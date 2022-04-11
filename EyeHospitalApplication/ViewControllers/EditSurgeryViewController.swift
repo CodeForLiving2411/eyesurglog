@@ -1799,9 +1799,22 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
         
         containerView.addSubview(suturelessSegmentedView)
         suturelessSegmentedView.anchor(top: suturedSegmentedView.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 30,  paddingRight: 20, height: 31)
+        
+        containerView.addSubview(iolName)
+        iolName.anchor(top: suturelessSegmentedView.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 31)
+        
+        containerView.addSubview(iolNameTextField)
+        iolNameTextField.anchor(top: iolName.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 34)
+        
+        containerView.addSubview(iolPowers)
+        iolPowers.anchor(top: iolNameTextField.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 31)
+        
+        containerView.addSubview(iolPowersTextField)
+        iolPowersTextField.anchor(top: iolPowers.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 34)
+        
        
         containerView.addSubview(pplLabel)
-        pplLabel.anchor(top: suturelessSegmentedView.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 20,  paddingRight: 20, height: 31)
+        pplLabel.anchor(top: iolPowersTextField.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 20,  paddingRight: 20, height: 31)
         
         containerView.addSubview(withFragSegmentedView)
         withFragSegmentedView.anchor(top: pplLabel.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 30,  paddingRight: 20, height: 31)
@@ -1829,20 +1842,10 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
         containerView.addSubview(otherField2)
         otherField2.anchor(top: otherFieldLabel.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, width: 100 ,height: 31)
         
-        containerView.addSubview(iolName)
-        iolName.anchor(top: otherField2.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 31)
         
-        containerView.addSubview(iolNameTextField)
-        iolNameTextField.anchor(top: iolName.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 34)
-        
-        containerView.addSubview(iolPowers)
-        iolPowers.anchor(top: iolNameTextField.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 31)
-        
-        containerView.addSubview(iolPowersTextField)
-        iolPowersTextField.anchor(top: iolPowers.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 34)
         
         containerView.addSubview(positioning)
-        positioning.anchor(top: iolPowersTextField.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 31)
+        positioning.anchor(top: otherField2.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 31)
         
         containerView.addSubview(positioningTextField)
         

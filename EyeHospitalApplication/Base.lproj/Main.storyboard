@@ -59,7 +59,7 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         </variation>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="753" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmC-qg-u2f">
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="753" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmC-qg-u2f">
                                                         <rect key="frame" x="20" y="103.5" width="335" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -5060,7 +5060,7 @@ that apply to the user with respect to such information;
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2GP-dO-Jua">
-                                <rect key="frame" x="-1" y="497" width="367" height="45"/>
+                                <rect key="frame" x="29" y="497" width="312" height="45"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="qJl-U1-0gX"/>
@@ -5126,11 +5126,41 @@ that apply to the user with respect to such information;
                                     <constraint firstAttribute="height" constant="30" id="hVO-2T-3UU"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhp-vV-wad">
+                                <rect key="frame" x="132" y="614" width="37" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="Lw9-bb-WcT"/>
+                                    <constraint firstAttribute="height" constant="41" id="arN-3s-RNJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="undo"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickUndo:" destination="XFu-Dn-vdO" eventType="touchUpInside" id="lg6-Xg-GLm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqo-Ip-MUt">
+                                <rect key="frame" x="193" y="614" width="37" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="S4K-uG-LHW"/>
+                                    <constraint firstAttribute="width" constant="37" id="hjS-W7-Hoe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="office-material"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickClear:" destination="XFu-Dn-vdO" eventType="touchUpInside" id="BzX-IA-KCG"/>
+                                    <action selector="onClickUndo:" destination="XFu-Dn-vdO" eventType="touchUpInside" id="9lh-za-dog"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V2i-UD-EfY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2GP-dO-Jua" firstAttribute="leading" secondItem="ehX-0L-mla" secondAttribute="leadingMargin" constant="-17" id="2QM-wp-Yq0"/>
+                            <constraint firstItem="Uhp-vV-wad" firstAttribute="top" secondItem="xAf-TF-Asd" secondAttribute="bottom" constant="16" id="2Ie-20-ohq"/>
+                            <constraint firstItem="2GP-dO-Jua" firstAttribute="leading" secondItem="ehX-0L-mla" secondAttribute="leadingMargin" constant="13" id="2QM-wp-Yq0"/>
                             <constraint firstItem="OMM-YK-Xtq" firstAttribute="top" secondItem="2GP-dO-Jua" secondAttribute="bottom" constant="26" id="2x4-Ae-NL9"/>
                             <constraint firstItem="xAf-TF-Asd" firstAttribute="top" secondItem="2GP-dO-Jua" secondAttribute="bottom" constant="26" id="42G-ZU-KOU"/>
                             <constraint firstItem="xAf-TF-Asd" firstAttribute="leading" secondItem="V2i-UD-EfY" secondAttribute="leading" constant="64" id="4qq-IZ-9rU"/>
@@ -5140,14 +5170,17 @@ that apply to the user with respect to such information;
                             <constraint firstItem="V2i-UD-EfY" firstAttribute="bottom" secondItem="giL-g0-Wor" secondAttribute="bottom" constant="227" id="IKv-Ev-UGd"/>
                             <constraint firstItem="2GP-dO-Jua" firstAttribute="top" secondItem="giL-g0-Wor" secondAttribute="bottom" constant="57" id="SMi-NM-ZfA"/>
                             <constraint firstItem="giL-g0-Wor" firstAttribute="top" secondItem="ehX-0L-mla" secondAttribute="top" id="TLB-4u-tHM"/>
+                            <constraint firstItem="oqo-Ip-MUt" firstAttribute="leading" secondItem="Uhp-vV-wad" secondAttribute="trailing" constant="24" id="TUQ-o0-lgU"/>
                             <constraint firstItem="giL-g0-Wor" firstAttribute="leading" secondItem="V2i-UD-EfY" secondAttribute="leading" id="Vba-Qc-2Ff"/>
+                            <constraint firstItem="oqo-Ip-MUt" firstAttribute="top" secondItem="xAf-TF-Asd" secondAttribute="bottom" constant="16" id="YB6-80-Z3n"/>
                             <constraint firstItem="OMM-YK-Xtq" firstAttribute="leading" secondItem="V2i-UD-EfY" secondAttribute="leading" constant="4" id="YHh-Mz-QPI"/>
                             <constraint firstItem="giL-g0-Wor" firstAttribute="trailing" secondItem="V2i-UD-EfY" secondAttribute="trailing" id="hlF-4D-ZN4"/>
                             <constraint firstItem="OMM-YK-Xtq" firstAttribute="top" secondItem="2GP-dO-Jua" secondAttribute="bottom" constant="26" id="jva-eu-1BI"/>
-                            <constraint firstItem="2GP-dO-Jua" firstAttribute="trailing" secondItem="i2L-hI-hvx" secondAttribute="trailing" id="k2f-GL-1p7"/>
+                            <constraint firstItem="2GP-dO-Jua" firstAttribute="trailing" secondItem="i2L-hI-hvx" secondAttribute="trailing" constant="-25" id="k2f-GL-1p7"/>
                             <constraint firstItem="V2i-UD-EfY" firstAttribute="trailing" secondItem="xAf-TF-Asd" secondAttribute="trailing" constant="16" id="kkC-Zx-4Wv"/>
                             <constraint firstItem="OMM-YK-Xtq" firstAttribute="leading" secondItem="V2i-UD-EfY" secondAttribute="leading" constant="4" id="l2j-w4-8Dd"/>
                             <constraint firstItem="V2i-UD-EfY" firstAttribute="trailing" secondItem="i2L-hI-hvx" secondAttribute="trailing" constant="9" id="mjy-K3-aTE"/>
+                            <constraint firstItem="Uhp-vV-wad" firstAttribute="leading" secondItem="V2i-UD-EfY" secondAttribute="leading" constant="132" id="sxB-Cn-V6c"/>
                         </constraints>
                     </view>
                     <connections>
@@ -7007,12 +7040,14 @@ Cg
         <image name="brush" width="64" height="64"/>
         <image name="downIcon" width="317" height="324"/>
         <image name="editButtom" width="395" height="353"/>
-        <image name="eyeLeftNew" width="358" height="399"/>
+        <image name="eyeLeftNew" width="1020" height="1020"/>
         <image name="eyeLogo" width="595" height="300"/>
-        <image name="eyeRightNew" width="358" height="400"/>
+        <image name="eyeRightNew" width="1008" height="1008"/>
         <image name="leftEyeNew" width="394" height="379"/>
         <image name="navigationdrawericon" width="240" height="240"/>
+        <image name="office-material" width="32" height="32"/>
         <image name="rightEyeNew" width="249" height="232"/>
+        <image name="undo" width="64" height="64"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

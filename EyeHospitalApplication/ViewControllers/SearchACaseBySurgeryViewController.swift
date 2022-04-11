@@ -17,7 +17,7 @@ class SearchACaseBySurgeryViewController: UIViewController {
     var patientSearchModelList: [PatientSearchModel]?
     @IBOutlet weak var surgeryTypeLabelView: UIView!
     let uiPicvkerView = UIPickerView()
-    var dataList = [ "Virectomy" , "Scleral Buckle" ,"Membrane peel", "ILM peel", "Retinectomy" , "Fluid-Air-Exchange" , "PFO" ,"Focal Endolaser", "PRP Laser" , "Indirect Laser Tear/Lattice" , "IOL Exchange" , "IOL Insertion" , "ACIOL" ,"Sulcus IOL" , "Scleral Fixated IOL Sutured" , "Scleral Fixated IOL Sutueless" , "PPL with Frag" , "PPL without Frag" , "Silicone Oil Removal" , "Silicone Oil Exchange" , "Choroidal Drainage" , "IOL Reposition" , "Cryotherapy"]
+    var dataList = [ "Virectomy" , "Scleral Buckle" ,"Membrane peel", "ILM peel", "Retinectomy" , "Fluid-Air-Exchange" , "PFO" ,"Focal Endolaser", "PRP Laser" , "Indirect Laser Tear/Lattice" , "IOL Exchange" , "IOL Insertion" , "ACIOL" ,"Sulcus IOL" , "Scleral Fixated IOL Sutured" , "Scleral Fixated IOL Sutureless" , "PPL with Frag" , "PPL without Frag" , "Silicone Oil Removal" , "Silicone Oil Exchange" , "Choroidal Drainage" , "IOL Reposition" , "Cryotherapy"]
     
     
     var selectedItem = ""

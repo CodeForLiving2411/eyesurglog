@@ -943,7 +943,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.38;
+				MARKETING_VERSION = 1.39;
 				PRODUCT_BUNDLE_IDENTIFIER = zemusi.com.surgLogApp;
 				PRODUCT_NAME = "Eye Surgery Log";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -970,7 +970,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.38;
+				MARKETING_VERSION = 1.39;
 				PRODUCT_BUNDLE_IDENTIFIER = zemusi.com.surgLogApp;
 				PRODUCT_NAME = "Eye Surgery Log";
 				PROVISIONING_PROFILE_SPECIFIER = "";

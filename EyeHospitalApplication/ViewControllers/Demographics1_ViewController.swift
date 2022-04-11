@@ -75,8 +75,9 @@ class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
     
     override func viewWillAppear(_ animated: Bool) {
         // For getting default hospital name and ASC Centr name
+        
          getUserHospitalName()
-       
+       // For fellow Eye Procedure 
         if tag == 1  {
             print("entered tag 1")
              demographics1List = DatabaseManager.shared.loadPatientDemographicsDetails(withID: tempPersonID )
@@ -91,7 +92,7 @@ class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
             firstName?.text? = demographics1List[1] as! String
             dobTextField?.text? =  demographics1List[3] as! String
             mrnTextField?.text? =  demographics1List[4] as! String
-            dateTextField?.text? = demographics1List[10] as! String
+            dateTextField?.text? = demographics1List[11] as! String
             
             
         }
@@ -102,7 +103,7 @@ class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
             lastName.text = lNameUnloggedString
             dobTextField?.text?  = dobUnloggedString
             mrnTextField?.text? = mrnUnloggedString
-           // hospitalAscNameTextField.text = hospitalNameUnloggedString
+          //  hospitalAscNameTextField.text = hospitalNameUnloggedString
             dateTextField?.text? = surgeryDateUnloggedString
         }
         
