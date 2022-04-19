@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DateTextField/DateTextField.framework
 ${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
 ${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework

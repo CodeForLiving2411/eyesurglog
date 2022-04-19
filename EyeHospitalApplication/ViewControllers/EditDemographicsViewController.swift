@@ -9,6 +9,7 @@ import UIKit
 import Foundation
 import KeyboardAvoidingView
 import IHKeyboardAvoiding
+import DateTextField
 
 
 
@@ -40,9 +41,9 @@ class EditDemographicsViewController: UIViewController , UITextFieldDelegate   {
     @IBOutlet weak var fellowInvolmentPercentageSeg: UISegmentedControl!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var firstName: UITextField!
-    @IBOutlet weak var dobTextField: UITextField!
+    @IBOutlet weak var dobTextField: DateTextField!
     @IBOutlet weak var mrnTextField: UITextField!
-    @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var dateTextField: DateTextField!
     @IBOutlet weak var eyeTypeSegmentedControll: UISegmentedControl!
  
 
@@ -165,6 +166,11 @@ class EditDemographicsViewController: UIViewController , UITextFieldDelegate   {
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
+        
+        dobTextField.dateFormat = .monthDayYear
+        dobTextField.separator = "/"
+        dateTextField.dateFormat = .monthDayYear
+        dateTextField.separator = "/"
          
         if(fellowLevelSegControl.selectedSegmentIndex == 0){
             fellowInvolmentPercentageSeg.isEnabled = false

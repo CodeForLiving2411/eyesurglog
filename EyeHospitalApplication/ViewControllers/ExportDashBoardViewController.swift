@@ -19,6 +19,7 @@ class ExportDashBoardViewController: UIViewController {
     @IBOutlet weak var exportBySurgery: UIButton!
     
     @IBOutlet weak var exportByDiagnosis: UIButton!
+    @IBOutlet weak var exportAllCases: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         exportByDOS.layer.cornerRadius = 5
@@ -30,6 +31,14 @@ class ExportDashBoardViewController: UIViewController {
         
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func WhenAllCasesButtonWasPressed(_ sender: UIButton) {
+        print("Clicked!!")
+        let vc = storyboard?.instantiateViewController(identifier: "ExportAllCasesController") as! ExportAllCasesController
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
     }
     
     

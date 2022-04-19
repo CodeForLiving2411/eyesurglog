@@ -12,6 +12,7 @@ import UIKit
 class EyeProcedureViewController: UIViewController {
     
      var personUID = 0
+     var unloggedCaseId = 0;
 
     @IBOutlet weak var submitACaseLabel: UILabel!
     @IBOutlet weak var submitButton: UIButton!
@@ -68,6 +69,12 @@ class EyeProcedureViewController: UIViewController {
                              let updatedCameraImageStatus = DatabaseManager.shared.UpdateCameraImageStatusColumn(personUID)
                              print(updatedCameraImageStatus)
         
+        if unloggedCaseId != 0 {
+            let deletedUnLoggedCase =
+            DatabaseManager.shared.deleteDemographicsTempDataWhenBactPressedAtDiagnosis(withID: unloggedCaseId)
+        }
+       
+    
         
       alertController   = UIAlertController(title: "Alert",
                                                 message: "Case Successfully Logged", preferredStyle: .alert)

@@ -32,6 +32,7 @@ UIImagePickerControllerDelegate{
     var mrnTemp = 0
     var imageName = ""
     var commentString = ""
+    var unloggedCaseId = 0;
      @IBOutlet weak var saveImageToPhotoGallery: UIButton!
     var documentsUrl: URL {
         return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -203,6 +204,7 @@ UIImagePickerControllerDelegate{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
           let vc = segue.destination as! EyeProcedureViewController
         vc.personUID = imageid
+        vc.unloggedCaseId = self.unloggedCaseId
       }
     
     

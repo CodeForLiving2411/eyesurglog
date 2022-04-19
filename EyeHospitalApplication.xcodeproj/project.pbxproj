@@ -88,6 +88,7 @@
 		69FA9DD223793BA7005A50F2 /* EyeProcedureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA9DD123793BA7005A50F2 /* EyeProcedureViewController.swift */; };
 		69FD575F24691E3C00B1ACA5 /* ExportByDiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FD575E24691E3C00B1ACA5 /* ExportByDiagnosisViewController.swift */; };
 		69FD576124691E5A00B1ACA5 /* ExportByMRNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FD576024691E5A00B1ACA5 /* ExportByMRNViewController.swift */; };
+		B9DA0B98280AD9FF00D76C3F /* ExportAllCasesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA0B97280AD9FE00D76C3F /* ExportAllCasesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +208,7 @@
 		971E42CB5D0A368151C191F0 /* Pods-EyeHospitalApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeHospitalApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-EyeHospitalApplicationTests/Pods-EyeHospitalApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A29270F1C8A91AAFDD178435 /* Pods-EyeHospitalApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeHospitalApplication.debug.xcconfig"; path = "Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1C1C64FCC3911D523FB8A1 /* Pods_EyeHospitalApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyeHospitalApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9DA0B97280AD9FE00D76C3F /* ExportAllCasesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportAllCasesController.swift; sourceTree = "<group>"; };
 		BF303CC414790A0F99971EF4 /* Pods-EyeHospitalApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeHospitalApplication.release.xcconfig"; path = "Target Support Files/Pods-EyeHospitalApplication/Pods-EyeHospitalApplication.release.xcconfig"; sourceTree = "<group>"; };
 		C7074F891567F2B214D56684 /* Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig"; path = "Target Support Files/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests/Pods-EyeHospitalApplication-EyeHospitalApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F95461824A479085B450C468 /* Pods_EyeHospitalApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyeHospitalApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -329,6 +331,7 @@
 				6953BA4A24EA4CF2004A5ADB /* FaqViewController.swift */,
 				69C77E84254FD33E00D23095 /* CPTSelectionViewController.swift */,
 				69C77E86254FD49A00D23095 /* CPTSelectionTableViewCell.swift */,
+				B9DA0B97280AD9FE00D76C3F /* ExportAllCasesController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				69343CB42536FF82000E9BAF /* Extension.swift in Sources */,
 				69673BE423AA287E001CEA04 /* DiagnosisDataListViewController.swift in Sources */,
 				6963153C23EEB86500258E56 /* ChangePasswordViewController.swift in Sources */,
+				B9DA0B98280AD9FF00D76C3F /* ExportAllCasesController.swift in Sources */,
 				69C56BB1238BA633006B0673 /* SurgeryModel.swift in Sources */,
 				693AEF5A23D08C7F00E84038 /* EditSurgeryViewController.swift in Sources */,
 				69FA9DD223793BA7005A50F2 /* EyeProcedureViewController.swift in Sources */,
@@ -943,7 +947,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.39;
+				MARKETING_VERSION = 1.40;
 				PRODUCT_BUNDLE_IDENTIFIER = zemusi.com.surgLogApp;
 				PRODUCT_NAME = "Eye Surgery Log";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -970,7 +974,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.39;
+				MARKETING_VERSION = 1.40;
 				PRODUCT_BUNDLE_IDENTIFIER = zemusi.com.surgLogApp;
 				PRODUCT_NAME = "Eye Surgery Log";
 				PROVISIONING_PROFILE_SPECIFIER = "";

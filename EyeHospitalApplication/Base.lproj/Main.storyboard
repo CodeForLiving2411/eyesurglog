@@ -81,11 +81,6 @@
                                                         <color key="textColor" systemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth(MM/DD/YYYY)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLV-3q-Yt8">
-                                                        <rect key="frame" x="20" y="244.5" width="335" height="34"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                                                    </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Medical Record Number (MRN)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-fu-qKl">
                                                         <rect key="frame" x="20" y="286.5" width="335" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -158,7 +153,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surgery Date ((MM/DD/YYYY))" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hvv-ub-37u">
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surgery Date ((MM/DD/YYYY))" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hvv-ub-37u" customClass="DateTextField" customModule="DateTextField">
                                                         <rect key="frame" x="20" y="680.5" width="335" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -222,6 +217,11 @@
                                                             <action selector="demographicsNextButtonPressed:" destination="Mot-8U-7uO" eventType="touchUpInside" id="gsg-hW-hoj"/>
                                                         </connections>
                                                     </button>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth(MM/DD/YYYY)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLV-3q-Yt8" customClass="DateTextField" customModule="DateTextField">
+                                                        <rect key="frame" x="20" y="244.5" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                    </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -1087,7 +1087,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vHn-Uf-6fN">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vHn-Uf-6fN" customClass="DateTextField" customModule="DateTextField">
                                 <rect key="frame" x="30" y="74" width="140" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1115,7 +1115,7 @@
                                     <action selector="WhenBackWasPressed:" destination="0YE-Rr-Pwa" eventType="touchUpInside" id="cCP-bX-hXB"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Du-lt-S4y">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Du-lt-S4y" customClass="DateTextField" customModule="DateTextField">
                                 <rect key="frame" x="205" y="74" width="140" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1172,7 +1172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efJ-s3-3gR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2241" y="-2348"/>
+            <point key="canvasLocation" x="2257" y="-2348"/>
         </scene>
         <!--Search A Case-->
         <scene sceneID="YRw-01-XXf">
@@ -2359,6 +2359,19 @@
                                     <segue destination="ZW7-m5-bTP" kind="presentation" modalPresentationStyle="fullScreen" id="r4Q-Ui-Z5h"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXc-go-kFv">
+                                <rect key="frame" x="30" y="420" width="315" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="BLN-LH-nJ7"/>
+                                </constraints>
+                                <state key="normal" title="Export All Cases">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="WhenAllCasesButtonWasPressed:" destination="l58-Nq-NCh" eventType="touchUpInside" id="Oin-DB-rjb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dXn-EQ-95p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2371,8 +2384,11 @@
                             <constraint firstItem="dXn-EQ-95p" firstAttribute="trailing" secondItem="KFu-7b-ZR2" secondAttribute="trailing" constant="30" id="LTR-qd-XR6"/>
                             <constraint firstItem="KxY-Jt-lht" firstAttribute="top" secondItem="KFu-7b-ZR2" secondAttribute="bottom" constant="30" id="b8r-DT-Sny"/>
                             <constraint firstItem="4zX-mz-Lwv" firstAttribute="top" secondItem="dXn-EQ-95p" secondAttribute="top" id="dZg-KX-ppT"/>
+                            <constraint firstItem="dXn-EQ-95p" firstAttribute="trailing" secondItem="tXc-go-kFv" secondAttribute="trailing" constant="30" id="iDR-cp-0l4"/>
                             <constraint firstItem="4LW-Us-Qfp" firstAttribute="top" secondItem="5WN-X9-URv" secondAttribute="bottom" constant="30" id="jqF-zn-Vch"/>
+                            <constraint firstItem="tXc-go-kFv" firstAttribute="leading" secondItem="dXn-EQ-95p" secondAttribute="leading" constant="30" id="kya-Fi-54L"/>
                             <constraint firstItem="dXn-EQ-95p" firstAttribute="trailing" secondItem="4LW-Us-Qfp" secondAttribute="trailing" constant="30" id="lp6-vs-4wi"/>
+                            <constraint firstItem="tXc-go-kFv" firstAttribute="top" secondItem="KxY-Jt-lht" secondAttribute="bottom" constant="30" id="np2-Zx-2xj"/>
                             <constraint firstItem="KxY-Jt-lht" firstAttribute="leading" secondItem="dXn-EQ-95p" secondAttribute="leading" constant="30" id="ojz-7h-cxt"/>
                             <constraint firstItem="KFu-7b-ZR2" firstAttribute="top" secondItem="4LW-Us-Qfp" secondAttribute="bottom" constant="30" id="rta-zU-n0g"/>
                             <constraint firstItem="dXn-EQ-95p" firstAttribute="trailing" secondItem="5WN-X9-URv" secondAttribute="trailing" constant="30" id="xhN-36-3nO"/>
@@ -2380,6 +2396,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="exportAllCases" destination="tXc-go-kFv" id="8iF-NI-Tbk"/>
                         <outlet property="exportByDOS" destination="5WN-X9-URv" id="kmM-6M-AO8"/>
                         <outlet property="exportByDiagnosis" destination="KxY-Jt-lht" id="Bc3-kj-xHV"/>
                         <outlet property="exportByMRN" destination="4LW-Us-Qfp" id="9wn-ZG-ji0"/>
@@ -2388,7 +2405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BrD-9h-8DQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-724" y="-673.15270935960598"/>
+            <point key="canvasLocation" x="-724" y="-673.31334332833592"/>
         </scene>
         <!--Csv Export View Controller-->
         <scene sceneID="tcF-B8-i1C">
@@ -2405,7 +2422,7 @@
                                     <action selector="WhenBackButtonWasPressed:" destination="bBS-KF-SkG" eventType="touchUpInside" id="3FN-mN-73g"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Qh-QS-4Vq">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Qh-QS-4Vq" customClass="DateTextField" customModule="DateTextField">
                                 <rect key="frame" x="30" y="60" width="140" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -2437,14 +2454,14 @@
                                     <constraint firstAttribute="height" constant="40" id="F2o-nj-8SY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Export">
+                                <state key="normal" title="Export by Date">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="WhenExportButtonWasPressed:" destination="bBS-KF-SkG" eventType="touchUpInside" id="m4R-Bl-dgq"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DgB-TD-hBp">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DgB-TD-hBp" customClass="DateTextField" customModule="DateTextField">
                                 <rect key="frame" x="215" y="60" width="130" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -2503,7 +2520,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avB-BY-qv5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2279" y="-830"/>
+            <point key="canvasLocation" x="2306" y="-773"/>
         </scene>
         <!--Un Logged Patient Search Details View Controller-->
         <scene sceneID="Q5F-N0-hNl">
@@ -5047,6 +5064,92 @@ that apply to the user with respect to such information;
             </objects>
             <point key="canvasLocation" x="2256.8000000000002" y="-3489.8050974512748"/>
         </scene>
+        <!--Export All Cases Controller-->
+        <scene sceneID="gX5-dN-pvP">
+            <objects>
+                <viewController storyboardIdentifier="ExportAllCasesController" id="eAS-CC-t5s" customClass="ExportAllCasesController" customModule="Eye_Surgery_Log" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ou7-U7-6p6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XY3-Iq-O33">
+                                <rect key="frame" x="16" y="54" width="30" height="23"/>
+                                <state key="normal" image="backarrow"/>
+                                <connections>
+                                    <action selector="WhenBackButtonWasPressed:" destination="eAS-CC-t5s" eventType="touchUpInside" id="Igk-iq-ycq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaE-AF-CIu">
+                                <rect key="frame" x="319" y="45" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BOR-7d-vH9"/>
+                                    <constraint firstAttribute="width" constant="40" id="fqq-Qk-BoP"/>
+                                </constraints>
+                                <state key="normal" image="Home2"/>
+                                <connections>
+                                    <action selector="WhenHomeButtonWasPressed:" destination="eAS-CC-t5s" eventType="touchUpInside" id="R66-0t-GXV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfY-Qv-akP">
+                                <rect key="frame" x="30" y="228" width="315" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3IO-HE-6JI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Export All Cases">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="WhenExportAllCasesButtonWasPressed:" destination="eAS-CC-t5s" eventType="touchUpInside" id="KyK-vp-suz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpu-sa-BpC">
+                                <rect key="frame" x="30" y="148" width="315" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Export All Cases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-6Z-ayy">
+                                <rect key="frame" x="113" y="45" width="149" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="ZCR-SY-h5D"/>
+                                    <constraint firstAttribute="height" constant="21" id="gzs-91-OSB"/>
+                                    <constraint firstAttribute="width" constant="149" id="qbO-Q8-cDS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zsG-dj-MeX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XY3-Iq-O33" firstAttribute="top" secondItem="zsG-dj-MeX" secondAttribute="top" constant="54" id="029-dp-q27"/>
+                            <constraint firstItem="l8g-6Z-ayy" firstAttribute="centerX" secondItem="sfY-Qv-akP" secondAttribute="centerX" id="0eq-RE-Kwk"/>
+                            <constraint firstItem="IaE-AF-CIu" firstAttribute="centerY" secondItem="XY3-Iq-O33" secondAttribute="centerY" constant="-0.5" id="23x-LL-N3O"/>
+                            <constraint firstItem="IaE-AF-CIu" firstAttribute="trailing" secondItem="Xpu-sa-BpC" secondAttribute="trailing" constant="14" id="3pL-Zx-vn9"/>
+                            <constraint firstItem="IaE-AF-CIu" firstAttribute="top" secondItem="zsG-dj-MeX" secondAttribute="top" constant="45" id="AE1-ps-1tH"/>
+                            <constraint firstItem="Xpu-sa-BpC" firstAttribute="top" secondItem="IaE-AF-CIu" secondAttribute="bottom" constant="63" id="JkU-Hc-No3"/>
+                            <constraint firstItem="l8g-6Z-ayy" firstAttribute="centerX" secondItem="ou7-U7-6p6" secondAttribute="centerX" id="Oyg-FS-xbl"/>
+                            <constraint firstItem="l8g-6Z-ayy" firstAttribute="top" secondItem="ou7-U7-6p6" secondAttribute="top" constant="45" id="Rk9-xH-nC3"/>
+                            <constraint firstItem="zsG-dj-MeX" firstAttribute="trailing" secondItem="Xpu-sa-BpC" secondAttribute="trailing" constant="30" id="SGJ-jt-2aS"/>
+                            <constraint firstItem="XY3-Iq-O33" firstAttribute="leading" secondItem="ou7-U7-6p6" secondAttribute="leadingMargin" id="Sdp-Tb-QQx"/>
+                            <constraint firstItem="l8g-6Z-ayy" firstAttribute="centerX" secondItem="Xpu-sa-BpC" secondAttribute="centerX" id="YBe-Kp-9ER"/>
+                            <constraint firstItem="sfY-Qv-akP" firstAttribute="top" secondItem="Xpu-sa-BpC" secondAttribute="bottom" constant="59" id="i3W-S6-flh"/>
+                            <constraint firstItem="zsG-dj-MeX" firstAttribute="trailing" secondItem="IaE-AF-CIu" secondAttribute="trailing" constant="16" id="isU-ai-6c4"/>
+                            <constraint firstItem="Xpu-sa-BpC" firstAttribute="leading" secondItem="zsG-dj-MeX" secondAttribute="leading" constant="30" id="vL1-JS-Pdj"/>
+                            <constraint firstItem="sfY-Qv-akP" firstAttribute="leading" secondItem="Xpu-sa-BpC" secondAttribute="leading" id="zAv-pd-iEh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberOfCasesCompletedLabel" destination="Xpu-sa-BpC" id="DtH-Cp-JEw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C0Q-nk-VrK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3464.8000000000002" y="-3105.6971514242882"/>
+        </scene>
         <!--Eye Fundus Drawing View Controller-->
         <scene sceneID="kpo-Sy-NkH">
             <objects>
@@ -6112,7 +6215,7 @@ that apply to the user with respect to such information;
                                                         <color key="textColor" systemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth(MM/DD/YYYY)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cNo-2r-OCZ">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Of Birth(MM/DD/YYYY)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cNo-2r-OCZ" customClass="DateTextField" customModule="DateTextField">
                                                         <rect key="frame" x="20" y="244.5" width="335" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -6188,7 +6291,7 @@ that apply to the user with respect to such information;
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surgery Date ((MM/DD/YYYY))" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CAY-Bs-3ey">
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surgery Date ((MM/DD/YYYY))" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CAY-Bs-3ey" customClass="DateTextField" customModule="DateTextField">
                                                         <rect key="frame" x="20" y="708" width="335" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -7029,7 +7132,7 @@ Cg
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="c2o-OM-4wi"/>
-        <segue reference="Y28-5u-wxi"/>
+        <segue reference="ndy-lj-ef6"/>
         <segue reference="sWY-bq-fxc"/>
     </inferredMetricsTieBreakers>
     <resources>

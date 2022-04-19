@@ -1,4 +1,5 @@
 PODS:
+  - DateTextField (2.1.0)
   - DropDown (2.3.13)
   - IHKeyboardAvoiding (4.7)
   - IQKeyboardManagerSwift (6.5.5)
@@ -8,6 +9,7 @@ PODS:
   - ViewState (1.0.0)
 
 DEPENDENCIES:
+  - DateTextField
   - DropDown (= 2.3.13)
   - IHKeyboardAvoiding
   - IQKeyboardManagerSwift
@@ -16,6 +18,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - DateTextField
     - DropDown
     - IHKeyboardAvoiding
     - IQKeyboardManagerSwift
@@ -24,6 +27,7 @@ SPEC REPOS:
     - ViewState
 
 SPEC CHECKSUMS:
+  DateTextField: 7e36dec07cea49abd787341b7af9436da89fb348
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   IHKeyboardAvoiding: 4cae0880c3975feffa278495df894c5166e71ad0
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
@@ -31,6 +35,6 @@ SPEC CHECKSUMS:
   SideMenuSwift: c7d99c270e0fad922a14b81f1dcc7a84c764bcd5
   ViewState: 78aa77483e74e592c22e841619b853bc686843be
 
-PODFILE CHECKSUM: 76f66e93846ec200253a8e400cd7c76557f781d9
+PODFILE CHECKSUM: b8b978474cb30105adb0bf7f19ac59a7dfc22031
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1

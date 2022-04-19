@@ -1,9 +1,11 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DropDown" "${PODS_CONFIGURATION_BUILD_DIR}/IHKeyboardAvoiding" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift" "${PODS_CONFIGURATION_BUILD_DIR}/KeyboardAvoidingView" "${PODS_CONFIGURATION_BUILD_DIR}/SideMenuSwift" "${PODS_CONFIGURATION_BUILD_DIR}/ViewState"
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DateTextField" "${PODS_CONFIGURATION_BUILD_DIR}/DropDown" "${PODS_CONFIGURATION_BUILD_DIR}/IHKeyboardAvoiding" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift" "${PODS_CONFIGURATION_BUILD_DIR}/KeyboardAvoidingView" "${PODS_CONFIGURATION_BUILD_DIR}/SideMenuSwift" "${PODS_CONFIGURATION_BUILD_DIR}/ViewState"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DropDown/DropDown.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/KeyboardAvoidingView/KeyboardAvoidingView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SideMenuSwift/SideMenuSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ViewState/ViewState.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "CoreGraphics" -framework "DropDown" -framework "Foundation" -framework "IHKeyboardAvoiding" -framework "IQKeyboardManagerSwift" -framework "KeyboardAvoidingView" -framework "QuartzCore" -framework "SideMenuSwift" -framework "UIKit" -framework "ViewState"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DateTextField/DateTextField.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/DropDown/DropDown.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/KeyboardAvoidingView/KeyboardAvoidingView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SideMenuSwift/SideMenuSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ViewState/ViewState.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "CoreGraphics" -framework "DateTextField" -framework "DropDown" -framework "Foundation" -framework "IHKeyboardAvoiding" -framework "IQKeyboardManagerSwift" -framework "KeyboardAvoidingView" -framework "QuartzCore" -framework "SideMenuSwift" -framework "UIKit" -framework "ViewState"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
 USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

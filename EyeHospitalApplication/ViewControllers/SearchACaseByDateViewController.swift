@@ -7,15 +7,15 @@
 //
 
 import UIKit
-
+import DateTextField
 
 @available(iOS 13.0, *)
 class SearchACaseByDateViewController: UIViewController , UITextFieldDelegate {
     
 
-    @IBOutlet weak var selectDateTextField: UITextField!
+    @IBOutlet weak var selectDateTextField: DateTextField!
     
-    @IBOutlet weak var selectEndDate: UITextField!
+    @IBOutlet weak var selectEndDate: DateTextField!
     private var surgeryDatePicker: UIDatePicker?
     private var endDatePicker: UIDatePicker?
     
@@ -23,7 +23,16 @@ class SearchACaseByDateViewController: UIViewController , UITextFieldDelegate {
     var patientSearchModelList: [PatientSearchModel]?
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchButton.layer.cornerRadius = 5 
+        selectDateTextField.dateFormat = .monthDayYear
+        selectDateTextField.separator = "/"
+        selectEndDate.dateFormat = .monthDayYear
+        selectEndDate.separator = "/"
+      
+       
+        selectDateTextField.dateFormat = .monthDayYear
+        selectDateTextField.separator = "/"
+        selectEndDate.dateFormat = .monthDayYear
+        selectEndDate.separator = "/"
         getCurrentStartDate()
       //  Date Picker For selectDateTextField (Here the user enters the surgery date to get list the list of patient details)
         //-----------------------------------------------

@@ -2175,6 +2175,173 @@ func loadData() -> Int {
            return patientCsvDataExportModelList
         }
     
+    // Export all the patient details
+    func loadPatientDetailsForExportAllRecords() -> [CsvExportDataModel]! {
+            var patientCsvDataExportModelList: [CsvExportDataModel]!
+            var fetchStatus: Bool = false
+         
+            if openDatabase() {
+                
+               
+                let query = "select lastName, firstname, dob, mrn, eye, fellowInvolvement, level, surgerySetting, hospitalName,date, aphakia, cataract, choroidalEffusion, choroidalHemorrhage, diabeticTrd, dislocatedIntraocularLens, endophthalmitis, epiretinalMembrane, fevr, floaters, fullThicknessMacularHole, intraocularForeignBody, lamellarMacularHole, latticeDegeneration, pdr, primaryRdWithPvr, recurrentRdWithPvr, recurrentRdWithOutPvr, retainedLensFragments, retinalTear, retinalVeinOcclusion, rhegmatogenousRdMaculaOff, rhegmatogenousRdMaculaOn, rop, sickleCell, spRdRepairWithSiliconeOil, subluxedCrystallineLens, vitreousHemorrhage,otherField, otherField2 ,otherField3, otherField4,gauge, band, sleeve, tamponad1, srfDrain, acTap, radialElement, membranePeel, ilmPeel, retinectomy, fluidAirExchange, pfo, focalEndolaser, prpLaser, indirectLaserTear, iolExchange, aciol, sulcusIol, sutured, sutureless, pplWithFrag, pplWithoutFrag, tamponade2, comments , percentageTamponade , otherFieldTamponade ,otherField2, virectomy, scleralBuckle , iolInsertion , iolName , iolPower , positioning ,siliconeOilRemoval, siliconeOilExchange , corodialDrainage  ,iolReposition, cptCodeDropdown,cptFreeTextBox,cryotherapy , ilmDropDown , retinalDetachment, macularHoleClosed ,  pomVisualAcuity , pom3VisualAcuity , otherOutcomeData , fellowInvolvementPercentage , retinalDefect from Demographics1 D1 inner join  Demographics2 D2 on   D1.personIdDemo1 = D2.personIdfromDemo1 inner join Surgery S  on  D1.personIdDemo1 = S.personIdfromDemo1 "
+         
+                 var lastNameColumn: String = "lastName"
+                 var firstnameColumn: String = "firstname"
+                 var dobColumn: String = "dob"
+                 var mrnColumn: String = "mrn"
+                 var eyeColumn: String = "eye"
+                 var fellowInvolvementColumn: String = "fellowInvolvement"
+                 var levelColumn: String = "level"
+                 var surgerySettingColumn: String = "surgerySetting"
+                 var hospitalNameColumn: String = "hospitalName"
+                 var dateColumn: String = "date"
+                 var aphakiaColumn: String = "aphakia"
+                 var cataractColumn: String = "cataract"
+                 var choroidalEffusionColumn: String = "choroidalEffusion"
+                 var choroidalHemorrhageColumn: String = "choroidalEffusion"
+                 var diabeticTrdColumn: String = "diabeticTrd"
+                 var dislocatedIntraocularLensColumn: String = "dislocatedIntraocularLens"
+                 var endophthalmitisColumn: String = "endophthalmitis"
+                 var epiretinalMembraneColumn: String = "epiretinalMembrane"
+                 var fevrColumn: String = "fevr"
+                 var floatersColumn: String  = "floaters"
+                 var fullThicknessMacularHoleColumn:  String  = "fullThicknessMacularHole"
+                 var intraocularForeignBodyColumn: String = "intraocularForeignBody"
+                 var lamellarMacularHoleColumn: String  = "lamellarMacularHole"
+                 var latticeDegenerationColumn: String = "latticeDegeneration"
+                 var pdrColumn: String = "pdr"
+                 var primaryRdWithPvrColumn: String = "primaryRdWithPvr"
+                 var recurrentRdWithPvrColumn: String = "recurrentRdWithPvr"
+                 var recurrentRdWithOutPvrColumn: String = "recurrentRdWithOutPvr"
+                 var retainedLensFragmentsColumn: String  = "retainedLensFragments"
+                 var retinalTearColumn: String = "retinalTear"
+                 var retinalVeinOcclusionColumn: String = "retinalVeinOcclusion"
+                 var rhegmatogenousRdMaculaOffColumn: String = "rhegmatogenousRdMaculaOff"
+                 var rhegmatogenousRdMaculaOnColumn: String = "rhegmatogenousRdMaculaOn"
+                 var ropColumn: String = "rop"
+                 var sickleCellColumn: String = "sickleCell"
+                 var spRdRepairWithSiliconeOilColumn: String = "spRdRepairWithSiliconeOil"
+                 var subluxedCrystallineLensColumn: String = "subluxedCrystallineLens"
+                 var vitreousHemorrhageColumn: String = "vitreousHemorrhage"
+                 var otherFieldColumn: String = "otherField"
+                 var otherField2Column: String = "otherField2"
+                 var otherField3Column: String = "otherField3"
+                 var otherField4Column: String = "otherField4"
+                 var gaugeColumn: String = "gauge"
+                 var bandColumn: String = "band"
+                 var sleeveColumn: String = "sleeve"
+                 var tamponad1Column: String = "tamponad1"
+                 var srfDrainColumn: String = "srfDrain"
+                 var acTapColumn: String = "acTap"
+                 var membranePeelColumn: String = "membranePeel"
+                 var ilmPeelColumn: String = "ilmPeel"
+                 var retinectomyColumn: String = "retinectomy"
+                 var fluidAirExchangeColumn: String = "fluidAirExchange"
+                 var pfoColumn: String = "pfo"
+                 var focalEndolaserColumn: String = "focalEndolaser"
+                 var prpLaserColumn:String = "prpLaser"
+                 var indirectLaserTearColumn: String = "indirectLaserTear"
+                 var iolExchangeColumn: String = "iolExchange"
+                 var aciolColumn: String = "aciol"
+                 var sulcusIolColumn: String = "sulcusIol"
+                 var suturedColumn: String = "sutured"
+                 var suturelessColumn: String = "sutureless"
+                 var pplWithFragColumn: String = "pplWithFrag"
+                 var pplWithoutFragColumn: String = "pplWithoutFrag"
+                 var tamponade2Column: String = "tamponade2"
+                 var commentsColumn: String = "comments"
+                 var percentageTamponadeColumn : String = "percentageTamponade"
+                 var otherFieldTamponadeColumn : String = "otherFieldTamponade"
+                 var otherFieldSurgery2Column : String = "otherField2"
+                 var virectomyColumn : String = "virectomy"
+                 var scleralBuckleColumn : String = "scleralBuckle"
+                 var iolInsertionColumn : String = "iolInsertion"
+                 var iolNameColumn : String = "iolName"
+                 var iolPowerColumn : String = "IolPower"
+                 var positioningColumn : String = "positioning"
+                 var retinalDetachmentColumn : String = "retinalDetachment"
+                 var macularHoleClosedColumn : String = "macularHoleClosed"
+                 var pomVisualAcuityColumn: String = "pomVisualAcuity"
+                 var pom3VisualAcuityColumn: String = "pom3VisualAcuity"
+                 var otherOutcomeDataColumn : String = "otherOutcomeData"
+                 var siliconeOilRemovalColumn : String = "siliconeOilRemoval"
+                 var siliconeOilExchangeColumn : String = "siliconeOilExchange"
+                 var corodialDrainageColumn : String = "corodialDrainage"
+                 let iolRepositionColumn : String = "iolReposition"
+                 let cptCodeDropdownColumn : String = "cptCodeDropdown"
+                 let cptFreeTextBoxColumn : String = "cptFreeTextBox"
+                 let cryotherapyColumn : String = "cryotherapy"
+                 let ilmDropDownColumn : String = "ilmDropDown"
+                 let radialElementColumn : String = "radialElement"
+                let fellowInvolvementPercentageColumn : String = "fellowInvolvementPercentage"
+                let retinalDefectColumn: String = "retinalDefect"
+                do {
+                    
+                    print(database)
+                    
+                    let results = try! database.executeQuery(query, values : nil )
+                    fetchStatus = true
+                    print("patient details fetched during search" ,fetchStatus)
+
+         
+                    while (results.next()) {
+                        print("while loop entered")
+                        
+                        let patientCsvDataExportModel = CsvExportDataModel(lastName: results.string(forColumn: lastNameColumn),
+                                                                           firstname: results.string(forColumn: firstnameColumn),
+                          
+                                                                           dob: results.string(forColumn: dobColumn)
+                            , mrn: results.string(forColumn: mrnColumn),
+                              eye: results.string(forColumn: eyeColumn)
+                              ,fellowInvolvement: results.string(forColumn: fellowInvolvementColumn), level: results.string(forColumn: levelColumn), surgerySetting: results.string(forColumn: surgerySettingColumn), hospitalName: results.string(forColumn: hospitalNameColumn), date: results.string(forColumn: dateColumn), aphakia: results.string(forColumn: aphakiaColumn), cataract: results.string(forColumn: cataractColumn), choroidalEffusion: results.string(forColumn: choroidalEffusionColumn), choroidalHemorrhage: results.string(forColumn: choroidalHemorrhageColumn), diabeticTrd: results.string(forColumn: diabeticTrdColumn), dislocatedIntraocularLens: results.string(forColumn: dislocatedIntraocularLensColumn), endophthalmitis: results.string(forColumn: endophthalmitisColumn), epiretinalMembrane: results.string(forColumn: epiretinalMembraneColumn),
+                              fevr: results.string(forColumn: fevrColumn),
+                              floaters: results.string(forColumn: floatersColumn),
+                              fullThicknessMacularHole: results.string(forColumn: fullThicknessMacularHoleColumn),
+                              intraocularForeignBody: results.string(forColumn: intraocularForeignBodyColumn),
+                              lamellarMacularHole: results.string(forColumn: lamellarMacularHoleColumn),
+                             latticeDegeneration: results.string(forColumn: latticeDegenerationColumn),
+                             pdr: results.string(forColumn: pdrColumn),
+                             primaryRdWithPvr: results.string(forColumn: primaryRdWithPvrColumn),
+                             recurrentRdWithPvr: results.string(forColumn: recurrentRdWithPvrColumn),
+                             recurrentRdWithOutPvr: results.string(forColumn: recurrentRdWithOutPvrColumn),
+                             retainedLensFragments: results.string(forColumn: retainedLensFragmentsColumn), retinalTear: results.string(forColumn: retinalTearColumn),
+                             retinalVeinOcclusion: results.string(forColumn: retinalVeinOcclusionColumn), rhegmatogenousRdMaculaOff: results.string(forColumn: rhegmatogenousRdMaculaOffColumn),
+                             rhegmatogenousRdMaculaOn: results.string(forColumn: rhegmatogenousRdMaculaOnColumn) , rop: results.string(forColumn: ropColumn)!, sickleCell: results.string(forColumn: sickleCellColumn), spRdRepairWithSiliconeOil: results.string(forColumn: spRdRepairWithSiliconeOilColumn), subluxedCrystallineLens: results.string(forColumn: subluxedCrystallineLensColumn), vitreousHemorrhage: results.string(forColumn: vitreousHemorrhageColumn), otherField: results.string(forColumn: otherFieldColumn),otherField2 : results.string(forColumn: otherField2Column) , otherField3 : results.string(forColumn: otherField3Column), otherField4 : results.string(forColumn: otherField4Column) , gauge: results.string(forColumn: gaugeColumn), band: results.string(forColumn: bandColumn), sleeve: results.string(forColumn: sleeveColumn), tamponad1: results.string(forColumn: tamponad1Column), srfDrain: results.string(forColumn: srfDrainColumn), acTap: results.string(forColumn: acTapColumn), radialElement: results.string(forColumn: radialElementColumn) , membranePeel: results.string(forColumn: membranePeelColumn), ilmPeel: results.string(forColumn: ilmPeelColumn), retinectomy: results.string(forColumn: retinectomyColumn), fluidAirExchange: results.string(forColumn: fluidAirExchangeColumn), pfo: results.string(forColumn: pfoColumn), focalEndolaser: results.string(forColumn: focalEndolaserColumn), prpLaser: results.string(forColumn: prpLaserColumn), indirectLaserTear: results.string(forColumn: indirectLaserTearColumn), iolExchange: results.string(forColumn: iolExchangeColumn), aciol: results.string(forColumn: aciolColumn), sulcusIol: results.string(forColumn: sulcusIolColumn), sutured: results.string(forColumn: suturedColumn), sutureless: results.string(forColumn: suturelessColumn), pplWithFrag: results.string(forColumn: pplWithFragColumn), pplWithoutFrag: results.string(forColumn: pplWithoutFragColumn), tamponade2: results.string(forColumn: tamponade2Column),percentageTamponade: results.string(forColumn: percentageTamponadeColumn)  ,
+                             otherFieldTamponade: results.string(forColumn: otherFieldTamponadeColumn) ,comments: results.string(forColumn: commentsColumn)  ,
+                             otherField2Surgery: results.string(forColumn: otherFieldSurgery2Column),
+                             virectomy: results.string(forColumn: virectomyColumn),
+                             scleralBuckle: results.string(forColumn: scleralBuckleColumn),
+                             iolInsertion: results.string(forColumn: iolInsertionColumn), siliconeOilRemoval: results.string(forColumn: siliconeOilRemovalColumn) , siliconeOilExchange: results.string(forColumn: siliconeOilExchangeColumn),corodialDrainage: results.string(forColumn: corodialDrainageColumn), iolReposition: results.string(forColumn: iolRepositionColumn),cptCodeDropdown: results.string(forColumn: cptCodeDropdownColumn), cptFreeTextBox: results.string(forColumn: cptFreeTextBoxColumn) , cryotherapy: results.string(forColumn: cryotherapyColumn),ilmCodeDropdown:  results.string(forColumn: ilmDropDownColumn) ,
+                             iolName : results.string(forColumn: iolNameColumn),
+                             iolPower: results.string(forColumn: iolPowerColumn ) , positioning: results.string(forColumn: positioningColumn ),
+                             
+                                  retinalDetachment: results.string(forColumn: retinalDetachmentColumn) , macularHoleClosed: results.string(forColumn: macularHoleClosedColumn) ,
+                                                                           pomVisualAcuity: results.string(forColumn: pomVisualAcuityColumn) , pom3VisualAcuity: results.string(forColumn: pom3VisualAcuityColumn),otherOutcomeData: results.string(forColumn: otherOutcomeDataColumn ) ,fellowInvolvementPercentage: results.string(forColumn: fellowInvolvementPercentageColumn),retinalDefect: results.string(forColumn: retinalDefectColumn)
+                                  
+                             
+                             
+                             )
+                        
+                     
+                       if patientCsvDataExportModelList  == nil {
+                                                                           patientCsvDataExportModelList = [CsvExportDataModel]()
+                                                                       }
+                                     
+                        patientCsvDataExportModelList.append(patientCsvDataExportModel)
+                        
+                              }
+                    
+                    print("details of patient list in dbManger", patientCsvDataExportModelList)
+                
+                }
+                catch {
+                    print(error.localizedDescription)
+                }
+                
+            }
+           return patientCsvDataExportModelList
+        }
+    
     // function get patient details for Export on the basis of type od Surgery
     func loadPatientDetailsForExportBySurgery(withID surgeryType1 : String , surgeryType2 : String , surgeryType3 : String ,  surgeryStatus : String , queryStatus : Int ) -> [CsvExportDataModel]! {
                var patientCsvDataExportModelList: [CsvExportDataModel]!

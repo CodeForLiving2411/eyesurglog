@@ -10,6 +10,7 @@ import UIKit
 import Foundation
 import KeyboardAvoidingView
 import IHKeyboardAvoiding
+import DateTextField
 
 @available(iOS 13.0, *)
 class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
@@ -37,12 +38,14 @@ class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
     @IBOutlet weak var fellowInvolmentPercentageSeg: UISegmentedControl!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var firstName: UITextField!
-    @IBOutlet weak var dobTextField: UITextField!
+   
+    @IBOutlet weak var dobTextField: DateTextField!
     @IBOutlet weak var mrnTextField: UITextField!
-    @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var dateTextField: DateTextField!
     @IBOutlet weak var eyeTypeSegmentedControll: UISegmentedControl!
   //  @IBOutlet weak var fellowLevelSelected: UITextField!
     @IBOutlet weak var fellowLevelSegControl: UISegmentedControl!
+    
     
     @IBOutlet weak var fellowInvolvementName: UITextField!
     
@@ -75,6 +78,7 @@ class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
     
     override func viewWillAppear(_ animated: Bool) {
         // For getting default hospital name and ASC Centr name
+        
         
          getUserHospitalName()
        // For fellow Eye Procedure 
@@ -113,6 +117,11 @@ class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light    
         nextButton.layer.cornerRadius = 5
+        
+        dobTextField.dateFormat = .monthDayYear
+        dobTextField.separator = "/"
+        dateTextField.dateFormat = .monthDayYear
+        dateTextField.separator = "/"
         
         if(fellowLevelSegControl.selectedSegmentIndex == 0){
             fellowInvolmentPercentageSeg.isEnabled = false
@@ -412,7 +421,10 @@ class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
         let demographics1Info =  Demographics1Model( firstName: firstName.text!, lastName: lastName.text!, dob: dobTextField?.text!, mrn: mrnValue , eye: eyeSeg!,fellowInvolvement: fellowInvolvementSeg, levelSelect: fellowNameString , fellowInvolvementPercentage: fellowInvolvementPercentageString,  surjurySetting: surgerySeg! ,hospitalName: hospitalAscNameTextField.text , date: dateTextField?.text! ,status: 0)
         // Saving values into the database
        // DatabaseManager.shared.createDemographics1Table()
-        let inserted = DatabaseManager.shared.insertDemographics1Data(demographics1Info)
+         
+       
+         
+             let inserted = DatabaseManager.shared.insertDemographics1Data(demographics1Info)
          print(inserted)
         
         // getting the id from the database
@@ -428,6 +440,7 @@ class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
             let vc = Demographics2_ViewController()
              vc.valueDemo = self.personID
             vc.mrnTemp = self.mrnValue ?? 0
+            vc.unloggedCaseId = self.tempPersonID ?? 0
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
         }

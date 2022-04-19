@@ -7,17 +7,18 @@
 //
 
 import UIKit
+import DateTextField
 
 
 @available(iOS 13.0, *)
 class CsvExportViewController: UIViewController {
     
    
-    @IBOutlet weak var startDateText: UITextField!
+    @IBOutlet weak var startDateText: DateTextField!
     
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var exportButton: UIButton!
-    @IBOutlet weak var endDateText: UITextField!
+    @IBOutlet weak var endDateText: DateTextField!
     var patientDataInCsvList : [CsvExportDataModel]?
      private var surgeryStartDatePicker: UIDatePicker?
      private var surgeryEndDatePicker: UIDatePicker?
@@ -29,7 +30,12 @@ class CsvExportViewController: UIViewController {
         getCurrentStartDate()
         exportButton.isHidden = true
         searchButton.layer.cornerRadius = 5
-        exportButton.layer.cornerRadius = 5 
+        exportButton.layer.cornerRadius = 5
+       
+        startDateText.dateFormat = .monthDayYear
+        startDateText.separator = "/"
+        endDateText.dateFormat = .monthDayYear
+        endDateText.separator = "/"
         
         // Date picker for surgery Start Date for startDateText TextField
               // -----------------------------------------------
@@ -158,6 +164,20 @@ class CsvExportViewController: UIViewController {
         
     }
     
+    @IBAction func WhenExportAllCasesButtonWasPressed(_ sender: UIButton) {
+        
+        patientDataInCsvList = DatabaseManager.shared.loadPatientDetailsForExportAllRecords()
+        print("patient details in csv list" , patientDataInCsvList)
+        if patientDataInCsvList == nil {
+            recordFoundLabel.text = "No Records Found !!!"
+            
+        }
+        else{
+            ExportDataToCsv()   // this function exports the data to CSV
+        }
+ 
+    }
+    
     
     @IBAction func WhenExportButtonWasPressed(_ sender: UIButton) {
        
@@ -222,7 +242,7 @@ class CsvExportViewController: UIViewController {
         
         for patientDataInCsv  in patientDataInCsvList! {
             
-            let newLine = "\(patientDataInCsv.lastName!), \(patientDataInCsv.firstname!),\(patientDataInCsv.dob!), \(patientDataInCsv.mrn!), \(patientDataInCsv.eye!), \(patientDataInCsv.fellowInvolvement!),\(patientDataInCsv.level!), \(patientDataInCsv.surgerySetting!), \(patientDataInCsv.hospitalName!), \(patientDataInCsv.date!), \(patientDataInCsv.aphakia!), \(patientDataInCsv.cataract!) , \(patientDataInCsv.choroidalEffusion!), \(patientDataInCsv.choroidalHemorrhage!), \(patientDataInCsv.diabeticTrd!), \(patientDataInCsv.dislocatedIntraocularLens!), \(patientDataInCsv.endophthalmitis!), \(patientDataInCsv.epiretinalMembrane!), \(patientDataInCsv.fevr!), \(patientDataInCsv.floaters!), \(patientDataInCsv.fullThicknessMacularHole!), \(patientDataInCsv.intraocularForeignBody!), \(patientDataInCsv.lamellarMacularHole!), \(patientDataInCsv.latticeDegeneration!), \(patientDataInCsv.pdr!), \(patientDataInCsv.primaryRdWithPvr!), \(patientDataInCsv.recurrentRdWithPvr!), \(patientDataInCsv.recurrentRdWithOutPvr!) , \(patientDataInCsv.retainedLensFragments!), \(patientDataInCsv.retinalTear!), \(patientDataInCsv.retinalVeinOcclusion!), \(patientDataInCsv.rhegmatogenousRdMaculaOff!) , \(patientDataInCsv.rhegmatogenousRdMaculaOn!), \(patientDataInCsv.rop!) , \(patientDataInCsv.sickleCell!) , \(patientDataInCsv.spRdRepairWithSiliconeOil!) , \(patientDataInCsv.subluxedCrystallineLens!), \(patientDataInCsv.vitreousHemorrhage!),\(patientDataInCsv.otherField!) ,\(patientDataInCsv.otherField2!), \(patientDataInCsv.otherField3!) , \(patientDataInCsv.otherField4!), \("\(patientDataInCsv.gauge!)"), \(patientDataInCsv.band!), \(patientDataInCsv.sleeve!),  \(patientDataInCsv.srfDrain!), \(patientDataInCsv.acTap!),\(patientDataInCsv.radialElement!) , \(patientDataInCsv.membranePeel!) , \(patientDataInCsv.ilmPeel!), \(patientDataInCsv.retinectomy!), \(patientDataInCsv.fluidAirExchange!), \(patientDataInCsv.pfo!), \(patientDataInCsv.focalEndolaser!), \(patientDataInCsv.prpLaser!), \(patientDataInCsv.indirectLaserTear!), \(patientDataInCsv.iolExchange!), \(patientDataInCsv.aciol!), \(patientDataInCsv.sulcusIol),\(patientDataInCsv.sutured!), \(patientDataInCsv.sutureless!), \(patientDataInCsv.pplWithFrag!), \(patientDataInCsv.pplWithoutFrag!), \(patientDataInCsv.tamponade2!), \(patientDataInCsv.percentageTamponade!) ,\(patientDataInCsv.otherFieldTamponade!) , \(patientDataInCsv.otherField2Surgery!) ,\(patientDataInCsv.virectomy!) ,\(patientDataInCsv.scleralBuckle!) , \(patientDataInCsv.iolInsertion!) , \(patientDataInCsv.siliconeOilRemoval!), \(patientDataInCsv.siliconeOilExchange!),\(patientDataInCsv.corodialDrainage!) , \(patientDataInCsv.iolName!) , \(patientDataInCsv.iolPower!) , \(patientDataInCsv.positioning!) , \(patientDataInCsv.comments!),\(patientDataInCsv.retinalDetachment!) ,\(patientDataInCsv.macularHoleClosed!) , \(patientDataInCsv.pomVisualAcuity!) , \(patientDataInCsv.pom3VisualAcuity!) , \(patientDataInCsv.otherOutcomeData!) , \(patientDataInCsv.cptCodeDropdown!) , \(patientDataInCsv.iolReposition!) , \(patientDataInCsv.cptFreeTextBox!) , \(patientDataInCsv.cryotherapy!), \(patientDataInCsv.ilmCodeDropdown!) , \(patientDataInCsv.fellowInvolvementPercentage!),\(patientDataInCsv.retinalDefect!)  \n"
+            let newLine = "\(patientDataInCsv.lastName!), \(patientDataInCsv.firstname!),\(patientDataInCsv.dob!), \(patientDataInCsv.mrn!), \(patientDataInCsv.eye!), \(patientDataInCsv.fellowInvolvement!),\(patientDataInCsv.level!), \(patientDataInCsv.surgerySetting!), \(patientDataInCsv.hospitalName!), \(patientDataInCsv.date!), \(patientDataInCsv.aphakia!), \(patientDataInCsv.cataract!) , \(patientDataInCsv.choroidalEffusion!), \(patientDataInCsv.choroidalHemorrhage!), \(patientDataInCsv.diabeticTrd!), \(patientDataInCsv.dislocatedIntraocularLens!), \(patientDataInCsv.endophthalmitis!), \(patientDataInCsv.epiretinalMembrane!), \(patientDataInCsv.fevr!), \(patientDataInCsv.floaters!), \(patientDataInCsv.fullThicknessMacularHole!), \(patientDataInCsv.intraocularForeignBody!), \(patientDataInCsv.lamellarMacularHole!), \(patientDataInCsv.latticeDegeneration!), \(patientDataInCsv.pdr!), \(patientDataInCsv.primaryRdWithPvr!), \(patientDataInCsv.recurrentRdWithPvr!), \(patientDataInCsv.recurrentRdWithOutPvr!) , \(patientDataInCsv.retainedLensFragments!), \(patientDataInCsv.retinalTear!), \(patientDataInCsv.retinalVeinOcclusion!), \(patientDataInCsv.rhegmatogenousRdMaculaOff!) , \(patientDataInCsv.rhegmatogenousRdMaculaOn!), \(patientDataInCsv.rop!) , \(patientDataInCsv.sickleCell!) , \(patientDataInCsv.spRdRepairWithSiliconeOil!) , \(patientDataInCsv.subluxedCrystallineLens!), \(patientDataInCsv.vitreousHemorrhage!),\(patientDataInCsv.otherField!) ,\(patientDataInCsv.otherField2!), \(patientDataInCsv.otherField3!) , \(patientDataInCsv.otherField4!), \("\(patientDataInCsv.gauge!)"), \(patientDataInCsv.band!), \(patientDataInCsv.sleeve!),  \(patientDataInCsv.srfDrain!), \(patientDataInCsv.acTap!),\(patientDataInCsv.radialElement!) , \(patientDataInCsv.membranePeel!) , \(patientDataInCsv.ilmPeel!), \(patientDataInCsv.retinectomy!), \(patientDataInCsv.fluidAirExchange!), \(patientDataInCsv.pfo!), \(patientDataInCsv.focalEndolaser!), \(patientDataInCsv.prpLaser!), \(patientDataInCsv.indirectLaserTear!), \(patientDataInCsv.iolExchange!), \(patientDataInCsv.aciol!), \(patientDataInCsv.sulcusIol!),\(patientDataInCsv.sutured!), \(patientDataInCsv.sutureless!), \(patientDataInCsv.pplWithFrag!), \(patientDataInCsv.pplWithoutFrag!), \(patientDataInCsv.tamponade2!), \(patientDataInCsv.percentageTamponade!) ,\(patientDataInCsv.otherFieldTamponade!) , \(patientDataInCsv.otherField2Surgery!) ,\(patientDataInCsv.virectomy!) ,\(patientDataInCsv.scleralBuckle!) , \(patientDataInCsv.iolInsertion!) , \(patientDataInCsv.siliconeOilRemoval!), \(patientDataInCsv.siliconeOilExchange!),\(patientDataInCsv.corodialDrainage!) , \(patientDataInCsv.iolName!) , \(patientDataInCsv.iolPower!) , \(patientDataInCsv.positioning!) , \(patientDataInCsv.comments!),\(patientDataInCsv.retinalDetachment!) ,\(patientDataInCsv.macularHoleClosed!) , \(patientDataInCsv.pomVisualAcuity!) , \(patientDataInCsv.pom3VisualAcuity!) , \(patientDataInCsv.otherOutcomeData!) , \(patientDataInCsv.cptCodeDropdown!) , \(patientDataInCsv.iolReposition!) , \(patientDataInCsv.cptFreeTextBox!) , \(patientDataInCsv.cryotherapy!), \(patientDataInCsv.ilmCodeDropdown!) , \(patientDataInCsv.fellowInvolvementPercentage!),\(patientDataInCsv.retinalDefect!)  \n"
           
             csvText.append(newLine)
         }

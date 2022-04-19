@@ -30,6 +30,7 @@ class Demographics2_ViewController: UIViewController, UITextFieldDelegate{
     var valueDemo = 0
     var textFieldCount = 0
     var mrnTemp = 0
+    var unloggedCaseId = 0;
     
     // Accesiblity Identifier
     let aphakiaAccessIdentifier = "aphakia"
@@ -1161,7 +1162,7 @@ class Demographics2_ViewController: UIViewController, UITextFieldDelegate{
                     vc.modalPresentationStyle = .fullScreen
             vc.valuesurg = self.valueDemo
             vc.mrnTemp = self.mrnTemp
-                   
+            vc.unloggedCaseId = self.unloggedCaseId
             self.present(vc, animated: true, completion: nil)
         
        

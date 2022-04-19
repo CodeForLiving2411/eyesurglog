@@ -16,6 +16,7 @@ class Surgery_ViewController: UIViewController , UITextFieldDelegate {
     // MARK:- Properties
      var valuesurg = 0
      var mrnTemp = 0
+    var unloggedCaseId = 0;
      lazy var contentViewSize = CGSize(width: self.view.frame.width, height: self.view.frame.height + 1520)
      
    
@@ -1512,6 +1513,7 @@ class Surgery_ViewController: UIViewController , UITextFieldDelegate {
                vc.modalPresentationStyle = .fullScreen
                vc.imageid = self.valuesurg
                vc.mrnTemp = self.mrnTemp
+               vc.unloggedCaseId = self.unloggedCaseId
                                
             self.present(vc, animated: true, completion: nil)
                      
@@ -1696,6 +1698,7 @@ class Surgery_ViewController: UIViewController , UITextFieldDelegate {
             vc.modalPresentationStyle = .fullScreen
             vc.gaugeCodeDelegate = self
             vc.codeType = 3
+         
             self.present(vc, animated: true, completion: nil)
         }
     }

@@ -16,6 +16,7 @@ target 'EyeHospitalApplication' do
    pod "KeyboardAvoidingView", '~> 5.0'
    
    pod 'IQKeyboardManagerSwift'
+   pod 'DateTextField'
 
 
   target 'EyeHospitalApplicationTests' do
