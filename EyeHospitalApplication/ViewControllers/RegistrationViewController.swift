@@ -21,9 +21,9 @@ class RegistrationViewController: UIViewController , UITextFieldDelegate {
     var validation = Validation()
     var alertControllerForSubmitButton  = UIAlertController()
     var selectedQuestion = ""
-    var questionsList = ["What primary school did you attend?" , "In what town or city was your first full time job?" ,"In what town or city did you meet your spouse/partner?",
+    var questionsList = ["What high school did you attend?" , "In what town or city was your first full time job?" ,"In what town did you meet your spouse/partner?",
         "What is the middle name of your oldest child?",
-        "What is your spouse or partner's mother's maiden name?" , "What is your Nickname"]
+        "What is your mother's maiden name?" , "What is your Nickname?"]
     
     
     

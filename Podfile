@@ -18,6 +18,8 @@ target 'EyeHospitalApplication' do
    pod 'IQKeyboardManagerSwift'
    pod 'DateTextField'
 
+   pod 'Firebase/Core'
+   pod 'Firebase/Messaging'
 
   target 'EyeHospitalApplicationTests' do
     inherit! :search_paths

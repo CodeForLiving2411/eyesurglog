@@ -55,6 +55,7 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
        var iolRepositionAccesiblityIdentifier = "iolReposition"
        var cryotherapyAccesiblityIdentifier = "cryotherapy"
     var ilmCodeAccesiblityIdentifier = "ilmCode"
+    var pplAccesiblityIdentifier = "ppl"
         
         
        // CPT Codes
@@ -289,15 +290,15 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
              return label
        }()
        
-       var pplLabel: UILabel = { // label
-                let label = UILabel()
-                label.text = "PPL"
-                label.textColor = .black
-                label.font = UIFont.systemFont(ofSize: 16.0)
-                
-                return label
-          }()
-       
+//       var pplLabel: UILabel = { // label
+//                let label = UILabel()
+//                label.text = "PPL"
+//                label.textColor = .black
+//                label.font = UIFont.systemFont(ofSize: 16.0)
+//                
+//                return label
+//          }()
+//       
        var iolName: UILabel = { // label
                 let label = UILabel()
                 label.text = "IOL Name"
@@ -962,6 +963,23 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
                         
                     }()
     
+    // PPL
+    lazy var pplSegmentedControl: UISegmentedControl  = {
+     
+     let sc = UISegmentedControl(items: ["No" , "Yes"])
+     sc.selectedSegmentIndex = 0
+     sc.accessibilityIdentifier = pplAccesiblityIdentifier
+     return sc
+    
+     }()
+    
+    lazy var pplSegmentedView : UIView = {
+                        
+         let view = inputSurgeryContainerView(labelName: "PPL", segmentedControl:  pplSegmentedControl, items:   ["No","Yes"])
+         view.heightAnchor.constraint(equalToConstant: 40).isActive = true
+                        return view
+    }()
+    
     var commentLabel: UILabel = { // label
                 let label = UILabel()
                 label.text = "Comment"
@@ -1348,6 +1366,21 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
                              default : print("Not in the option")
                       }
         
+        
+        // PPL
+        switch getSurgeryList[41] {
+                      
+                      case "Yes" : pplSegmentedControl.selectedSegmentIndex = 1
+                                   withFragSegmentedControl.isEnabled = true
+                                 break
+                      case "No" : pplSegmentedControl.selectedSegmentIndex = 0
+                                  withFragSegmentedControl.isEnabled = false
+                                 break
+                             
+                                 
+                             default : print("Not in the option")
+                      }
+        
        
 //            print("uniqueidWhileEditingDaignosis" , valuesurg)
 //               print("first elent removes during edit at EditDemographics2ViewController ")
@@ -1489,10 +1522,22 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
           
          let radialElementSeg = radialElementSegmentedControl.titleForSegment(at: radialElementSegmentedControl.selectedSegmentIndex)
         
+        // For PPL
+        let pplString : String?
+        
+        
+        if pplSegmentedControl.isEnabled == true {
+            pplString = pplSegmentedControl.titleForSegment(at: pplSegmentedControl.selectedSegmentIndex)
+               } else {
+                   pplString = ""
+               }
+        
+        
+        
          
          
          // To insert data in SurgeryModel
-        let surgeryModelInfo = SurgeryModel(personIdfromDemo1:valuesurg, gauge: gaugeText, band: bandText, sleeve: sleeveText, tamponad1: tamponadeSeg1, srfDrain: srfDrainSeg, acTap: acTapSeg, radialElement: radialElementSeg!  , membranePeel: membranePeelSeg, ilmPeel: ilmPeelSeg, retinectomy: retinectomySeg , fluidAirExchange: fluidAirExchangeSeg, pfo: pfoSeg, focalEndolaser: focalEndolasorSeg, prpLaser: prpLaserSeg, indirectLaserTear: indirectLaserTearSeg, iolExchange: iolExchangeSeg, aciol: aciolSeg, sulcusIol: sulcusIOLSeg, sutured: suturedSeg, sutureless: suturelessSeg, pplWithFrag: withFragSeg, pplWithoutFrag: withoutFragSeg ,  tamponade1: tamponadeSeg2, percentageTamponade: percentageTampnadeString, otherFieldTamponade:otherField1String , otherField2: otherField2String, comments: commentText,virectomy: virectomySeg, scleralBuckle: scleralBuckleSeg , iolInsertion: iolInsertionSeg,iolName: iolNameString, iolPower: IolPowerString, positioning: positioningString, siliconeOilRemoval: siliconeOilRemovalString , siliconeOilExchange: siliconeOilExchangeString ,corodialDrainage: corodialDrainageString, iolReposition : iolRepositionString, cptCodeDropdown: cptCodeDropdownString, cptFreeTextBox: cptFreeTextBoxString, cryotherapy: cryotherapyString, ilmDropDown: ilmDropDownString, status: 1)
+        let surgeryModelInfo = SurgeryModel(personIdfromDemo1:valuesurg, gauge: gaugeText, band: bandText, sleeve: sleeveText, tamponad1: tamponadeSeg1, srfDrain: srfDrainSeg, acTap: acTapSeg, radialElement: radialElementSeg!  , membranePeel: membranePeelSeg, ilmPeel: ilmPeelSeg, retinectomy: retinectomySeg , fluidAirExchange: fluidAirExchangeSeg, pfo: pfoSeg, focalEndolaser: focalEndolasorSeg, prpLaser: prpLaserSeg, indirectLaserTear: indirectLaserTearSeg, iolExchange: iolExchangeSeg, aciol: aciolSeg, sulcusIol: sulcusIOLSeg, sutured: suturedSeg, sutureless: suturelessSeg,ppl: pplString, pplWithFrag: withFragSeg, pplWithoutFrag: withoutFragSeg ,  tamponade1: tamponadeSeg2, percentageTamponade: percentageTampnadeString, otherFieldTamponade:otherField1String , otherField2: otherField2String, comments: commentText,virectomy: virectomySeg, scleralBuckle: scleralBuckleSeg , iolInsertion: iolInsertionSeg,iolName: iolNameString, iolPower: IolPowerString, positioning: positioningString, siliconeOilRemoval: siliconeOilRemovalString , siliconeOilExchange: siliconeOilExchangeString ,corodialDrainage: corodialDrainageString, iolReposition : iolRepositionString, cptCodeDropdown: cptCodeDropdownString, cptFreeTextBox: cptFreeTextBoxString, cryotherapy: cryotherapyString, ilmDropDown: ilmDropDownString, status: 1)
          
          // To create table in database
         
@@ -1652,6 +1697,11 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
                ilmCodeSegmentedControl.titleForSegment(at: index)
                print("name -->" , sender.accessibilityIdentifier , "index -->"  , index)
                break
+           case pplAccesiblityIdentifier :
+               pplSegmentedControl.titleForSegment(at: index)
+               handlePplSegmentedControl()
+               print("name -->" , sender.accessibilityIdentifier , "index -->"  , index)
+               break
             
            default:  print("Not an Option")
                
@@ -1662,6 +1712,24 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
        @objc func doneClicked(){
            view.endEditing(true)
     
+    }
+    
+    // objc function for when ppl clicked
+    @objc func handlePplSegmentedControl(){
+        print("ppl pressed")
+        
+        if  pplSegmentedControl.titleForSegment(at: pplSegmentedControl.selectedSegmentIndex) == "Yes" {
+            withFragSegmentedControl.isEnabled = true
+           
+                   
+                   
+               }
+               else {
+                   withFragSegmentedControl.isEnabled = false
+             
+               }
+        
+        
     }
 
     @objc func handleaddTemponadeField() {
@@ -1813,17 +1881,17 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
         iolPowersTextField.anchor(top: iolPowers.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor , paddingTop: 10, paddingLeft: 20, paddingRight: 20, height: 34)
         
        
-        containerView.addSubview(pplLabel)
-        pplLabel.anchor(top: iolPowersTextField.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 20,  paddingRight: 20, height: 31)
+        containerView.addSubview(pplSegmentedView)
+        pplSegmentedView.anchor(top: iolPowersTextField.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 20,  paddingRight: 20, height: 31)
         
         containerView.addSubview(withFragSegmentedView)
-        withFragSegmentedView.anchor(top: pplLabel.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 30,  paddingRight: 20, height: 31)
+        withFragSegmentedView.anchor(top: pplSegmentedView.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 30,  paddingRight: 20, height: 31)
         
-        containerView.addSubview(withOutFragSegmentedView)
-               withOutFragSegmentedView.anchor(top: withFragSegmentedView.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 30,  paddingRight: 20, height: 31)
+//        containerView.addSubview(withOutFragSegmentedView)
+//               withOutFragSegmentedView.anchor(top: withFragSegmentedView.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 30,  paddingRight: 20, height: 31)
         
         containerView.addSubview(tamponadeLabel)
-        tamponadeLabel.anchor(top: withOutFragSegmentedView.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 20,  paddingRight: 10, height: 31)
+        tamponadeLabel.anchor(top: withFragSegmentedView.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 20,  paddingRight: 10, height: 31)
         
         containerView.addSubview(tamponadeSegmentControl)
         tamponadeSegmentControl.anchor(top: tamponadeLabel.bottomAnchor, left: containerView.leftAnchor, right: containerView.rightAnchor, paddingTop: 10, paddingLeft: 20,  paddingRight: 10, height: 31)

@@ -26,7 +26,7 @@ class ExportByDiagnosisViewController: UIViewController {
     @IBOutlet weak var seachButton: UIButton!
     @IBOutlet weak var exportButton: UIButton!
       // let uiPicvkerView = UIPickerView()
-      var dataList = ["Select Diagnosis","Aphakia","Cataract", "Choroidal Effusion","Choroidal Hemorrhage","Diabetic TRD", "Dislocated Intraocular Lens","Endophthalmitis","Epiretinal Membrane","FEVR","Vitreous Opacities","Full Thickness Macular Hole", "Intraocular Foreign Body","Lamellar Macular Hole","Lattice Degeneration", "PDR,Primary RD with PVR","RecurrentRD with PVr","Recurrent RD without PVR","Retained Lens Fragments","Retinal Tear","Retinal Vein Occlusion", "Rhegmatogenous RD (Macula Off)","Rhegmatogenous RD (Macula On)","ROP", "Sickle Cell","s/p RD Repair with Silicone Oil","Subluxed Crystalline Lens","Vitreous Hemorrhage", "Retinal Defect NOS", ]
+      var dataList = ["Select Diagnosis","Aphakia","Cataract", "Choroidal Effusion","Choroidal Hemorrhage","Diabetic TRD", "Dislocated Intraocular Lens","Endophthalmitis","Epiretinal Membrane","FEVR","Full Thickness Macular Hole", "Intraocular Foreign Body","Lamellar Macular Hole","Lattice Degeneration", "PDR","Primary RD with PVR","Recurrent RD with PVR","Recurrent RD without PVR","Retained Lens Fragments","Retinal Tear","Retinal Vein Occlusion", "Rhegmatogenous RD (Macula Off)","Rhegmatogenous RD (Macula On)","ROP", "Retinal Defect NOS","Sickle Cell","s/p RD Repair with Silicone Oil","Subluxed Crystalline Lens","Vitreous Hemorrhage" , "Vitreous Opacities" ]
       var selectedItem = ""
       var queryStatus = 0
       
@@ -174,7 +174,7 @@ class ExportByDiagnosisViewController: UIViewController {
             break
         case "FEVR" : value = "fevr"
             break
-        case "Floaters" : value = "floaters"
+        case "Vitreous Opacities" : value = "floaters"   // Vitreous Opacities new name for this 
             break
         case "Full Thickness Macular Hole" : value = "fullThicknessMacularHole"
             break
@@ -188,7 +188,7 @@ class ExportByDiagnosisViewController: UIViewController {
             break
         case "Primary RD with PVR"  : value = "primaryRdWithPvr"
             break
-        case "RecurrentRD with PVR" : value = "recurrentRdWithPvr"
+        case "Recurrent RD with PVR" : value = "recurrentRdWithPvr"
             break
         case "Recurrent RD without PVR" : value = "recurrentRdWithOutPvr"
             break
@@ -200,7 +200,7 @@ class ExportByDiagnosisViewController: UIViewController {
             break
         case "Rhegmatogenous RD (Macula Off)" : value = "rhegmatogenousRdMaculaOff"
             break
-        case "Rhegmatogenous RD (Macula On" : value = "rhegmatogenousRdMaculaOn"
+        case "Rhegmatogenous RD (Macula On)" : value = "rhegmatogenousRdMaculaOn"
             break
         case "ROP" : value = "rop"
             break
@@ -212,8 +212,10 @@ class ExportByDiagnosisViewController: UIViewController {
             break
         case "Vitreous Hemorrhage" : value = "vitreousHemorrhage"
             break
-        case "Retinal Defect,NOS" : value = "retinalDefect"
+        case "Retinal Defect NOS" : value = "retinalDefect"
             break
+       
+       
             
             
             
@@ -244,7 +246,7 @@ class ExportByDiagnosisViewController: UIViewController {
                    break
                case "FEVR" : value2 = "fevr"
                    break
-               case "Floaters" : value2 = "floaters"
+               case "Vitreous Opacities" : value2 = "floaters" // Vitreous Opacities new name for this
                    break
                case "Full Thickness Macular Hole" : value2 = "fullThicknessMacularHole"
                    break
@@ -270,7 +272,7 @@ class ExportByDiagnosisViewController: UIViewController {
                    break
                case "Rhegmatogenous RD (Macula Off)" : value2 = "rhegmatogenousRdMaculaOff"
                    break
-               case "Rhegmatogenous RD (Macula On" : value2 = "rhegmatogenousRdMaculaOn"
+               case "Rhegmatogenous RD (Macula On)" : value2 = "rhegmatogenousRdMaculaOn"
                    break
                case "ROP" : value2 = "rop"
                    break
@@ -282,8 +284,10 @@ class ExportByDiagnosisViewController: UIViewController {
                    break
                case "Vitreous Hemorrhage" : value2 = "vitreousHemorrhage"
                    break
-               case "Retinal Defect,NOS" : value2 = "retinalDefect"
+               case "Retinal Defect NOS" : value2 = "retinalDefect"
                    break
+              
+               
                    
                    
                    
@@ -314,7 +318,7 @@ class ExportByDiagnosisViewController: UIViewController {
                           break
                       case "FEVR" : value3 = "fevr"
                           break
-                      case "Floaters" : value3 = "floaters"
+                      case "Vitreous Opacities" : value3 = "floaters"     // Vitreous Opacities new name for this
                           break
                       case "Full Thickness Macular Hole" : value3 = "fullThicknessMacularHole"
                           break
@@ -340,7 +344,7 @@ class ExportByDiagnosisViewController: UIViewController {
                           break
                       case "Rhegmatogenous RD (Macula Off)" : value3 = "rhegmatogenousRdMaculaOff"
                           break
-                      case "Rhegmatogenous RD (Macula On" : value3 = "rhegmatogenousRdMaculaOn"
+                      case "Rhegmatogenous RD (Macula On)" : value3 = "rhegmatogenousRdMaculaOn"
                           break
                       case "ROP" : value3 = "rop"
                           break
@@ -352,8 +356,10 @@ class ExportByDiagnosisViewController: UIViewController {
                           break
                       case "Vitreous Hemorrhage" : value3 = "vitreousHemorrhage"
                           break
-                      case "Retinal Defect,NOS" : value3 = "retinalDefect"
+                      case "Retinal Defect NOS" : value3 = "retinalDefect"
                           break
+                     
+                     
                           
                           
                           
@@ -427,7 +433,7 @@ class ExportByDiagnosisViewController: UIViewController {
           let fileName = "PatientDetailsByDiagnosisType.csv"
           let path = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileName)
          
-          var csvText = "Last Name,First Name,Date Of Birth,MRN(Medical Record Number),Eye Type,Fellow Involvement,Fellow Name, Surgery Setting,Hospital/ASC Name,Surgery Date,Aphakia,Cataract , Choroidal Effusion,Choroidal Hemorrhage,Diabetic TRD, Dislocated Intraocular Lens,Endophthalmitis,Epiretinal Membrane,FEVR,Vitreous Opacities,Full Thickness Macular Hole, Intraocular Foreign Body,Lamellar Macular Hole,Lattice Degeneration, PDR,Primary RD with PVR,RecurrentRD with PVr,Recurrent RD without PVR,Retained Lens Fragments,Retinal Tear,Retinal Vein Occlusion, Rhegmatogenous RD (Macula Off),Rhegmatogenous RD (Macula On),ROP, Sickle Cell,s/p RD Repair with Silicone Oil,Subluxed Crystalline Lens,Vitreous Hemorrhage,Other Field 1, Other Field 2, Other Field 3,Other Field 4,Gauge,band,sleeve,SRF Drain,AC Tap,Membrane Peel,ILM Peel,Retinectomy, Fluid Air Exchange,PFO,Focal Endolaser, PRP Laser, Indirect Laser Tear,IOL Exchange,ACIOL,Sulcus IOL,Sutured,Sutureless, PPL with Frag,PPL without Frag,Tamponade 1,Percentage Tamponade,OtherField Tamponade, Other Field 2 Surgery , Virectomy , Scleral Buckle , IOL Insertion ,Silicone Oil Removal , Silicone Oil Exchange, Choroidal Drainage , IOL Name , IOL Power , Positioning , Comments,Redetached before POM3?, Macular Hole Closed? ,POM1 Visual Acuity,POM 3 Visual Acuity,Other Outcomes Data ,CPT Code , IOL Reposition  ,CPT Field ,Cryotherapy , ILM Peel Code , Fellow Involvement Percentage , Retinal Defect NOS \n"
+          var csvText = "Last Name,First Name,Date Of Birth,MRN(Medical Record Number),Eye Type,Fellow Involvement,Fellow Name, Surgery Setting,Hospital/ASC Name,Surgery Date,Aphakia,Cataract , Choroidal Effusion,Choroidal Hemorrhage,Diabetic TRD, Dislocated Intraocular Lens,Endophthalmitis,Epiretinal Membrane,FEVR,Vitreous Opacities,Full Thickness Macular Hole, Intraocular Foreign Body,Lamellar Macular Hole,Lattice Degeneration, PDR,Primary RD with PVR,RecurrentRD with PVr,Recurrent RD without PVR,Retained Lens Fragments,Retinal Tear,Retinal Vein Occlusion, Rhegmatogenous RD (Macula Off),Rhegmatogenous RD (Macula On),ROP, Sickle Cell,s/p RD Repair with Silicone Oil,Subluxed Crystalline Lens,Vitreous Hemorrhage,Other Field 1, Other Field 2, Other Field 3,Other Field 4,Gauge,band,sleeve, SRF Drain,AC Tap, Radial Element,Membrane Peel,ILM Peel,Retinectomy, Fluid Air Exchange,PFO,Focal Endolaser, PRP Laser, Indirect Laser Tear,IOL Exchange,ACIOL,Sulcus IOL,Sutured,Sutureless, PPL, PPL with Frag, Tamponade 1, Percentage Tamponade,OtherField Tamponade,  Other Field 2 Surgery , Virectomy , Scleral Buckle , IOL Insertion ,Silicone Oil Removal , Silicone Oil Exchange , Choroidal Drainage  , IOL Name , IOL Power , Positioning ,Comments ,Redetached before POM3?, Macular Hole Closed? ,POM1 Visual Acuity,POM 3 Visual Acuity ,Other Outcomes Data ,CPT Code,IOL Reposition ,CPT Field ,Cryotherapy , ILM Peel Code , Fellow Involvement Percentage , Retinal Defect NOS \n"
           
         
           let count = (patientDataInCsvList?.count)!
@@ -436,7 +442,7 @@ class ExportByDiagnosisViewController: UIViewController {
           
           for patientDataInCsv  in patientDataInCsvList! {
               
-              let newLine = "\(patientDataInCsv.lastName!), \(patientDataInCsv.firstname!),\(patientDataInCsv.dob!), \(patientDataInCsv.mrn!), \(patientDataInCsv.eye!), \(patientDataInCsv.fellowInvolvement!),\(patientDataInCsv.level!), \(patientDataInCsv.surgerySetting!), \(patientDataInCsv.hospitalName!), \(patientDataInCsv.date!), \(patientDataInCsv.aphakia!), \(patientDataInCsv.cataract!) , \(patientDataInCsv.choroidalEffusion!), \(patientDataInCsv.choroidalHemorrhage!), \(patientDataInCsv.diabeticTrd!), \(patientDataInCsv.dislocatedIntraocularLens!), \(patientDataInCsv.endophthalmitis!), \(patientDataInCsv.epiretinalMembrane!), \(patientDataInCsv.fevr!), \(patientDataInCsv.floaters!), \(patientDataInCsv.fullThicknessMacularHole!), \(patientDataInCsv.intraocularForeignBody!), \(patientDataInCsv.lamellarMacularHole!), \(patientDataInCsv.latticeDegeneration!), \(patientDataInCsv.pdr!), \(patientDataInCsv.primaryRdWithPvr!), \(patientDataInCsv.recurrentRdWithPvr!), \(patientDataInCsv.recurrentRdWithOutPvr!) , \(patientDataInCsv.retainedLensFragments!), \(patientDataInCsv.retinalTear!), \(patientDataInCsv.retinalVeinOcclusion!), \(patientDataInCsv.rhegmatogenousRdMaculaOff!) , \(patientDataInCsv.rhegmatogenousRdMaculaOn!), \(patientDataInCsv.rop!) , \(patientDataInCsv.sickleCell!) , \(patientDataInCsv.spRdRepairWithSiliconeOil!) , \(patientDataInCsv.subluxedCrystallineLens!), \(patientDataInCsv.vitreousHemorrhage!),\(patientDataInCsv.otherField!) ,\(patientDataInCsv.otherField2!), \(patientDataInCsv.otherField3!) , \(patientDataInCsv.otherField4!), \(patientDataInCsv.gauge!), \(patientDataInCsv.band!), \(patientDataInCsv.sleeve!), \(patientDataInCsv.srfDrain!), \(patientDataInCsv.acTap!), \(patientDataInCsv.radialElement!), \(patientDataInCsv.membranePeel!) , \(patientDataInCsv.ilmPeel!), \(patientDataInCsv.retinectomy!), \(patientDataInCsv.fluidAirExchange!), \(patientDataInCsv.pfo!), \(patientDataInCsv.focalEndolaser!), \(patientDataInCsv.prpLaser!), \(patientDataInCsv.indirectLaserTear!), \(patientDataInCsv.iolExchange!), \(patientDataInCsv.aciol!), \(patientDataInCsv.sulcusIol!),\(patientDataInCsv.sutured!), \(patientDataInCsv.sutureless!), \(patientDataInCsv.pplWithFrag!), \(patientDataInCsv.pplWithoutFrag!), \(patientDataInCsv.tamponade2!), \(patientDataInCsv.percentageTamponade!) ,\(patientDataInCsv.otherFieldTamponade!) , \(patientDataInCsv.otherField2Surgery!) ,\(patientDataInCsv.virectomy!) ,\(patientDataInCsv.scleralBuckle!) , \(patientDataInCsv.iolInsertion!) , \(patientDataInCsv.siliconeOilRemoval!), \(patientDataInCsv.siliconeOilExchange!), \(patientDataInCsv.corodialDrainage!) , \(patientDataInCsv.iolName!) , \(patientDataInCsv.iolPower!) , \(patientDataInCsv.positioning!) , \(patientDataInCsv.comments!),\(patientDataInCsv.retinalDetachment!) ,\(patientDataInCsv.macularHoleClosed!) , \(patientDataInCsv.pomVisualAcuity!) , \(patientDataInCsv.pom3VisualAcuity!) , \(patientDataInCsv.otherOutcomeData!) , \(patientDataInCsv.cptCodeDropdown!) , \(patientDataInCsv.iolReposition!) , \(patientDataInCsv.cptFreeTextBox!) , \(patientDataInCsv.cryotherapy!) , \(patientDataInCsv.ilmCodeDropdown!) ,\(patientDataInCsv.fellowInvolvementPercentage!) , \(patientDataInCsv.retinalDefect!) \n"
+              let newLine = "\(patientDataInCsv.lastName!), \(patientDataInCsv.firstname!),\(patientDataInCsv.dob!), \(patientDataInCsv.mrn!), \(patientDataInCsv.eye!), \(patientDataInCsv.fellowInvolvement!),\(patientDataInCsv.level!), \(patientDataInCsv.surgerySetting!), \(patientDataInCsv.hospitalName!), \(patientDataInCsv.date!), \(patientDataInCsv.aphakia!), \(patientDataInCsv.cataract!) , \(patientDataInCsv.choroidalEffusion!), \(patientDataInCsv.choroidalHemorrhage!), \(patientDataInCsv.diabeticTrd!), \(patientDataInCsv.dislocatedIntraocularLens!), \(patientDataInCsv.endophthalmitis!), \(patientDataInCsv.epiretinalMembrane!), \(patientDataInCsv.fevr!), \(patientDataInCsv.floaters!), \(patientDataInCsv.fullThicknessMacularHole!), \(patientDataInCsv.intraocularForeignBody!), \(patientDataInCsv.lamellarMacularHole!), \(patientDataInCsv.latticeDegeneration!), \(patientDataInCsv.pdr!), \(patientDataInCsv.primaryRdWithPvr!), \(patientDataInCsv.recurrentRdWithPvr!), \(patientDataInCsv.recurrentRdWithOutPvr!) , \(patientDataInCsv.retainedLensFragments!), \(patientDataInCsv.retinalTear!), \(patientDataInCsv.retinalVeinOcclusion!), \(patientDataInCsv.rhegmatogenousRdMaculaOff!) , \(patientDataInCsv.rhegmatogenousRdMaculaOn!), \(patientDataInCsv.rop!) , \(patientDataInCsv.sickleCell!) , \(patientDataInCsv.spRdRepairWithSiliconeOil!) , \(patientDataInCsv.subluxedCrystallineLens!), \(patientDataInCsv.vitreousHemorrhage!),\(patientDataInCsv.otherField!) ,\(patientDataInCsv.otherField2!), \(patientDataInCsv.otherField3!) , \(patientDataInCsv.otherField4!), \(patientDataInCsv.gauge!), \(patientDataInCsv.band!), \(patientDataInCsv.sleeve!), \(patientDataInCsv.srfDrain!), \(patientDataInCsv.acTap!), \(patientDataInCsv.radialElement!), \(patientDataInCsv.membranePeel!) , \(patientDataInCsv.ilmPeel!), \(patientDataInCsv.retinectomy!), \(patientDataInCsv.fluidAirExchange!), \(patientDataInCsv.pfo!), \(patientDataInCsv.focalEndolaser!), \(patientDataInCsv.prpLaser!), \(patientDataInCsv.indirectLaserTear!), \(patientDataInCsv.iolExchange!), \(patientDataInCsv.aciol!), \(patientDataInCsv.sulcusIol!),\(patientDataInCsv.sutured!), \(patientDataInCsv.sutureless!),\(patientDataInCsv.ppl!) ,\(patientDataInCsv.pplWithFrag!),  \(patientDataInCsv.tamponade2!), \(patientDataInCsv.percentageTamponade!) ,\(patientDataInCsv.otherFieldTamponade!) , \(patientDataInCsv.otherField2Surgery!) ,\(patientDataInCsv.virectomy!) ,\(patientDataInCsv.scleralBuckle!) , \(patientDataInCsv.iolInsertion!) , \(patientDataInCsv.siliconeOilRemoval!), \(patientDataInCsv.siliconeOilExchange!), \(patientDataInCsv.corodialDrainage!) , \(patientDataInCsv.iolName!) , \(patientDataInCsv.iolPower!) , \(patientDataInCsv.positioning!) , \(patientDataInCsv.comments!),\(patientDataInCsv.retinalDetachment!) ,\(patientDataInCsv.macularHoleClosed!) , \(patientDataInCsv.pomVisualAcuity!) , \(patientDataInCsv.pom3VisualAcuity!) , \(patientDataInCsv.otherOutcomeData!) , \(patientDataInCsv.cptCodeDropdown!) , \(patientDataInCsv.iolReposition!) , \(patientDataInCsv.cptFreeTextBox!) , \(patientDataInCsv.cryotherapy!) , \(patientDataInCsv.ilmCodeDropdown!) ,\(patientDataInCsv.fellowInvolvementPercentage!) , \(patientDataInCsv.retinalDefect!) \n"
             
               csvText.append(newLine)
           }

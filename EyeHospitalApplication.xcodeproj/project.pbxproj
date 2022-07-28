@@ -44,6 +44,7 @@
 		6968C4E123AE1A48008FB819 /* UnloggedCaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6968C4E023AE1A48008FB819 /* UnloggedCaseTableViewCell.swift */; };
 		696A1CA623F14F7300A0C40A /* Demographics1a_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696A1CA523F14F7300A0C40A /* Demographics1a_ViewController.swift */; };
 		69705AB0246EA05A002EE2A9 /* SearchACaseByDiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69705AAF246EA05A002EE2A9 /* SearchACaseByDiagnosisViewController.swift */; };
+		697E3B182891CB5B00F10928 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 697E3B172891CB5B00F10928 /* GoogleService-Info.plist */; };
 		6988134523BA1EAA00808379 /* OutcomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988134423BA1EAA00808379 /* OutcomesViewController.swift */; };
 		6988134723BB14C000808379 /* SurgeryOutcomesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988134623BB14C000808379 /* SurgeryOutcomesModel.swift */; };
 		6996617C24CC2021009B7594 /* EditCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6996617B24CC2021009B7594 /* EditCameraViewController.swift */; };
@@ -147,6 +148,7 @@
 		6968C4E023AE1A48008FB819 /* UnloggedCaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnloggedCaseTableViewCell.swift; sourceTree = "<group>"; };
 		696A1CA523F14F7300A0C40A /* Demographics1a_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demographics1a_ViewController.swift; sourceTree = "<group>"; };
 		69705AAF246EA05A002EE2A9 /* SearchACaseByDiagnosisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchACaseByDiagnosisViewController.swift; sourceTree = "<group>"; };
+		697E3B172891CB5B00F10928 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6988134423BA1EAA00808379 /* OutcomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutcomesViewController.swift; sourceTree = "<group>"; };
 		6988134623BB14C000808379 /* SurgeryOutcomesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryOutcomesModel.swift; sourceTree = "<group>"; };
 		6996617B24CC2021009B7594 /* EditCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCameraViewController.swift; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 				69F5406E231E433100B49F4A /* Main.storyboard */,
 				69F54073231E433300B49F4A /* LaunchScreen.storyboard */,
 				69F54076231E433300B49F4A /* Info.plist */,
+				697E3B172891CB5B00F10928 /* GoogleService-Info.plist */,
 				6921A13B2487711800ED0145 /* Assets.xcassets */,
 			);
 			path = EyeHospitalApplication;
@@ -561,6 +564,7 @@
 			files = (
 				69F54075231E433300B49F4A /* LaunchScreen.storyboard in Resources */,
 				69C56BD2238BEABD006B0673 /* SurgLogAppDB.db in Resources */,
+				697E3B182891CB5B00F10928 /* GoogleService-Info.plist in Resources */,
 				6921A13C2487711800ED0145 /* Assets.xcassets in Resources */,
 				69F54070231E433100B49F4A /* Main.storyboard in Resources */,
 			);
@@ -947,7 +951,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.40;
+				MARKETING_VERSION = 1.44;
 				PRODUCT_BUNDLE_IDENTIFIER = zemusi.com.surgLogApp;
 				PRODUCT_NAME = "Eye Surgery Log";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -974,7 +978,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.40;
+				MARKETING_VERSION = 1.44;
 				PRODUCT_BUNDLE_IDENTIFIER = zemusi.com.surgLogApp;
 				PRODUCT_NAME = "Eye Surgery Log";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -23,7 +23,7 @@ class EyeFundusDrawingViewController: UIViewController {
        @IBOutlet weak var canvasView: CanvasView!
        @IBOutlet var featuresView: UIView!
        @IBOutlet weak var collectionView: UICollectionView!
-//       @IBOutlet weak var btnArrow: UIButton!
+       @IBOutlet weak var colorName: UILabel!
        
        @IBOutlet weak var widthSlider: UISlider!
 //       @IBOutlet weak var opacitySlider: UISlider!
@@ -156,6 +156,12 @@ class EyeFundusDrawingViewController: UIViewController {
        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
            let color = colorsArray[indexPath.row]
            canvasView.strokeColor = color
+           if #available(iOS 14.0, *) {
+//               colorName.text = color.accessibilityName
+               colorName.backgroundColor = color
+           } else {
+               // Fallback on earlier versions
+           }
        }
        
    }

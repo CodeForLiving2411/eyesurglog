@@ -15,7 +15,7 @@ class SearchACaseByDiagnosisViewController: UIViewController {
   var patientSearchModelList: [PatientSearchModel]?
      @IBOutlet weak var diagnosisTypeLabelView: UIView!
      let uiPicvkerView = UIPickerView()
-     var dataList = ["Select Diagnosis","Aphakia","Cataract", "Choroidal Effusion","Choroidal Hemorrhage","Diabetic TRD", "Dislocated Intraocular Lens","Endophthalmitis","Epiretinal Membrane","FEVR","Full Thickness Macular Hole", "Intraocular Foreign Body","Lamellar Macular Hole","Lattice Degeneration", "PDR","Primary RD with PVR","Recurrent RD with PVR","Recurrent RD without PVR","Retained Lens Fragments","Retinal Tear", "Retinal Vein Occlusion", "Rhegmatogenous RD (Macula Off)","Rhegmatogenous RD (Macula On)","ROP","Sickle Cell","s/p RD Repair with Silicone Oil","Subluxed Crystalline Lens","Vitreous Opacities" ,"Vitreous Hemorrhage" ]
+     var dataList = ["Select Diagnosis","Aphakia","Cataract", "Choroidal Effusion","Choroidal Hemorrhage","Diabetic TRD", "Dislocated Intraocular Lens","Endophthalmitis","Epiretinal Membrane","FEVR","Full Thickness Macular Hole", "Intraocular Foreign Body","Lamellar Macular Hole","Lattice Degeneration", "PDR","Primary RD with PVR","Recurrent RD with PVR","Recurrent RD without PVR","Retained Lens Fragments","Retinal Tear", "Retinal Vein Occlusion", "Rhegmatogenous RD (Macula Off)","Rhegmatogenous RD (Macula On)","ROP","Sickle Cell","s/p RD Repair with Silicone Oil","Subluxed Crystalline Lens" ,"Vitreous Hemorrhage" ,"Vitreous Opacities" ]
      
      
     @IBOutlet weak var searchButton: UIButton!

@@ -33,7 +33,7 @@ class SurgeryDataListViewViewController: UIViewController {
 //    var titleList: [String]?
 //    var dataList: [Any]?
      var surgeryDetailsList : [Any] = []
-     var surgeryTittleList = ["Gauge", "Band", "Sleeve", "Tamponade", "SRF Drain", "AC Tap", "Radial Element" , "Membrane Peel", "ILM Peel", "Retinectomy", "Fluid Air Exchange", "PFO", "Focal Endolaser", "PRP Laser", "Indirect Laser Tear", "IOL Exchange", "ACIOL", "Sulcus IOL", "Sutured", "Sutureless",  "PPL with Frag", "PPL without Frag", "Tamponade","Tamponade %", "Other Field 1","Other Field 2" ,"IOL Name" , "IOL Power" ,  "Positioning" , "Silicone Oil Removal" , "Silicone Oil Exchange", "Choroidal Drainage" , "Comments" ,"Redetached before POM3?","Macular Hole Closed?","POM1 Visual Acuity","POM 3 Visual Acuity","Other Outcomes Data" , "IOL Reposition" , "CPT Code" , "CPT Field" , "Cryotherapy" ,"ILM Peel Code"]
+     var surgeryTittleList = ["Gauge", "Band", "Sleeve", "Tamponade", "SRF Drain", "AC Tap", "Radial Element" , "Membrane Peel", "ILM Peel", "Retinectomy", "Fluid Air Exchange", "PFO", "Focal Endolaser", "PRP Laser", "Indirect Laser Tear", "IOL Exchange", "ACIOL", "Sulcus IOL", "Sutured", "Sutureless",  "PPL","PPL with Frag",  "Tamponade","Tamponade %", "Other Field 1","Other Field 2" ,"IOL Name" , "IOL Power" ,  "Positioning" , "Silicone Oil Removal" , "Silicone Oil Exchange", "Choroidal Drainage" , "Comments" ,"Redetached before POM3?","Macular Hole Closed?","POM1 Visual Acuity","POM 3 Visual Acuity","Other Outcomes Data" , "IOL Reposition" , "CPT Code" , "CPT Field" , "Cryotherapy" ,"ILM Peel Code" , ]
    
     override func viewWillAppear(_ animated: Bool) {
        

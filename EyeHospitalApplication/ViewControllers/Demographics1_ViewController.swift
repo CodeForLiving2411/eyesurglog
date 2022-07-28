@@ -85,7 +85,7 @@ class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
         if tag == 1  {
             print("entered tag 1")
              demographics1List = DatabaseManager.shared.loadPatientDemographicsDetails(withID: tempPersonID )
-                    
+                   
                     print("demolist at fellow" , demographics1List )
                     
             //       lastName.text! = demographics1List[0] as! String
@@ -440,7 +440,14 @@ class Demographics1_ViewController: UIViewController , UITextFieldDelegate   {
             let vc = Demographics2_ViewController()
              vc.valueDemo = self.personID
             vc.mrnTemp = self.mrnValue ?? 0
-            vc.unloggedCaseId = self.tempPersonID ?? 0
+            if(self.tag == 1) {
+                vc.unloggedCaseId = 0
+            }else if(self.tag==2){
+                vc.unloggedCaseId = self.tempPersonID ?? 0
+            }else{
+                print("tag =" , self.tag)
+            }
+           
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
         }

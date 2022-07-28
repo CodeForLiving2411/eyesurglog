@@ -231,7 +231,7 @@ class CPTSelectionViewController: UIViewController, UITableViewDelegate, UITable
          dismiss(animated: true, completion: nil)
         }
         else {
-            displayAlertMessage(messageToDisplay: "Please select aleast 1 or altmost 2 ILM Codes. If nothing to be selected then select the first option")
+            displayAlertMessage(messageToDisplay: "Please select aleast 1 or altmost 2 Gauges. If nothing to be selected then select the first option")
         }
     }
     

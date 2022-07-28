@@ -10,15 +10,35 @@ import UIKit
 import CoreData
 import DropDown
 import IQKeyboardManagerSwift
+import Firebase
+import FirebaseMessaging
+import UserNotifications
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        FirebaseApp.configure()
+        Messaging.messaging().delegate = self
+        UNUserNotificationCenter.current().delegate = self
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge]){success,_ in
+            guard success else {
+                return
+            }
+            
+            print("Success in Apn Registry!")
+                
+        }
+        
+        application.registerForRemoteNotifications()
+
+        
         ///---------------------------
         /// For  making the User Interface to light on iOS 13.0 devices 
         if #available(iOS 13.0, *) {
@@ -39,6 +59,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // KeyBoard avoiding
         IQKeyboardManager.shared.enable = true
         return true
+    }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        messaging.token{token,_ in
+            guard let token = token else {
+                return
+            }
+            print("Token : \(token)")
+            
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

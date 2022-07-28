@@ -17,7 +17,7 @@ class SearchACaseBySurgeryViewController: UIViewController {
     var patientSearchModelList: [PatientSearchModel]?
     @IBOutlet weak var surgeryTypeLabelView: UIView!
     let uiPicvkerView = UIPickerView()
-    var dataList = [ "Virectomy" , "Scleral Buckle" ,"Membrane peel", "ILM peel", "Retinectomy" , "Fluid-Air-Exchange" , "PFO" ,"Focal Endolaser", "PRP Laser" , "Indirect Laser Tear/Lattice" , "IOL Exchange" , "IOL Insertion" , "ACIOL" ,"Sulcus IOL" , "Scleral Fixated IOL Sutured" , "Scleral Fixated IOL Sutureless" , "PPL with Frag" , "PPL without Frag" , "Silicone Oil Removal" , "Silicone Oil Exchange" , "Choroidal Drainage" , "IOL Reposition" , "Cryotherapy"]
+    var dataList = [ "Virectomy" , "Scleral Buckle" ,"Membrane peel", "ILM peel", "Retinectomy" , "Fluid-Air-Exchange" , "PFO" ,"Focal Endolaser", "PRP Laser" , "Indirect Laser Tear/Lattice" , "IOL Exchange" , "IOL Insertion" , "ACIOL" ,"Sulcus IOL" , "Scleral Fixated IOL Sutured" , "Scleral Fixated IOL Sutureless" , "PPL" ,"PPL with Frag" , "Silicone Oil Removal" , "Silicone Oil Exchange" , "Choroidal Drainage" , "IOL Reposition" , "Cryotherapy"]
     
     
     var selectedItem = ""
@@ -99,6 +99,8 @@ class SearchACaseBySurgeryViewController: UIViewController {
         case "Scleral Fixated IOL Sutured" :  value = "sutured"
             break
         case "Scleral Fixated IOL Sutueless" : value = "sutureless"
+            break
+        case "PPL" : value = "ppl"
             break
         case "PPL with Frag" : value = "pplWithFrag"
             break

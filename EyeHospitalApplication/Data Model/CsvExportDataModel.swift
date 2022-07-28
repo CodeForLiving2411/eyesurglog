@@ -71,6 +71,7 @@ struct CsvExportDataModel {
     var sulcusIol: String?
     var sutured: String?
     var sutureless: String?
+    var ppl: String?
     var pplWithFrag: String?
     var pplWithoutFrag: String?
     var tamponade2: String?
