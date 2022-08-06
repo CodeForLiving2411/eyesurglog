@@ -1169,25 +1169,26 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
                                                                      }
         
         // withFragSegmentedControl
-        if getSurgeryList[18] == "Yes" {
-                                                                         
+        if getSurgeryList[19] == "Yes" || getSurgeryList[18] == "Optional(\"Yes\")" {
+                                                                         print("getSurgeryList" + getSurgeryList[18])
                                                                          withFragSegmentedControl.selectedSegmentIndex = 1
                                                                          
                                                                      }
                                                                      else{
+                                                                         print("getSurgeryList" + getSurgeryList[18])
                                                                          withFragSegmentedControl.selectedSegmentIndex = 0
                                                                      }
         
-        // withOutFragSegmentedControl
-        if getSurgeryList[19] == "Yes" {
-                                                                         
-                                                                         withOutFragSegmentedControl.selectedSegmentIndex = 1
-                                                                         
-                                                                     }
-                                                                     else{
-                                                                         withOutFragSegmentedControl.selectedSegmentIndex = 0
-                                                                     }
-        
+//        // withOutFragSegmentedControl
+//        if getSurgeryList[19] == "Yes" {
+//                                                                         
+//                                                                         withOutFragSegmentedControl.selectedSegmentIndex = 1
+//                                                                         
+//                                                                     }
+//                                                                     else{
+//                                                                         withOutFragSegmentedControl.selectedSegmentIndex = 0
+//                                                                     }
+//        
         // suturelessSegmentedControl
         if getSurgeryList[20] == "Yes" {
                                                                                 
@@ -1532,12 +1533,16 @@ class EditSurgeryViewController: UIViewController , UITextFieldDelegate {
                    pplString = ""
                }
         
+        let withFragStr = pplString == "Yes" ? withFragSeg : "No"
+        
+        print("withFragStr" , withFragStr)
+        
         
         
          
          
          // To insert data in SurgeryModel
-        let surgeryModelInfo = SurgeryModel(personIdfromDemo1:valuesurg, gauge: gaugeText, band: bandText, sleeve: sleeveText, tamponad1: tamponadeSeg1, srfDrain: srfDrainSeg, acTap: acTapSeg, radialElement: radialElementSeg!  , membranePeel: membranePeelSeg, ilmPeel: ilmPeelSeg, retinectomy: retinectomySeg , fluidAirExchange: fluidAirExchangeSeg, pfo: pfoSeg, focalEndolaser: focalEndolasorSeg, prpLaser: prpLaserSeg, indirectLaserTear: indirectLaserTearSeg, iolExchange: iolExchangeSeg, aciol: aciolSeg, sulcusIol: sulcusIOLSeg, sutured: suturedSeg, sutureless: suturelessSeg,ppl: pplString, pplWithFrag: withFragSeg, pplWithoutFrag: withoutFragSeg ,  tamponade1: tamponadeSeg2, percentageTamponade: percentageTampnadeString, otherFieldTamponade:otherField1String , otherField2: otherField2String, comments: commentText,virectomy: virectomySeg, scleralBuckle: scleralBuckleSeg , iolInsertion: iolInsertionSeg,iolName: iolNameString, iolPower: IolPowerString, positioning: positioningString, siliconeOilRemoval: siliconeOilRemovalString , siliconeOilExchange: siliconeOilExchangeString ,corodialDrainage: corodialDrainageString, iolReposition : iolRepositionString, cptCodeDropdown: cptCodeDropdownString, cptFreeTextBox: cptFreeTextBoxString, cryotherapy: cryotherapyString, ilmDropDown: ilmDropDownString, status: 1)
+        let surgeryModelInfo = SurgeryModel(personIdfromDemo1:valuesurg, gauge: gaugeText, band: bandText, sleeve: sleeveText, tamponad1: tamponadeSeg1, srfDrain: srfDrainSeg, acTap: acTapSeg, radialElement: radialElementSeg!  , membranePeel: membranePeelSeg, ilmPeel: ilmPeelSeg, retinectomy: retinectomySeg , fluidAirExchange: fluidAirExchangeSeg, pfo: pfoSeg, focalEndolaser: focalEndolasorSeg, prpLaser: prpLaserSeg, indirectLaserTear: indirectLaserTearSeg, iolExchange: iolExchangeSeg, aciol: aciolSeg, sulcusIol: sulcusIOLSeg, sutured: suturedSeg, sutureless: suturelessSeg,ppl: pplString, pplWithFrag: withFragStr, pplWithoutFrag: withoutFragSeg ,  tamponade1: tamponadeSeg2, percentageTamponade: percentageTampnadeString, otherFieldTamponade:otherField1String , otherField2: otherField2String, comments: commentText,virectomy: virectomySeg, scleralBuckle: scleralBuckleSeg , iolInsertion: iolInsertionSeg,iolName: iolNameString, iolPower: IolPowerString, positioning: positioningString, siliconeOilRemoval: siliconeOilRemovalString , siliconeOilExchange: siliconeOilExchangeString ,corodialDrainage: corodialDrainageString, iolReposition : iolRepositionString, cptCodeDropdown: cptCodeDropdownString, cptFreeTextBox: cptFreeTextBoxString, cryotherapy: cryotherapyString, ilmDropDown: ilmDropDownString, status: 1)
          
          // To create table in database
         
