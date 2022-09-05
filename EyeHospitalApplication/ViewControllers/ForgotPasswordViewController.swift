@@ -23,9 +23,14 @@ class ForgotPasswordViewController: UIViewController {
     @IBOutlet weak var answerTextField: UITextField!
     
     @IBOutlet weak var securityQuestionUIView: UIView!
-    var questionsList = ["What primary school did you attend?" , "In what town or city was your first full time job?" ,"In what town or city did you meet your spouse/partner?",
-       "What is the middle name of your oldest child?",
-         "What is your spouse or partner's mother's maiden name?" , "What is your Nickname"]
+    
+//    var questionsList = ["What primary school did you attend?" , "In what town or city was your first full time job?" ,"In what town or city did you meet your spouse/partner?",
+//       "What is the middle name of your oldest child?",
+//         "What is your spouse or partner's mother's maiden name?" , "What is your Nickname"]
+//
+    var questionsList = ["What high school did you attend?" , "In what town or city was your first full time job?" ,"In what town did you meet your spouse/partner?",
+        "What is the middle name of your oldest child?",
+        "What is your mother's maiden name?" , "What is your Nickname?"]
     var dropDown = DropDown()
     
    
@@ -100,13 +105,19 @@ class ForgotPasswordViewController: UIViewController {
         
         for registrationData in registrationDataList! {
             
-            if registrationData.emailid == emailId {
+           
+            
+            if registrationData.emailid!.lowercased() == emailId.lowercased() {
+                print("emailid"  , registrationData.emailid!)
+                print("security"  , securityQuestion)
+                print("security"  , registrationData.securityQuestion!)
+                print("answer"  , registrationData.answer!)
                 
-                if registrationData.securityQuestion == securityQuestion && registrationData.answer == answer {
+                
+                if (registrationData.securityQuestion!.lowercased() == securityQuestion.lowercased() && registrationData.answer! == answer) {
                      count = 1
                     print("password is " , registrationData.password)
-                  //  resultLabel.text = "Your Password is \(registrationData.password!)"
-    
+                
                     
                     let messageToDisplay = "Your password is \(registrationData.password!)"
                     
@@ -123,31 +134,7 @@ class ForgotPasswordViewController: UIViewController {
                                 self.present(alertController, animated: true,completion: nil)
                                 
                     }
-                   
-//                else {
-//
-//                    print("Wrong Credentials in inner else")
-//                  //  resultLabel.text = "Sorry!!! Wrong Credentials. Please try Again!!"
-//
-//                    let alertController = UIAlertController(title: "Alert",
-//                                                                                           message: "Sorry!!! Wrong Credentials. Please try Again!!" , preferredStyle: .alert)
-//
-//                                                   let OKAction = UIAlertAction(title : "Ok", style : .default){
-//                                                       (action :UIAlertAction) in
-//                                                    self.emailIdTextField.text! = ""
-//                                                    self.answerTextField.text! = ""
-//                                                    self.securityQuestionTextField.text! = "Select the security Question"
-//
-//
-//
-//                                                   }
-//                                                  alertController.addAction(OKAction)
-//                                                   self.present(alertController, animated: true,completion: nil)
-//
-//
-//
-//
-//                        }
+                              
                     }
            
                 
@@ -218,7 +205,7 @@ class ForgotPasswordViewController: UIViewController {
     
     func displayAlertMessage(messageToDisplay : String)
           {
-              let alertController = UIAlertController(title: "Alert",
+              let alertController = UIAlertController(title: "",
                                                       message: messageToDisplay, preferredStyle: .alert)
               
               let OKAction = UIAlertAction(title : "Ok", style : .default){
